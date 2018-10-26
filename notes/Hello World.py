@@ -3,8 +3,8 @@ print("Hello World!")
 # This is a comment, This had no effect on the code
 # but this does allow me to do things, I can:
 # 1. Make notes to myself
-# 2. Comment peices of code does not work
-# 3. Make my code eaiser to read
+# 2. Comment pieces of code does not work
+# 3. Make my code easier to read
 
 print("Look at what happens here. Is there any space?")
 print("")
@@ -38,18 +38,7 @@ print("Hello %s." % name)
 age = input("How old are you? >_")
 print("%s?!? You belong in a museum." % age)
 print()
-print("%s is really old. They are %s years old." % (name, age))
+print("%s is really old. They are %s years old." % (name,age))
 
-# Variable Assignments
-car_name = "Anai mobile"
-car_type = "Tesla"
-car_Cylinders = 16
-car_miles_per_gallon = 0.01
 
-#make it print "I have a car callef the Anai mobile. It id a Tesla."
-print(make it print "I have a car callef the Anai mobile. It id a Tesla.)
-
-#Recasting
-real_Age = int(input(How old are you again?))
-hidden_age =  age + 5
 
