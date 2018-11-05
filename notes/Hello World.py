@@ -100,3 +100,55 @@ for i in range(10) :
 
 for i in range(5) :
     f(i)
+
+# While loops
+
+
+
+
+
+
+"""
+At the moment you START the loo[:
+For loops - Use when you know EXACTLY how many iterations
+While - loops - Use when you DON'T know how many iterations
+"""
+
+
+
+
+
+
+
+def grade_calc
+    elif percentage >=90:
+        return "A"
+    elif percentage >= 80:
+        return "B"
+    elif percentage >= 70:
+        return "C"
+    elif percentage >= 60:
+        return "F"
+    else:
+        return "F"
+
+
+    your_grade = grade_calc(82)
+    print (your_grade)
+
+# Random notes
+import random # this should be line 1
+
+
+
+# "Random" notes
+print(5 > 3)
+print(5 >= 3)
+print(3 == 3)
+print(3 != 4)
+
+"""
+a = 3 # A is set up to3
+
+a == 3 # is equeal to 3?
+"""
