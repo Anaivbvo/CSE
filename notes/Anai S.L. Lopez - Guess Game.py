@@ -7,7 +7,7 @@ print(3 != 4)
 """
 a = 3 # A is set up to3
 
-a == 3 # is equeal to 3?
+a == 3 # is equal to 3?
 """
 
 print("Guess the number I am thinking of!")
