@@ -1,16 +1,16 @@
-# "Random" notes
-print(5 > 3)
-print(5 >= 3)
-print(3 == 3)
-print(3 != 4)
+number = 5
+guesses = 5
+wins = False
 
-"""
-a = 3 # A is set up to3
-
-a == 3 # is equal to 3?
-"""
-
-
-print("Guess the number I am thinking of!")
-print("This number is between 1 - 10.")
-print("You have 5 chances! I'll help you along the way!")
+while guesses > 0:
+    num = int(input("What's number am i thinking of from 1 - 10?"))
+    if num > 11:
+        print("Way too high! Try again.")
+        guesses = guesses - 1
+    elif num > number:
+        print("A bit too high! Try again.")
+        guesses = guesses - 1
+    elif number < 4:
+        print("It's a little higher. Try again you got this!")
+        guesses == guesses - 1
+        
