@@ -1,4 +1,4 @@
-number = .randint(0, 10)
+number = random.randint(0, 10)
 guesses = 5
 wins = False
 
