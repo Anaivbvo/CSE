@@ -1,6 +1,7 @@
 import random
 
 number = (random.randint(1, 10))
+print(number)
 guesses = 5
 wins = False
 
@@ -9,14 +10,19 @@ while guesses > 0:
     if number > 10:
         print("Way too high! Try again.")
         guesses = guesses - 1
+        print(guesses)
     elif number < 0:
         print("Way too low! Try again!")
+        guesses = guesses - 1
+        print(guesses)
     elif number > number:
         print("A bit too high! Try again.")
         guesses = guesses - 1
+        print(guesses)
     elif number < number:
         print("It's a little higher! Try again.")
         guesses = guesses - 1
+        print(guesses)
     elif number == number:
         print("You did it! Good job!")
         guesses = 0

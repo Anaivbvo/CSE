@@ -119,7 +119,7 @@ While - loops - Use when you DON'T know how many iterations
 
 
 
-
+"""
 def grade_calc
     elif percentage >=90:
         return "A"
@@ -138,7 +138,7 @@ def grade_calc
 
 # Random notes
 import random # this should be line 1
-
+"""
 
 
 # "Random" notes
