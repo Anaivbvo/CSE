@@ -1,29 +1,30 @@
-import random
-
-number = (random.randint(1, 10))
-print(number)
 guesses = 5
 wins = False
+number = 5
 
 while guesses > 0:
-    number = int(input("What's number am I thinking of from 1 - 10?"))
-    if number > 10:
+    num = int(input("What number am I thinking of from 1 - 10?"))
+    if num > 10:
         print("Way too high! Try again.")
         guesses = guesses - 1
+        print("Guesses left:")
         print(guesses)
-    elif number < 0:
+    elif num < 0:
         print("Way too low! Try again!")
         guesses = guesses - 1
+        print("Guesses left:")
         print(guesses)
-    elif number > number:
+    elif num > number:
         print("A bit too high! Try again.")
         guesses = guesses - 1
+        print("Guesses left:")
         print(guesses)
-    elif number < number:
+    elif num < number:
         print("It's a little higher! Try again.")
         guesses = guesses - 1
+        print("Guesses left:")
         print(guesses)
-    elif number == number:
+    elif num == number:
         print("You did it! Good job!")
         guesses = 0
     elif guesses == 0:
