@@ -70,6 +70,9 @@ print(list1)
 
 # Turn a list into a string
 print("".join(list1))
+print("!".join(list1))
+
+"""
 
 for i in range (len(list1)): # i goes through all indices
     if list1 == "u": # if we find a "u"
@@ -79,7 +82,9 @@ for i in range (len(list1)): # i goes through all indices
 
 for character in list1:
     if character == "u"
-        # replace with a *
+        "00#" replace with a "*"
         current_index = list1.index(character)
         list.pop(current_index)
         list1.insert(current_index. "*")
+        
+"""
