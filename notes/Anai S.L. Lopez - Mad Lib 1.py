@@ -15,5 +15,5 @@ adj2 = input("Choose another adjective: ")
 print("They tend to be very %s and %s at times." % (adj1, adj2))
 
 task1 = input("Choose an everyday task: ")
-adj3 = 
-print("Whenever you so happen to do everyday task 1 they react in such a adj3 manner.")
+adj3 = input("Choose a new adjective: ")
+print("Whenever you so happen to do %s they react in such a %s manner." % (task1, adj3))

@@ -88,3 +88,8 @@ for character in list1:
         list1.insert(current_index. "*")
         
 """
+
+# turn list into string
+print("".join(list1))
+
+# If you want add something int the quotations
