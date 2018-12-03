@@ -94,7 +94,7 @@ print("".join(list1))
 
 # If you want add something int the quotations
 
-
+"""
 # Faction notes
 # a**2 + b**2 = c**2
 def pythagorean (a, b):
@@ -102,3 +102,4 @@ def pythagorean (a, b):
 
 
 print(pythagorean(3, 4))
+"""
