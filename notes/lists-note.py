@@ -93,3 +93,12 @@ for character in list1:
 print("".join(list1))
 
 # If you want add something int the quotations
+
+
+# Faction notes
+# a**2 + b**2 = c**2
+def pythagorean (a, b):
+    return (a** + b**)**(1/2)
+
+
+print(pythagorean(3, 4))
