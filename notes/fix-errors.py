@@ -26,7 +26,7 @@ print(poem)
 print("--------------")
 
 
-five = (10 - 2 - 3)
+five = (10 - 2 +(-3))
 print("This should be five: %s" % five)
 
 def secret_formula(started):
