@@ -1,31 +1,39 @@
 print("Mad Lib")
 
-people1 = input("Choose a group of people: ")
-print(" The %s are quite strange." % people1)
+list1 = []
 
-adj1 = input("Choose an adjective: ")
-adj2 = input("Choose another adjective: ")
-print(" They tend to be very %s and %s at times." % (adj1, adj2))
+list1.append(input("Choose a group of people: "))
+print(" The %s are quite strange." % list1[0])
 
-task1 = input("Choose an everyday task: ")
-adj3 = input("Choose a third adjective: ")
-print(" Whenever you so happen to do %s hey react in such a %s manner. Maybe they don’t do %s." % (task1, adj3, task1))
+list1.append(input("Choose an adjective: "))
+list1.append(input("Choose another adjective: "))
+print(" They tend to be very %s and %s at times." % (list1[1], list1[2]))
 
-adj4 = input("Choose a fourth adjective: ")
-print(" Even their fashion sense is interesting. It's very %s and out of the ordinary." % adj4)
+list1.append(input("Choose an everyday task: "))
+list1.append(input("Choose a third adjective: "))
+print(" Whenever you so happen to do %s hey react in such a %s manner. Maybe they don’t do %s." % (list1[3], list1[4],
+                                                                                                   list1[3]))
 
-adj5 = input("Choose another adjective: ")
-grade1 = input("Choose a grade level: ")
-adj6 = input("Choose a sixth adjective: ")
+list1.append(input("Choose a fourth adjective: "))
+print(" Even their fashion sense is interesting. It's very %s and out of the ordinary." % list1[5])
+
+list1.append(input("Choose another adjective: "))
+list1.append(input("Choose a grade level: "))
+list1.append(input("Choose a sixth adjective: "))
 print(" I wonder when they became so %s. Maybe it was when they entered %s grade. Everyone had a strange year during"
-      "this grade. Everyone became %s." % (adj5, grade1, adj6))
+      "this grade. Everyone became %s." % (list1[6], list1[7], list1[8]))
 
-adj7 = input("Choose another adjective: ")
-print(" Yeah the %s are strange but %s. Hmm I wonder if we will ever truly know why." % (people1, adj7))
+list1.append(input("Choose another adjective: "))
+list1.append(input("Choose a finale adjective: "))
+print(" Yeah the %s are strange but %s. Hmm I wonder if we will ever truly know why." % (list1[9], list1[10]))
 
 print("Final product: ")
-print(" The %s are quite strange. They tend to be very %s and %s at times. Whenever you so happen to do %s hey react "
-      "in such a %s manner. Maybe they don’t do %s. Even their fashion sense is interesting. It's very %s and out of "
-      "the ordinary. I wonder when they became so %s. Maybe it was when they entered %s grade. Everyone had a strange"
-      "year during this grade. Everyone became %s. Yeah the %s are strange but %s. Hmm I wonder if we will ever truly "
-      "know why." % (people1, adj1, adj2, task1, adj3, task1, adj4, adj5, grade1, adj6, people1, adj7))
+
+print(" The %s are quite strange." % list1[0])
+print(" They tend to be very %s and %s at times." % (list1[1], list1[2]))
+print(" Whenever you so happen to do %s hey react in such a %s manner. Maybe they don’t do %s." % (list1[3], list1[4],
+                                                                                                   list1[3]))
+print(" Even their fashion sense is interesting. It's very %s and out of the ordinary." % list1[5])
+print(" I wonder when they became so %s. Maybe it was when they entered %s grade. Everyone had a strange year during"
+      "this grade. Everyone became %s." % (list1[6], list1[7], list1[8]))
+print(" Yeah the %s are strange but %s. Hmm I wonder if we will ever truly know why." % (list1[9], list1[10]))

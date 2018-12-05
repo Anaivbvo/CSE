@@ -18,9 +18,9 @@ nor comprehend passion from intuition
 and requires an explanation
 \n\t\twhere there is none."
 
-print("--------------)
+print("--------------")
 print(poem)
-print(--------------")
+print("--------------")
 
 
 five = (10 - 2 + 3 )
