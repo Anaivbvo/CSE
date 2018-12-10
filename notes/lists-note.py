@@ -155,3 +155,7 @@ print(" The %s are quite strange. They tend to be very %s and %s at times. Whene
       "year during this grade. Everyone became %s. Yeah the %s are strange but %s. Hmm I wonder if we will ever truly "
       "know why." % (people1, adj1, adj2, task1, adj3, task1, adj4, adj5, grade1, adj6, people1, adj7))
 """
+
+myList = [0, 1, 2, 3, 4, 5]
+myList. reverse()
+print(myList)
