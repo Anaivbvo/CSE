@@ -16,3 +16,6 @@ colors.append("purple")  # add onto the current list on top without editing so l
 
 print(colors)  # show the list # computers count form 0 vv
 colors.pop(0)  # first item from list without using the item's name (remove removes items, pop removes index/number)
+print(colors)
+print(colors[2])  # print the 3rd item in the list
+print(len(colors)) #print legnth of the list
