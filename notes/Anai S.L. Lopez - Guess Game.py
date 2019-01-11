@@ -24,10 +24,10 @@ while guesses > 0:
         guesses = guesses - 1
         print("Guesses left:")
         print(guesses)
-    elif num == number:
-        print("You did it! Good job!")
-        guesses = 0
     elif guesses == 0:
         print("Oh no! you ran out of guesses!")
         print("Here's the actual number: ")
         print(number)
+    elif num == number:
+        print("You did it! Good job!")
+        guesses = 0
