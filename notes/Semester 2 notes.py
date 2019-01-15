@@ -12,10 +12,16 @@ old = input("How old are you? : ")  # ask the user for their age
 print("Wow you're %s years old? You're ancient! :0!!" % old)  # use their age and write a remark against them
 
 colors = ["red", "orange", "yellow", "green", "blue"]  # make a list with 5 colors
+print(colors)
 colors.append("purple")  # add onto the current list on top without editing so line
 
 print(colors)  # show the list # computers count form 0 vv
 colors.pop(0)  # first item from list without using the item's name (remove removes items, pop removes index/number)
 print(colors)
 print(colors[2])  # print the 3rd item in the list
-print(len(colors)) #print legnth of the list
+print(len(colors))  # print length of the list
+
+import string
+print(list(string.ascii_letters))  # print the alphabet in a list
+print(string.digits)  # print all digits
+print(string.punctuation)  # print all special characters
