@@ -1,3 +1,5 @@
+import string
+
 print("hello world")  # write hello world in terminal
 
 # Single line comment  # (write a single line comment)
@@ -21,7 +23,6 @@ print(colors)
 print(colors[2])  # print the 3rd item in the list
 print(len(colors))  # print length of the list
 
-import string
 print(list(string.ascii_letters))  # print the alphabet in a list
 print(string.digits)  # print all digits
 print(string.punctuation)  # print all special characters
