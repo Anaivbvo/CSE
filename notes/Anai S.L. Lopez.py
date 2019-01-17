@@ -1,9 +1,6 @@
 import random
-colors = ["black", "brown", "red", "orange", "yellow", "green", "blue", "purple", "indigo", "violet"]
-word = random.choices(colors)
-print(word)
+bank = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
+guesses = 8
 
-word2 = list(word)
-print(word2)
+word = list(random.choices(bank))
 
-print(word2.replace(word2, 'X'))
