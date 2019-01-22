@@ -1,25 +1,36 @@
-mainStr = "Hello, This is a sample string"
-
-otherStr = mainStr.replace('s', 'X')
-
-print(otherStr)
+import random
 
 """
+bank = ["red", "orange", "yellow", "green", "blue", "indigo", "purple", "violet"]
+randomWord = random.choices(bank)
+print(randomWord)
+
+wrongGuesses = 0
+listOfGuesses = []
+
+while wrongGuesses != 8:
+    x = input("Enter a letter: ")
+if x.lower() in randomWord.lower():
+    print(x,"is in the word!")
+    listOfGuesses.append(x)
+    print("Letters guessed so far: ",listOfGuesses)
+    print()
+else:
+    print(x,"is not in the word.")
+    wrongGuesses += 1
+    print(wrongGuesses, "wrong guesses.")
+    listOfGuesses.append(x)
+    print("Letters guessed so far: ",listOfGuesses)
+    print()
+
+   print("You lost the game!")
+   return x
+"""
+
+bank = ["red", "orange", "yellow", "green", "blue", "indigo", "purple", "violet"]
+randomWord = random.choices(bank)
 guesses = 8
-while guesses < 0:
-    guess = input("Try to guess the word! You have 8 tries! : ")
-    if input == random.choices(colors):
-        print("You won!")
-    else:
-        guesses = guesses - 1
-        print("Aww too bad! Try again!")
-if guesses == 0:
-    print("Aww! You ran out guesses!")
-    print("The word you were trying was: ")
-    print(word)
-    
-"""
-
-x = ["abbbb", "123a", "nnnnas"]
-xi = [s.replace('a', 'b') for s in x]
-print(xi)
+WrongGuesses = 0
+ListOfGuesses = []
+# index = random.randint(0,len(bank)-1)
+# randomWord2 = bank[index]

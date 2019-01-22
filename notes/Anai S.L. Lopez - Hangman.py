@@ -15,7 +15,6 @@ hangman1 = []
 print(hangman1)
 hangman1.append("rhythm")
 
-
 hangman1A = input("Try to guess the word! You have 8 tries!: ")
 print("______")
 guesses = 8
@@ -42,3 +41,11 @@ while guesses < 0:
     else:
         guesses = guesses - 1
         print("Aww too bad! Try again!")
+
+# input, list guesses
+
+import random
+bank = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
+guesses = 8
+
+word = random.choices(bank)
