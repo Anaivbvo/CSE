@@ -1,3 +1,5 @@
+import random
+
 """
 - with every wrong letter chosen the number of guesses goes down
 - rewrite the whole sentence after each turn
@@ -42,9 +44,6 @@ while guesses < 0:
         guesses = guesses - 1
         print("Aww too bad! Try again!")
 
-# input, list guesses
-
-import random
 bank = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"]
 guesses = 8
 
