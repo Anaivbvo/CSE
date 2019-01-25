@@ -1,8 +1,13 @@
+import random
 # Creating a list
 color_list = ["blue", "turquoise", "pink", "orange", "black", "red"]
 print(color_list)
 print(color_list[1])
 print(color_list[0])
+color_list2 = random.choices(color_list)
+print(color_list2)
+color_list3 = list(color_list2)
+print(color_list3)
 
 # Length of list
 print("There are %d things in the list." % len(color_list))

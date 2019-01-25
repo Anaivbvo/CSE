@@ -1,23 +1,32 @@
 import random
-bank = ["red", "orange", "yellow", "green", "blue", "indigo", "purple", "violet"]
-word = random.choices(bank)
-letter_in_word = list[word]
-guesses_left = 8
-list_of_guesses = []
-print(letter_in_word)
+bank = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple', 'violet']
 
-while guesses_left > 0:
-    guess = input("Enter a letter: ")
-    if guess in letter_in_word:
-        print("%s is in the word" % guess)
-    else:
-        print("%s is not in the word" % guess)
-        guesses_left -= 1
-    print("You have: ", guesses_left, "guesses so far")
-    list_of_guesses.append(guess)
-    print("Guesses made so far:", list_of_guesses)
-if guesses_left == 0:
-    print("You ran out of guesses! :0!!")
+word_found = False
+word_choice = random.choice(bank)
+found = []
 
-"""
-input orks """
+for i in range(0, len(word_choice)):
+    found.append("-")
+
+def check_found(found):
+    global word_choice
+    looper = 0
+    for i in found:
+        if i != "-":
+            looper += 1
+    if looper == len(word_choice):
+        return True
+
+while not word_found:
+    print(" ".join(found))
+    letter = input("Enter a letter: ")
+    looper = 0
+    for i in word_choice:
+        if i == letter:
+            found[looper] = i
+            looper += 1
+            checker = check_found(found)
+            if checker == True:
+                letter_found = True
+    if letter == word_choice:
+        print("done")
