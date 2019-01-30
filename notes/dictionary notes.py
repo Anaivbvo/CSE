@@ -27,11 +27,11 @@ nested_dictionary = {
     }
 }
 
-print(nested_dictionary["GA"]["POPULATION"])
-print(nested_dictionary["FL"]["NAME"])
+print(nested_dictionary["GA"], ["POPULATION"])
+print(nested_dictionary["FL"], ["NAME"])
 
-print(nested_dictionary["GA"]
-print("GA")
+print(nested_dictionary["GA"])
+# 1
 
 complex_dictionary = {
     "CA": {
@@ -39,7 +39,8 @@ complex_dictionary = {
         "CITIES": [
             "Fresno",
             "Los Angeles",
-            "San Fransisco"
+            "San Fransisco",
+            ","
         ]
     },
     "FL": {
@@ -56,18 +57,44 @@ complex_dictionary = {
         "CITIES": [
             "Anchorage",
             "Fair banks",
-            "Juneau"
+            "Juneau",
+            ","
         ],
 
     },
     "GA": {
         "NAME": "Georgia",
         "CITIES": [
+            "Alabama",
             "Atlanta",
             "Savannah",
-            "Augusta"
+            "Augusta",
         ]
     }
 }
 
 print(complex_dictionary["AK"]["CITIES"][0])
+
+# Open your notes, and get it to print Florida
+# And then get it to print alabama cause superbowl
+
+print(["FL"], ["NAME"])
+print(["GA"], ["CITIES"], [0])
+
+print(complex_dictionary.keys())
+print(complex_dictionary.items())
+print(nested_dictionary.items())
+
+for key, value in complex_dictionary.items():
+    print(key)
+    print(value)
+    print("-" * 20)
+
+# This is what make sit look pretty
+print()
+for state, info in complex_dictionary.items():
+    for label, stats in info.items():
+        print(label)
+        print(stats)
+        print("-" * 20)
+    print("-" * 20)
