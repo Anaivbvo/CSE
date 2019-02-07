@@ -27,7 +27,7 @@ main_map = {
     },
     'Stage': {
         'NAME': "Main Stage",
-        'DESCRIPTION': "It's the main stage. This is where some band peformances happen. Sometimes the saxes have"
+        'DESCRIPTION': "It's the main stage. This is where some band performances happen. Sometimes the saxes have"
                        "sectionals here after school, it can get loud here with them. The stage is somewhere where both"
                        "the band members and theatre kids can share and not fight over it... all the time.. To the"
                        "north-west and north-east are stair cases to get off the stage.",
@@ -45,10 +45,18 @@ main_map = {
     }
 }
 
+print("-"*12)
+print(" ")
+print("Try this out: Basic tips: ")
+print("To quit or end the game just type: q, quit, or exit.")
+print(" ")
+print("-"*12)
+print(" ")
+
 # Controller
 playing = True
 current_node = main_map['Table']
-directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'NORTH EAST', 'NORTH WEST']
+directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'NORTH_EAST', 'NORTH_WEST']
 
 while playing:
     print(current_node['NAME'])
