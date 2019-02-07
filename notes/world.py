@@ -1,70 +1,150 @@
 main_map = {
-    'Table': {
-        'NAME': "Outer stage lunch table",
-        'DESCRIPTION': "It's the lunch table nearest to both the band room and the outer stage. To the west of you is"
-                       "the outer stage.",
-        'PATHS': {
-            'WEST': "Outer Stage"
+    'OUTSIDE': {
+        'OUTER_STAGE_TABLE': {
+            'NAME': "Hang Out Table",
+            'DESCRIPTION': "This is the table we tend to hang ot during lunch. It's next to the cafeteria and lunch"
+                           "room. good shade as well as shine. It's the perfect place to hang out after practice. To "
+                           "the WEST is the OUTER_STAGE.",
+            'PATHS': {
+                'WEST': 'OUTER_STAGE'
+            }
+        },
+        'OUTER_STAGE': {
+            'NAME': "AMP Stage",
+            'DESCRIPTION': "This is the AMP Stage. School peformances and events happen here. It's really nice to "
+                           "hang out at when it's raining. Though the shade does not provide a lot of coolness. To the "
+                           "NORTH of you is the entrance to the BACK_STAGE.",
+            'PATHS': {
+                'NORTH': 'BACK_STAGE'
+            }
         }
     },
-    'Outer Stage': {
-        'NAME': "Outer Stage",
-        'DESCRIPTIONS': "The is the same as the stage inside the cafeteria. The only difference is that it's outside "
-                        "where students or staff members do events near the quad area.. that are outside. To the north "
-                        "of you is the back stage.",
-        'PATHS': {
-            'NORTH': "Back Stage"
+    'CAFETERIA_BUILDING': {
+        'BACK_STAGE': {
+            'NAME': "Back Stage",
+            'DESCRIPTION': "This is in back of the stage. No one comes here except theatre kids, theatre teachers, and "
+                           "stage management. It's always full of wood and forgotten outfits. To the NORTH of you is "
+                           "the actual STAGE",
+            'PATHS': {
+                'NORTH': 'STAGE'
+            }
+        },
+        'STAGE': {
+            'NAME': "The School's Stage",
+            'DESCRIPTION': "It's the main stage. This is where some band peformances happen. Sometimes the saxes have"
+                           "sectionals here after school, it can get loud here with them. The stage is somewhere where "
+                           "both the band members and theatre kids can share and not fight over it... all the time.. "
+                           "To the NORTH_WEST and NORTH_EAST are stair cases to get off the stage and enter the "
+                           "CAFETERIA grounds.",
+            'PATHS': {
+                'NORTH_WEST': 'CAFETERIA',
+                'NORTH_EAST': 'CAFETERIA'
+            }
+        },
+        'CAFETERIA': {
+            'NAME': "The School's Cafeteria",
+            'DESCRIPTION': "It's the school's cafeteria. ",
+            'PATHS': {}
+        },
+        'JANITOR_ROOM': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'CART_ROOM': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'WATER_FOUNTAIN': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'LUNCH_ROOM': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'KITCHEN': {}
+    },
+    'HALL': {
+        'BAND_HALL': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'STAGE_HALL': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'LOUNGE_HALL': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'STORAGE_ROOM': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'TEACHER_LOUNGE': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
         }
     },
-    'Back Stage': {
-        'NAME': "Back Stage",
-        'DESCRIPTION': "This is in back of the stage. No one comes here except theatre kids, theatre teachers, and "
-                       "stage management. It's always full of wood and forgotten outfits. To the north of you is the "
-                       "actual stage.",
-        'PATHS': {
-            'NORTH': "Stage"
-        }
-    },
-    'Stage': {
-        'NAME': "Main Stage",
-        'DESCRIPTION': "It's the main stage. This is where some band peformances happen. Sometimes the saxes have"
-                       "sectionals here after school, it can get loud here with them. The stage is somewhere where both"
-                       "the band members and theatre kids can share and not fight over it... all the time.. To the"
-                       "north-west and north-east are stair cases to get off the stage.",
-        'PATHS': {
-            'NORTH EAST': "Cafeteria",
-            'NORTH WEST': "Cafeteria"
-        }
-    },
-    'Cafeteria': {
-        'NAME': "School's Cafeteria",
-        'DESCRIPTION': "The school's cafeteria. When we're lucky, the band instructors have us practice in here with ac"
-                       "on. It's very small but as long as it's not out in the field on a hot day, anything is better.."
-                       "You can rest here for now until lunch break s over",
-        'PATHS': {}
+    'BAND_ROOM': {
+        'ENTRANCE': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'DRUM_LINE_LOCKERS': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'PERCUSSION_PIT_LOCKERS': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'WOOD_WIND_LOCKERS': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'MAIN_BAND_ROOM': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'UNIFORM_ROOM': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'DIRECTOR_OFFICE': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'ORCHESTRA_ROOM': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'BRASS_LOCKERS': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
+        'COLOR_GUARD_LOCKERS': {
+            'NAME': "",
+            'DESCRIPTION': "",
+            'PATHS': {}
+        },
     }
 }
-
-# Controller
-playing = True
-current_node = main_map['Table']
-directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'NORTH EAST', 'NORTH WEST']
-
-while playing:
-    print(current_node['NAME'])
-    print(current_node['DESCRIPTION'])
-    command = input(">_")
-    if command.lower() in ['q', 'quit', 'exit']:
-        playing = False
-    elif command.upper in directions:
-        try:
-            room_name = current_node['PATHS'][command.upper()]
-            current_node = main_map[room_name]
-        except KeyError:
-            print("I can't go that way.")
-        except AttributeError:
-            pass
-        except ArithmeticError:
-            pass
-    else:
-        print("Command not found")
