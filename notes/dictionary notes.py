@@ -90,7 +90,7 @@ for key, value in complex_dictionary.items():
     print(value)
     print("-" * 20)
 
-# This is what make sit look pretty
+# This is what makes it look pretty
 print()
 for state, info in complex_dictionary.items():
     for label, stats in info.items():
