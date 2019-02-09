@@ -1,6 +1,5 @@
 main_map = {
-    'OUTSIDE': {
-        'TREE': {
+    'TREE': {
             'NAME': "Hang_Out_Tree",
             'DESCRIPTION': "It's the usual tree we hang out at. It has the best shade range, not to big and definetely "
                            "not to small. To the WEST of you is the Lunch_Table.",
@@ -8,7 +7,7 @@ main_map = {
                 'WEST': 'Lunch_Table'
             }
         },
-        'TABLE': {
+    'TABLE': {
             'NAME': "Lunch_Table",
             'DESCRIPTION': "This is the usual lunch table we hang out at. Enough for our circle to hang out at. "
                            "Great shade as well. To the WEST of you is the Amp.",
@@ -17,7 +16,7 @@ main_map = {
             }
 
         },
-        'OUTER_STAGE': {
+    'OUTER_STAGE': {
             'NAME': "Amp",
             'DESCRIPTION': "The amp. It's stairs and wide stage is the best place to have fun and rest at. To the "
                            "NORTH of you is the entrance to the Back_Stage.",
@@ -25,8 +24,7 @@ main_map = {
                 'NORTH': 'Back_Stage'
             }
 
-        }
-    },
+        },
     'CAFETERIA': {
         'BACK_STAGE': {
             'NAME': "Back_Stage",
@@ -97,13 +95,8 @@ main_map = {
         },
         'KITCHEN': {
             'NAME': "Cafeteria_Kitchen",
-<<<<<<< HEAD
             'DESCRIPTION': "The cafeteria's kitchen. They never actually cook anything, but there is always a lot of"
                            " ingredients here.. Going WEST leads you back to the Food_Booths.",
-=======
-            'DESCRIPTION': "It's the cafeteria's kitchen. They never cook food, so no one is ever sure why there is so "
-                           "much ingredients here... Go WEST to go back into the Food_Booths.",
->>>>>>> b515b2aa42b9bd7c8b10fe003c0f419fa012427c
             'PATHS': {
                 'WEST': 'Food_Booths'
             }
@@ -111,61 +104,61 @@ main_map = {
     },
     'MUSIC_BUILDING': {
         'ENTRANCE': {
-<<<<<<< HEAD
             'NAME': "Band_Room",
-            'DESCRIPTION': "",
-            'PATHS': {}
-=======
-            'NAME': "The_Band_Room",
-            'DESCRIPTION': "It's the band room! This is the home of the band kids and the color guard members! The "
-                           "entrance is maybe the best part of the whole room! There is a fridge here where kids leave "
-                           "their drinks and snacks. No one knows who first brought the fridge, but in fear of losing "
-                           "it, no one ha asked the director as well. There is also a lost and found box here. Shoes "
-                           "and music sheets are often found here. Sometimes even reed cases. Going NORTH is the "
-                           "Office of the director. Going SOUTH is the Drum-Line_Lockers. Going WEST is the "
-                           "Main_Band_Room.",
+            'DESCRIPTION': "It's the band room! It's our home! Sure it may be your first year but that is alright! The "
+                           "entrance is sometimes the best part! There is a fridge and a lost and found box. Both are "
+                           "good! Going to NORTH is the director's office. Going SOUTH is the drum line's lockers.",
             'PATHS': {
-                'NORTH': 'Office',
-                'SOUTH': 'Drum-Line_Lockers',
-                'WEST': 'Main_Band_Room'
+                'NORTH': 'Director_Office',
+                'SOUTH': 'Drum-line_Lockers'
             }
->>>>>>> b515b2aa42b9bd7c8b10fe003c0f419fa012427c
 
         },
         'OFFICE': {
-            'NAME': "Office",
-            'DESCRIPTION': "It's the director's office! Only section leaders and drum majors enter here, as well as the"
-                           "band instructors. There's music, trophies, and.. dvd cases? Going SOUTH_WEST leads you into"
-                           " the Main_Band_Room. Going SOUTH_EAST leads you back to the The_Band_Room entrance.",
+            'NAME': "Director_Office",
+            'DESCRIPTION': "It's the director's office. There is music, trophies, awards, photos and... movie dvd "
+                           "cases? The director is not here right now, unsure why. Go NORTH to enter the Orchestra_Room"
+                           "or go SOUTH to go back into the Band_Room entrance.",
             'PATHS': {
-                'SOUTH_EAST': 'The_Band_Room',
-                'SOUTH_WEST': 'Main_Band_Room'
+                'NORTH': 'Orchestra_Room',
+                'SOUTH': 'Band_Room'
             }
 
         },
         'DRUM-LINE': {
-            'NAME': "",
-            'DESCRIPTION': "IT IS THE DRUM LINE LOCKER ROOM. Only god tier level players dare come in here. Unless you're"
-                           "a percussion player, a member of the drum line, or a god tier player, you best leave this godly "
-                           "place. Going NORTH leads you into The_Band_Room entrance. Going SOUTH_WEST leads you to the "
-                           "Percussion_Lockers. Going WEST leads you into the Main_Band_Room. Going NORTH leads you back into "
-                           "The_Band_Room entrance.",
-            'PATHS': {}
+            'NAME': "Drum-line_Lockers",
+            'DESCRIPTION': "It's the drum line locker rooms! They are what really hold the band into their top level."
+                           "Being in their locker room is an honor! But unless you're a member or a god tier level "
+                           "junior/senior player, you best leave now... go NORTH_WEST to enter the Main_Band_Room or "
+                           "go NORTH to go back to the Band_Room entrance.",
+            'PATHS': {
+                'NORTH': 'Band_Room',
+                'NORTH_WEST': 'Main_Band_Room'
+            }
 
         },
         'PERCUSSION': {
-            'NAME': "",
-            'DESCRIPTION': "",
-            'PATHS': {}
+            'NAME': "Percussion_Lockers",
+            'DESCRIPTION': "This isn't a room necessarily but more of a section of the room. There are murambas and drm"
+                           "sets. Never stay here for too long though... The percussion members like their space neat "
+                           "and unoccupied... Go WEST for the Wood-Wind_Lockers and NORTH_EAST to enter into the "
+                           "Drum-Line_Lockers. Go NORTH to enter the Main_Band_Room.",
+            'PATHS': {
+                'WEST': 'Wood-Wind_Locker',
+                'NORTH': 'Main_Band_Room',
+                'NORTH_EAST': 'Drum-Line_Lockers'
+            }
 
         },
         'WOOD-WIND': {
-            'NAME': "",
-            'DESCRIPTION': "",
+            'NAME': "Wood-Wind_Lockers",
+            'DESCRIPTION': "It's the woodwind lockers! Most everyone hangs around here since there is rarely anyone "
+                           "that takes their instrument from their lockers. Flutes and clarinets always take theirs "
+                           "home.. Saxes though... They always go back and forth from here. Go ",
             'PATHS': {}
 
         },
-        'MAIN_ROOM': {
+        'BAND_ROOM': {
             'NAME': "",
             'DESCRIPTION': "",
             'PATHS': {}
@@ -229,3 +222,28 @@ main_map = {
         }
     }
 }
+
+# Controller
+playing = True
+current_node = main_map['TREE']
+directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'UP', 'DOWN']
+
+while playing:
+    print(current_node['NAME'])
+    print(current_node['DESCRIPTION'])
+    command = input(">_")
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+    elif command.upper in directions:
+        try:
+            room_name = current_node['PATHS'][command.upper()]
+            current_node = main_map[room_name]
+        except KeyError:
+            print("I can't go that way.")
+        except AttributeError:
+            pass
+        except ArithmeticError:
+            pass
+    else:
+        print("Command not found")
+

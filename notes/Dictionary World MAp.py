@@ -27,7 +27,7 @@ while playing:
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
-    elif command.upper in directions:
+    elif command.upper() in directions:
         try:
             room_name = current_node['PATHS'][command.upper()]
             current_node = world_map[room_name]
@@ -39,3 +39,5 @@ while playing:
             pass
     else:
         print("Command not found")
+
+
