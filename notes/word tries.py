@@ -40,7 +40,7 @@ main_map = {
         },
         'STAGE': {
             'NAME': "Stage",
-            'DESCRIPTION': "The school's main stage. Band peformances, mainly concert happen here! When the lights "
+            'DESCRIPTION': "The school's main stage. Band performances, mainly concert happen here! When the lights "
                            "shine on you, it's the best feeling! Oh, and theatre kids do their plays here to. To the "
                            "NORTH_WEST and NORTH_EAST is the stairs down to the floors of the Cafeteria.",
             'PATHS': {
@@ -59,8 +59,8 @@ main_map = {
             'PATHS': {
                 'NORTH_WEST': 'Water_Fountains',
                 'NORTH': 'Janitor_Storage_Room',
-                'SOUTH_EAST': '',
-                'NORTH_EAST': '',
+                'SOUTH_EAST': 'Band_Hall',
+                'NORTH_EAST': 'Theatre_Hall',
             }
 
         },
@@ -106,7 +106,7 @@ main_map = {
     },
     'MUSIC_BUILDING': {
         'ENTRANCE': {
-            'NAME': "Band_Roo",
+            'NAME': "Band_Room",
             'DESCRIPTION': "",
             'PATHS': {}
 
