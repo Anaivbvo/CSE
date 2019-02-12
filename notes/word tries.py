@@ -9,70 +9,63 @@ main_map = {
         }
     },
     'TABLE': {
-            'NAME': "Lunch_Table",
-            'DESCRIPTION': "This is the usual lunch table we hang out at. Enough for our circle to hang out at. "
-                           "Great shade as well. ",
-            'AV_DIR': "To the WEST of you is the Amp.",
-            'PATHS': {
-                'WEST': 'OUTER_STAGE'
-            }
-
-        },
+        'NAME': "Lunch_Table",
+        'DESCRIPTION': "This is the usual lunch table we hang out at. Enough for our circle to hang out at. Great "
+                       "shade as well.",
+        'AV_DIR': "To the WEST of you is the Amp.",
+        'PATHS': {
+            'WEST': 'OUTER_STAGE'
+        }
+    },
     'OUTER_STAGE': {
-            'NAME': "Amp",
-            'DESCRIPTION': "The amp. It's stairs and wide stage is the best place to have fun and rest at.",
-            'AV_DIR': " To the NORTH of you is the entrance to the Back_Stage.",
-            'PATHS': {
-                'NORTH': 'BACK_STAGE'
-            }
-
-        },
+        'NAME': "Amp",
+        'DESCRIPTION': "The amp. It's stairs and wide stage is the best place to have fun and rest at.",
+        'AV_DIR': " To the NORTH of you is the entrance to the Back_Stage.",
+        'PATHS': {
+            'NORTH': 'BACK_STAGE'
+        }
+    },
     'BACK_STAGE': {
-            'NAME': "Back_Stage",
-            'DESCRIPTION': "It's the back of the stage. There's really no need to be here. ",
-            'AV_DIR': "To the NORTH_WEST and NORTH_EAST are entrances to the actual Stage.",
-            'PATHS': {
-                'NORTH_WEST': 'STAGE',
-                'NORTH_EAST': 'STAGE'
-            }
-
-        },
+        'NAME': "Back_Stage",
+        'DESCRIPTION': "It's the back of the stage. There's really no need to be here. ",
+        'AV_DIR': "To the NORTH_WEST and NORTH_EAST are entrances to the actual Stage.",
+        'PATHS': {
+            'NORTH_WEST': 'STAGE',
+            'NORTH_EAST': 'STAGE'
+        }
+    },
     'STAGE': {
-            'NAME': "Stage",
-            'DESCRIPTION': "The school's main stage. Band performances, mainly concert happen here! When the lights "
-                           "shine on you, it's the best feeling! Oh, and theatre kids do their plays here to. ",
-            'AV_DIR': "To the NORTH_WEST and NORTH_EAST is the stairs down to the floors of the Cafeteria.",
-            'PATHS': {
-                'NORTH_WEST': 'CAFETERIA',
-                'NORTH_EAST': 'CAFETERIA'
-            }
-
-        },
+        'NAME': "Stage",
+        'DESCRIPTION': "The school's main stage. Band performances, mainly concert happen here! When the lights shine "
+                       "on you, it's the best feeling! Oh, and theatre kids do their plays here to. ",
+        'AV_DIR': "To the NORTH_WEST and NORTH_EAST is the stairs down to the floors of the Cafeteria.",
+        'PATHS': {
+            'NORTH_WEST': 'CAFETERIA',
+            'NORTH_EAST': 'CAFETERIA'
+        }
+    },
     'CAFETERIA': {
-            'NAME': "Cafeteria",
-            'DESCRIPTION': "It's the school's cafeteria. Though the tables and chairs are put away, so we have "
-                           "sectionals in here sometimes. Well it depends on who gets here first, the saxes or anyone"
-                           "else. ",
-            'AV_DIR': "To the NORTH of you are multiple rooms. To the NORTH_WEST is the Water_Fountains. Going NORTH "
-                      "leads you to the Janitor_Storage_Room. Going SOUTH_EAST leads ypu to the Theatre_Hall. Going to "
-                      "the NORTH_EAST leads you to the Band_Hall.",
-            'PATHS': {
-                'NORTH_WEST': 'WATER_FOUNTAIN',
-                'NORTH': 'JANITOR_ROOM',
-                'SOUTH_EAST': 'BAND_HALL',
-                'NORTH_EAST': 'THEATRE_HALL',
-            }
-
-        },
+        'NAME': "Cafeteria",
+        'DESCRIPTION': "It's the school's cafeteria. Though the tables and chairs are put away, so we have sectionals "
+                       "in here sometimes. Well it depends on who gets here first, the saxes or anyone else.",
+        'AV_DIR': "To the NORTH of you are multiple rooms. To the NORTH_WEST is the Water_Fountains. Going NORTH leads "
+                  "you to the Janitor_Storage_Room. Going SOUTH_EAST leads ypu to the Theatre_Hall. Going to the "
+                  "NORTH_EAST leads you to the Band_Hall.",
+        'PATHS': {
+            'NORTH_WEST': 'WATER_FOUNTAIN',
+            'NORTH': 'JANITOR_ROOM',
+            'SOUTH_EAST': 'BAND_HALL',
+            'NORTH_EAST': 'THEATRE_HALL',
+        }
+    },
     'JANITOR_ROOM': {
-            'NAME': "Janitor_Storage_Room",
-            'DESCRIPTION': "It's the janitor's storage room. Nothing special about it since it's always closed.. ",
-            'AV_DIR': "To the NORTH is the Food_Booths.",
-            'PATHS': {
-                'NORTH': 'FOOD_BOOTHS'
-            }
-
-        },
+        'NAME': "Janitor_Storage_Room",
+        'DESCRIPTION': "It's the janitor's storage room. Nothing special about it since it's always closed.. ",
+        'AV_DIR': "To the NORTH is the Food_Booths.",
+        'PATHS': {
+            'NORTH': 'FOOD_BOOTHS'
+        }
+    },
     'WATER_FOUNTAIN': {
             'NAME': "Water_Fountains",
             'DESCRIPTION': " This room has no actual walls but it does have around 5 water fountains! This is the best "
@@ -157,80 +150,82 @@ main_map = {
             'NAME': "Wood-Wind_Lockers",
             'DESCRIPTION': "It's the woodwind lockers! Most everyone hangs around here since there is rarely anyone "
                            "that takes their instrument from their lockers. Flutes and clarinets always take theirs "
-                           "home.. Saxes though... They always go back and forth from here. Go ",
-            'AV_DIR': "",
-            'PATHS': {}
+                           "home.. Saxes though... They always go back and forth from here from lockers to stands.",
+            'AV_DIR': "Go EAST to visit the Percussion_Lockers. Go NORTH for the Main_Band_room.",
+            'PATHS': {
+                'EAST': 'PERCUSSION',
+                'NORTH': 'MAIN_BAND_ROOM'
+            }
 
         },
     'MAIN_BAND_ROOM': {
-            'NAME': "",
-            'AV_DIR': "",
-            'DESCRIPTION': "",
-            'PATHS': {}
+            'NAME': "Main_Band_Room",
+            'DESCRIPTION': "This is the main band room. This is where most classes and practice takes place. No matter "
+                           "if you're a part of orchestra, choir, jazz, concert, etc, this is the main used room.",
+            'AV_DIR': "Go SOUTH_WEST for the Wood-Wind_Lockers and SOUTH for the Percussion_Lockers. Going SOUTH_EAST"
+                      "will lead you to the Drum-Line_Lockers. Go NORTH to enter the Uniform_Storage_Room.",
+            'PATHS': {
+                'SOUTH_WEST': 'WOOD-WIND',
+                'SOUTH': 'PERCUSSION',
+                'SOUTH_EAST': 'DRUM-LINE',
+                'NORTH': 'STORAGE'
+            }
 
         },
     'STORAGE': {
-            'NAME': "",
+            'NAME': "Uniform_Storage_Room",
+            'DESCRIPTION': "This is where we keep the band uniforms as well as any extra snacks, water bottles, and "
+                           "other stuff. A storage room of course.",
             'AV_DIR': "",
-            'DESCRIPTION': "",
             'PATHS': {}
-
         },
     'ORCHESTRA': {
             'NAME': "",
-            'AV_DIR': "",
             'DESCRIPTION': "",
+            'AV_DIR': "",
             'PATHS': {}
-
         },
     'BRASS': {
             'NAME': "",
-            'AV_DIR': "",
             'DESCRIPTION': "",
+            'AV_DIR': "",
             'PATHS': {}
-
         },
     'COLOR-GUARD': {
             'NAME': "",
-            'AV_DIR': "",
             'DESCRIPTION': "",
+            'AV_DIR': "",
             'PATHS': {}
-
         },
     'BAND_HALL': {
             'NAME': "",
-            'AV_DIR': "",
             'DESCRIPTION': "",
+            'AV_DIR': "",
             'PATHS': {}
-
         },  # Halls
     'LOUNGE_HALL': {
             'NAME': "",
-            'AV_DIR': "",
             'DESCRIPTION': "",
+            'AV_DIR': "",
             'PATHS': {}
-
         },
     'STORAGE_ROOM': {
             'NAME': "",
-            'AV_DIR': "",
             'DESCRIPTION': "",
+            'AV_DIR': "",
             'PATHS': {}
-
         },
     'TEACHER_LOUNGE': {
             'NAME': "",
-            'AV_DIR': "",
             'DESCRIPTION': "",
+            'AV_DIR': "",
             'PATHS': {}
-
         },
     'LOUNGE_TABLE': {
             'NAME': "",
-            'AV_DIR': "",
             'DESCRIPTION': "",
+            'AV_DIR': "",
             'PATHS': {}
-
         }
     }
 
