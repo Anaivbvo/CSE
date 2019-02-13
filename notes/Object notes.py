@@ -18,6 +18,7 @@ class Phone(object):
             print("You can't make a phone call.")
             print("Your screen is broken.")
             return
+<<<<<<< HEAD
     battery_loss_per_minute = 5
         if self.batter_left <= 0:
             print("You can't the phone is dead.")
@@ -33,3 +34,17 @@ class Phone(object):
 
 my_phone = Phone("ATT", 100)
 your_phone = Phone("Bell", 0)
+=======
+        battery_loss_per_minute = 5
+        if self.battery_left <= 0:
+            print("You can't the phone is dead.")
+            return
+        self.battery_left -= duration * battery_loss_per_minute
+        if self.battery_left < 0:
+            self.battery_left = 0
+            print("Your phone dies during the conversation.")
+        elif self.battery_left == 0:
+            print("Your phone dies at the end of this conversation.")
+        else:
+            print("You sincerely make the phone call!")
+>>>>>>> 793c8b17adb862c89d3a539b9fa2ce241bf701b1
