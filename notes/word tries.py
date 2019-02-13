@@ -12,17 +12,19 @@ main_map = {
         'NAME': "Lunch_Table",
         'DESCRIPTION': "This is the usual lunch table we hang out at. Enough for our circle to hang out at. Great "
                        "shade as well.",
-        'AV_DIR': "To the WEST of you is the Amp.",
+        'AV_DIR': "To the WEST of you is the Amp. Going EAST leads you back to the Hang_Out_Tree.",
         'PATHS': {
-            'WEST': 'OUTER_STAGE'
+            'WEST': 'OUTER_STAGE',
+            'EAST': 'TREE'
         }
     },
     'OUTER_STAGE': {
         'NAME': "Amp",
         'DESCRIPTION': "The amp. It's stairs and wide stage is the best place to have fun and rest at.",
-        'AV_DIR': " To the NORTH of you is the entrance to the Back_Stage.",
+        'AV_DIR': " Go NORTH of you is the entrance to the Back_Stage. Going EAST leads you back to the Lunch_Table.",
         'PATHS': {
-            'NORTH': 'BACK_STAGE'
+            'NORTH': 'BACK_STAGE',
+            'EAST': 'TABLE'
         }
     },
     'BACK_STAGE': {
@@ -54,7 +56,8 @@ main_map = {
         'PATHS': {
             'NORTH_WEST': 'WATER_FOUNTAIN',
             'NORTH': 'JANITOR_ROOM',
-            'SOUTH_EAST': 'BAND_HALL',
+            'SOUTH_WE'
+            'ST': 'BAND_HALL',
             'NORTH_EAST': 'THEATRE_HALL',
         }
     },
