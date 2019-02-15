@@ -27,3 +27,5 @@ class NoteBook(object):
         self.cover = False
 
 mybook()
+
+print(Object2.RandomWeibe.myrandom())

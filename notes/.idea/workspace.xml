@@ -36,7 +36,7 @@
     <session id="98169467">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.opened" value="2" />
@@ -44,24 +44,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="49" />
-          <entry key="py" value="803" />
+          <entry key="dummy" value="56" />
+          <entry key="py" value="901" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="49" />
-          <entry key="Python" value="803" />
+          <entry key="PLAIN_TEXT" value="56" />
+          <entry key="Python" value="901" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="2" />
+          <entry key="py" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="2" />
+          <entry key="Python" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -74,10 +74,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - Object.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+            <state relative-caret-position="510">
+              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="25" />
               <folding>
-                <marker date="1550165784145" expanded="true" signature="23:28" ph="..." />
+                <marker date="1550166259889" expanded="true" signature="23:28" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Object2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <marker date="1550166259666" expanded="true" signature="29:34" ph="..." />
               </folding>
             </state>
           </provider>
@@ -86,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Object notes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+            <state relative-caret-position="443">
+              <caret line="54" selection-start-line="54" selection-end-line="54" selection-end-column="44" />
               <folding>
                 <element signature="e#387#484#0" />
                 <element signature="e#1290#1370#0" />
@@ -185,6 +197,7 @@
         <option value="$PROJECT_DIR$/special_Random.py" />
         <option value="$PROJECT_DIR$/world.py" />
         <option value="$PROJECT_DIR$/Object notes.py" />
+        <option value="$PROJECT_DIR$/Anai S.L. Lopez - Object2.py" />
         <option value="$PROJECT_DIR$/Anai S.L. Lopez - Object.py" />
       </list>
     </option>
@@ -387,7 +400,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.27760968" />
       <window_info id="Favorites" order="1" side_tool="true" weight="0.32980332" />
@@ -563,8 +575,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Object notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        <state relative-caret-position="443">
+          <caret line="54" selection-start-line="54" selection-end-line="54" selection-end-column="44" />
           <folding>
             <element signature="e#387#484#0" />
             <element signature="e#1290#1370#0" />
@@ -572,12 +584,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Object2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <marker date="1550166259666" expanded="true" signature="29:34" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - Object.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        <state relative-caret-position="510">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="25" />
           <folding>
-            <marker date="1550165784145" expanded="true" signature="23:28" ph="..." />
+            <marker date="1550166259889" expanded="true" signature="23:28" ph="..." />
           </folding>
         </state>
       </provider>
