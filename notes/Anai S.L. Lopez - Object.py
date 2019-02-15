@@ -1,9 +1,9 @@
 class NoteBook(object):
-    def __init__(self, cover_title, entries):
+    def __init__(self, cover_title):
         self.pages = 4
         self.cover = True
         self.cover_title = cover_title
-        self.entries = entries
+        self.entries = True
 
     def rip_page(self):
         print("RIP!!")
@@ -26,6 +26,15 @@ class NoteBook(object):
         print("You have ripped the cover of your note book.")
         self.cover = False
 
+<<<<<<< HEAD
 mybook()
 
 print(Object2.RandomWeibe.myrandom())
+=======
+
+my_book = NoteBook("Book1")
+
+my_book.write_entry("Entry #1..")
+
+print(Static.RandomMine.myrandom())
+>>>>>>> 076e33428de54293e5f3429276b691d4abe91daa
