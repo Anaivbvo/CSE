@@ -1,5 +1,14 @@
 main_map = {
-    'TREE': {
+    'TREE1': {
+        'NAME': "Band_Tree",
+        'DESCRIPTION': "This is the nearest tree to the band room. Nothing too special about it.",
+        'AV_DIR': "WEST: Hang_Out_Tree, NORTH_EAST: Outside_Band_room",
+        'PATHS': {
+            'WEST': 'TREE2',
+            'NORTH_EAST': 'OUTER_BAND'
+        }
+    },
+    'TREE2': {
         'NAME': "Hang_Out_Tree",
         'DESCRIPTION': "It's the usual tree we hang out at. It has the best shade range, not to big and definitely "
                        "not to small. ",
@@ -101,10 +110,11 @@ main_map = {
         'NAME': "Band_Room",
         'DESCRIPTION': "It's the band room! It's our home! Sure it may be your first year but that is alright! The "
                        "entrance is sometimes the best part! There is a fridge and a lost and found box.",
-        'AV_DIR': "NORTH: Director_Office, SOUTH: Drum-Line_Lockers.",
+        'AV_DIR': "NORTH: Director_Office, SOUTH: Drum-Line_Lockers, WEST: Main_Band_Room",
         'PATHS': {
             'NORTH': 'OFFICE',
-            'SOUTH': 'DRUM-LINE'
+            'SOUTH': 'DRUM-LINE',
+            'WEST': 'MAIN_BAND_ROOM'
         }
     },  # Band room
     'OFFICE': {
@@ -155,12 +165,13 @@ main_map = {
         'DESCRIPTION': "This is the main band room. This is where most classes and practice takes place. No matter if "
                        "you're a part of orchestra, choir, jazz, concert, etc, this is the main used room.",
         'AV_DIR': "SOUTH_WEST: Wood-Wind_Lockers, SOUTH: Percussion_Lockers, SOUTH_EAST: Drum-Line_Lockers, NORTH: "
-                  "Uniform_Storage_Room.",
+                  "Uniform_Storage_Room, WEST: Band_Hall",
         'PATHS': {
             'SOUTH_WEST': 'WOOD-WIND',
             'SOUTH': 'PERCUSSION',
             'SOUTH_EAST': 'DRUM-LINE',
-            'NORTH': 'STORAGE'
+            'NORTH': 'STORAGE',
+            'WEST': 'BAND_HALL'
         }
     },
     'STORAGE': {
@@ -209,18 +220,27 @@ main_map = {
     },
     'BAND_HALL': {
         'NAME': "Band_Hall",
-        'DESCRIPTION': "",
-        'AV_DIR': "",
+        'DESCRIPTION': "This is thr band hall. Students have sectionals and solo practices here when ever the director "
+                       "lets us. Well, sometimes we just play video games here in groups too.",
+        'AV_DIR': "SOUTH_WEST: Cafeteria, NORTH_WEST: Cafeteria, SOUTH_EAST: Main_Band_room, "
+                  "NORTH_EAST: Orchestra_Room, NORTH: Band_Hall",
         'PATHS': {
-
+            'SOUTH_WEST': "CAFETERIA",
+            'SOUTH_EAST': "MAIN_BAND_ROOM",
+            'NORTH_WEST': "CAFETERIA",
+            'NORTH_EAST': "ORCHESTRA",
+            'NORTH': 'BAND_HALL'
         }
     },  # Halls
     'LOUNGE_HALL': {
-        'NAME': "",
-        'DESCRIPTION': "",
-        'AV_DIR': "",
+        'NAME': "Lounge_Hall",
+        'DESCRIPTION': "Band members practice here too. But majority of the psace is occupied by old broken stands and "
+                       "unused  carts.",
+        'AV_DIR': "SOUTH: Band_Hall, NORTH: Storage_Room, EAST: Outer_Orchestra_Room",
         'PATHS': {
-
+            'SOUTH': 'BAND_HALL',
+            'NORTH': 'STORAGE',
+            'EAST': 'OUTER_ORCHESTRA'
         }
     },
     'STORAGE_ROOM': {
@@ -246,12 +266,30 @@ main_map = {
         'PATHS': {
 
         }
+    },
+    'OUTER_BAND': {
+        'NAME': "Outside_Band_Room",
+        'DESCRIPTION': "This is outside the band room. A lot of band member hang ut here during lunch and break.",
+        'AV_DIR': "SOUTH_EAST: Band_Tree, NORTH: Outside_Orchestra_Room, WEST: Band_Room",
+        'PATHS': {
+            'SOUTH_EAST': 'TREE1',
+            'NORTH': 'OUTER_ORCHESTRA',
+            'WEST': 'BAND_ROOM'
+        }
+    },
+    'OUTER_ORCHESTRA': {
+        'NAME': "Outside_Orchestra_Room",
+        'DESCRIPTION': "",
+        'AV_DIR': "",
+        'PATHS': {
+
+        }
     }
 }
 
 # Controller
 playing = True
-current_node = main_map['TREE']
+current_node = main_map['TREE1']
 directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'NORTH_EAST', 'NORTH_WEST', 'SOUTH_EAST', 'SOUTH_WEST', 'UP', 'DOWN']
 
 while playing:
