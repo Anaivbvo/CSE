@@ -24,6 +24,7 @@
     <SUITE FILE_PATH="coverage/notes$Object_notes.coverage" NAME="Object notes Coverage Results" MODIFIED="1550205130175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Guess_Game.coverage" NAME="Anai S.L. Lopez - Guess Game Coverage Results" MODIFIED="1542388848242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Dictionary_World_MAp.coverage" NAME="Dictionary World MAp Coverage Results" MODIFIED="1549954034312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___World.coverage" NAME="Anai S.L. Lopez - World Coverage Results" MODIFIED="1550296323346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$fix_errors.coverage" NAME="fix-errors Coverage Results" MODIFIED="1543858659643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Lucky7.coverage" NAME="Anai S.L. Lopez - Lucky7 Coverage Results" MODIFIED="1543944941079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$lucky7.coverage" NAME="lucky7 Coverage Results" MODIFIED="1542215190009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -34,7 +35,47 @@
     <favorites_list name="notes" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - World.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="291" column="24" selection-start-line="291" selection-start-column="24" selection-end-line="291" selection-end-column="24" />
+              <folding>
+                <element signature="e#26#330#0" />
+                <element signature="e#345#640#0" />
+                <element signature="e#666#1005#0" />
+                <element signature="e#1026#1312#0" />
+                <element signature="e#1332#1616#0" />
+                <element signature="e#1644#2072#0" />
+                <element signature="e#2091#2717#0" />
+                <element signature="e#2739#3003#0" />
+                <element signature="e#3027#3440#0" />
+                <element signature="e#3461#3889#0" />
+                <element signature="e#3906#4214#0" />
+                <element signature="e#4233#4716#0" />
+                <element signature="e#4745#5069#0" />
+                <element signature="e#5088#5603#0" />
+                <element signature="e#5623#6186#0" />
+                <element signature="e#6205#6761#0" />
+                <element signature="e#6785#7437#0" />
+                <element signature="e#7454#7722#0" />
+                <element signature="e#7741#8503#0" />
+                <element signature="e#8518#9031#0" />
+                <element signature="e#9046#9607#0" />
+                <element signature="e#9626#10263#0" />
+                <element signature="e#10293#10713#0" />
+                <element signature="e#10735#10841#0" />
+                <element signature="e#10865#10971#0" />
+                <element signature="e#10993#11099#0" />
+                <element signature="e#11119#11505#0" />
+                <element signature="e#11530#11658#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -74,6 +115,7 @@
         <option value="$PROJECT_DIR$/new.py" />
         <option value="$PROJECT_DIR$/Static.py" />
         <option value="$PROJECT_DIR$/Anai S.L. Lopez - Object.py" />
+        <option value="$PROJECT_DIR$/Anai S.L. Lopez - World.py" />
       </list>
     </option>
   </component>
@@ -92,7 +134,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Object notes.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Hello World.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -107,8 +149,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Object notes">
-    <configuration name="Challanges" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Anai S.L. Lopez - World">
+    <configuration name="Anai S.L. Lopez - World" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -121,7 +163,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Challanges.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anai S.L. Lopez - World.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -219,19 +261,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Challanges" />
       <item itemvalue="Python.Dictionary World MAp" />
       <item itemvalue="Python.word tries" />
       <item itemvalue="Python.world" />
       <item itemvalue="Python.Object notes" />
+      <item itemvalue="Python.Anai S.L. Lopez - World" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Anai S.L. Lopez - World" />
         <item itemvalue="Python.Object notes" />
         <item itemvalue="Python.word tries" />
         <item itemvalue="Python.world" />
         <item itemvalue="Python.Dictionary World MAp" />
-        <item itemvalue="Python.Challanges" />
       </list>
     </recent_temporary>
   </component>
@@ -253,12 +295,12 @@
       <workItem from="1550026562101" duration="706000" />
       <workItem from="1550027508165" duration="4175000" />
       <workItem from="1550203291115" duration="4077000" />
-      <workItem from="1550288333998" duration="1797000" />
+      <workItem from="1550288333998" duration="6804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28659000" />
+    <option name="totallyTimeSpent" value="33666000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -271,6 +313,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.27760968" />
       <window_info id="Favorites" order="1" side_tool="true" weight="0.32980332" />
@@ -336,13 +379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="67" column="30" lean-forward="true" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hello World.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
         </state>
       </provider>
     </entry>
@@ -418,37 +454,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Hello World.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - World.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="216" column="15" lean-forward="true" selection-start-line="216" selection-start-column="15" selection-end-line="216" selection-end-column="15" />
+        <state relative-caret-position="118">
+          <caret line="291" column="24" selection-start-line="291" selection-start-column="24" selection-end-line="291" selection-end-column="24" />
           <folding>
-            <element signature="e#25#320#0" />
-            <element signature="e#346#685#0" />
-            <element signature="e#706#992#0" />
-            <element signature="e#1012#1296#0" />
-            <element signature="e#1324#1752#0" />
-            <element signature="e#1771#2397#0" />
-            <element signature="e#2419#2683#0" />
-            <element signature="e#2707#3120#0" />
-            <element signature="e#3141#3569#0" />
-            <element signature="e#3586#3894#0" />
-            <element signature="e#3913#4337#0" />
-            <element signature="e#4366#4690#0" />
-            <element signature="e#4709#5224#0" />
-            <element signature="e#5244#5807#0" />
-            <element signature="e#5826#6382#0" />
-            <element signature="e#6406#7009#0" />
-            <element signature="e#7026#7294#0" />
-            <element signature="e#7313#8075#0" />
-            <element signature="e#8090#8603#0" />
-            <element signature="e#8618#9179#0" />
-            <element signature="e#9198#9313#0" />
-            <element signature="e#9343#9449#0" />
-            <element signature="e#9471#9577#0" />
-            <element signature="e#9601#9707#0" />
-            <element signature="e#9729#9835#0" />
-            <element signature="e#10037#10675#0" />
+            <element signature="e#26#330#0" />
+            <element signature="e#345#640#0" />
+            <element signature="e#666#1005#0" />
+            <element signature="e#1026#1312#0" />
+            <element signature="e#1332#1616#0" />
+            <element signature="e#1644#2072#0" />
+            <element signature="e#2091#2717#0" />
+            <element signature="e#2739#3003#0" />
+            <element signature="e#3027#3440#0" />
+            <element signature="e#3461#3889#0" />
+            <element signature="e#3906#4214#0" />
+            <element signature="e#4233#4716#0" />
+            <element signature="e#4745#5069#0" />
+            <element signature="e#5088#5603#0" />
+            <element signature="e#5623#6186#0" />
+            <element signature="e#6205#6761#0" />
+            <element signature="e#6785#7437#0" />
+            <element signature="e#7454#7722#0" />
+            <element signature="e#7741#8503#0" />
+            <element signature="e#8518#9031#0" />
+            <element signature="e#9046#9607#0" />
+            <element signature="e#9626#10263#0" />
+            <element signature="e#10293#10713#0" />
+            <element signature="e#10735#10841#0" />
+            <element signature="e#10865#10971#0" />
+            <element signature="e#10993#11099#0" />
+            <element signature="e#11119#11505#0" />
+            <element signature="e#11530#11658#0" />
           </folding>
         </state>
       </provider>
