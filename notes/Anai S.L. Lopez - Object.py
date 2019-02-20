@@ -26,15 +26,7 @@ class NoteBook(object):
         print("You have ripped the cover of your note book.")
         self.cover = False
 
-<<<<<<< HEAD
-mybook()
-
-print(Object2.RandomWeibe.myrandom())
-=======
 
 my_book = NoteBook("Book1")
 
-my_book.write_entry("Entry #1..")
-
-print(Static.RandomMine.myrandom())
->>>>>>> 076e33428de54293e5f3429276b691d4abe91daa
+my_book.write_entry()
