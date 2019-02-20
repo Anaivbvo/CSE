@@ -12,9 +12,10 @@ main_map = {
         'NAME': "Hang_Out_Tree",
         'DESCRIPTION': "It's the usual tree we hang out at. It has the best shade range, not to big and definitely "
                        "not to small. ",
-        'AV_DIR': "WEST: Lunch_Table.",
+        'AV_DIR': "WEST: Lunch_Table, EAST: Band_Tree",
         'PATHS': {
-            'WEST': "TABLE"
+            'WEST': "TABLE",
+            'EAST': 'TREE2'
         }
     },  # Outside
     'TABLE': {
@@ -170,16 +171,19 @@ main_map = {
             'SOUTH_WEST': 'WOOD-WIND',
             'SOUTH': 'PERCUSSION',
             'SOUTH_EAST': 'DRUM-LINE',
-            'NORTH': 'STORAGE',
+            'NORTH': 'UNIFORM',
             'WEST': 'BAND_HALL'
         }
     },
-    'STORAGE': {
+    'UNIFORM': {
         'NAME': "Uniform_Storage_Room",
         'DESCRIPTION': "This is where we keep the band uniforms as well as any extra snacks, water bottles, and other "
                        "stuff. A storage room of course.",
-        'AV_DIR': "",
-        'PATHS': {}
+        'AV_DIR': "NORTH: Orchestra_Room, SOUTH: Main_Band_Room",
+        'PATHS': {
+            'NORTH': 'ORCHESTRA',
+            'SOUTH': 'MAIN_BAND_ROOM'
+        }
     },
     'ORCHESTRA': {
         'NAME': "Orchestra_Room",
@@ -192,7 +196,7 @@ main_map = {
             'NORTH_WEST': 'BRASS',
             'NORTH_EAST': 'GUARD',
             'WEST': 'BAND_HALL',
-            'SOUTH_WEST': 'STORAGE',
+            'SOUTH_WEST': 'UNIFORM',
             'SOUTH_EAST': 'OFFICE'
         }
     },
@@ -236,35 +240,43 @@ main_map = {
         'NAME': "Lounge_Hall",
         'DESCRIPTION': "Band members practice here too. But majority of the psace is occupied by old broken stands and "
                        "unused  carts.",
-        'AV_DIR': "SOUTH: Band_Hall, NORTH: Storage_Room, EAST: Outer_Orchestra_Room",
+        'AV_DIR': "SOUTH: Band_Hall, NORTH: Storage_Room, EAST: Outer_Orchestra_Room, NORTH_EAST: Teacher_Lounge_Room",
         'PATHS': {
             'SOUTH': 'BAND_HALL',
             'NORTH': 'STORAGE',
-            'EAST': 'OUTER_ORCHESTRA'
+            'EAST': 'OUTER_ORCHESTRA',
+            'NORTH_EAST': 'TEACHER_LOUNGE'
         }
     },
-    'STORAGE_ROOM': {
-        'NAME': "",
-        'DESCRIPTION': "",
-        'AV_DIR': "",
+    'STORAGE': {
+        'NAME': "Storage_Room",
+        'DESCRIPTION': "This room has tables and chairs. A lot of them seem to be broken. It's not very bright in here"
+                       " for the lights are very dim..",
+        'AV_DIR': "SOUTH: Lounge_Hall",
         'PATHS': {
-
+            'SOUTH': 'LOUNGE_HALL'
         }
     },
     'TEACHER_LOUNGE': {
-        'NAME': "",
-        'DESCRIPTION': "",
-        'AV_DIR': "",
+        'NAME': "Teacher_Lounge_Room",
+        'DESCRIPTION': "It's the teacher's lounge room. A lot of teachers spent there time here during lunch. Though "
+                       "why the lounge room is so far from other classes as well as near the band room, is a weird "
+                       "placement..",
+        'AV_DIR': "SOUTH_EAST: Lounge_Hall, EAST: Lounge_Table",
         'PATHS': {
-
+            'SOUTH_EAST': 'LOUNGE_HALL',
+            'EAST': 'LOUNGE_TABLE'
         }
     },
     'LOUNGE_TABLE': {
-        'NAME': "",
-        'DESCRIPTION': "",
-        'AV_DIR': "",
+        'NAME': "Lounge_Table",
+        'DESCRIPTION': "This is an area outside the teacher's lounge table. Sometimes students hang here during lunch. "
+                       "Sometimes sectionals happen here too. Well.. it tends to be a battle between low brass and "
+                       "saxes for this spot.",
+        'AV_DIR': "WEST: Teacher_Lounge, SOUTH: Outside_Orchestra_Room",
         'PATHS': {
-
+            'WEST': 'TEACHER_LOUNGE',
+            'SOUTH': 'OUTER_ORCHESTRA'
         }
     },
     'OUTER_BAND': {
@@ -279,10 +291,13 @@ main_map = {
     },
     'OUTER_ORCHESTRA': {
         'NAME': "Outside_Orchestra_Room",
-        'DESCRIPTION': "",
-        'AV_DIR': "",
+        'DESCRIPTION': "This is outside the orchestra room. Members don;t hang here as often except during lunch.",
+        'AV_DIR': "SOUTH: Outside_Band_Room, WEST: Orchestra_Room, NORTH: Lounge_Table, NORTH_WEST: Lounge_Hall",
         'PATHS': {
-
+            'SOUTH': 'OUTER_BAND',
+            'WEST': 'ORCHESTRA',
+            'NORTH': 'LOUNGE_TABLE',
+            'NORTH_WEST': 'LOUNGE_HALL'
         }
     }
 }

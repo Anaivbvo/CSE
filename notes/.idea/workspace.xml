@@ -13,22 +13,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/notes$Object_notes.coverage" NAME="Object notes Coverage Results" MODIFIED="1550165457571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$fix_errors.coverage" NAME="fix-errors Coverage Results" MODIFIED="1543858659643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$object_notes_2.coverage" NAME="object notes 2 Coverage Results" MODIFIED="1550079201424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Mad_Lib_2.coverage" NAME="Anai S.L. Lopez - Mad Lib 2 Coverage Results" MODIFIED="1544116683656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Lucky7s.coverage" NAME="Anai S.L. Lopez - Lucky7s Coverage Results" MODIFIED="1544206728925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Lucky7.coverage" NAME="Anai S.L. Lopez - Lucky7 Coverage Results" MODIFIED="1543944941079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Dictionary_World_MAp.coverage" NAME="Dictionary World MAp Coverage Results" MODIFIED="1549954034312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$lucky7.coverage" NAME="lucky7 Coverage Results" MODIFIED="1542215190009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Hello_World.coverage" NAME="Hello World Coverage Results" MODIFIED="1540917846744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Mad_Lib.coverage" NAME="Anai S.L. Lopez - Mad Lib Coverage Results" MODIFIED="1544031455307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Challanges.coverage" NAME="Challanges Coverage Results" MODIFIED="1549683819792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$world.coverage" NAME="world Coverage Results" MODIFIED="1549954489175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$gambling_game_lucky7.coverage" NAME="gambling_game_lucky7 Coverage Results" MODIFIED="1542302659389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$lists_note.coverage" NAME="lists-note Coverage Results" MODIFIED="1544461514881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Guess_Game.coverage" NAME="Anai S.L. Lopez - Guess Game Coverage Results" MODIFIED="1542388848242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___World.coverage" NAME="Anai S.L. Lopez - World Coverage Results" MODIFIED="1550252259751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Challanges.coverage" NAME="Challanges Coverage Results" MODIFIED="1549683819792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Mad_Lib_2.coverage" NAME="Anai S.L. Lopez - Mad Lib 2 Coverage Results" MODIFIED="1544116683656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Fix_it.coverage" NAME="Anai S.L. Lopez - Fix it Coverage Results" MODIFIED="1544206902272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$world.coverage" NAME="world Coverage Results" MODIFIED="1549954489175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$word_tries.coverage" NAME="word tries Coverage Results" MODIFIED="1550030061146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Fix_it.coverage" NAME="Anai S.L. Lopez - Fix it Coverage Results" MODIFIED="1544206902272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Object.coverage" NAME="Anai S.L. Lopez - Object Coverage Results" MODIFIED="1550165853213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Hello_World.coverage" NAME="Hello World Coverage Results" MODIFIED="1540917846744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -67,66 +60,62 @@
         </counts>
       </usages-collector>
     </session>
+=======
+    <SUITE FILE_PATH="coverage/notes$Object_notes.coverage" NAME="Object notes Coverage Results" MODIFIED="1550205130175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Guess_Game.coverage" NAME="Anai S.L. Lopez - Guess Game Coverage Results" MODIFIED="1542388848242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Dictionary_World_MAp.coverage" NAME="Dictionary World MAp Coverage Results" MODIFIED="1549954034312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___World.coverage" NAME="Anai S.L. Lopez - World Coverage Results" MODIFIED="1550296323346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$fix_errors.coverage" NAME="fix-errors Coverage Results" MODIFIED="1543858659643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Lucky7.coverage" NAME="Anai S.L. Lopez - Lucky7 Coverage Results" MODIFIED="1543944941079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$lucky7.coverage" NAME="lucky7 Coverage Results" MODIFIED="1542215190009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$gambling_game_lucky7.coverage" NAME="gambling_game_lucky7 Coverage Results" MODIFIED="1542302659389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Lucky7s.coverage" NAME="Anai S.L. Lopez - Lucky7s Coverage Results" MODIFIED="1544206728925" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+>>>>>>> 4223fecf4096efc81f7a442a06e2c1bcb0efb805
   </component>
   <component name="FavoritesManager">
     <favorites_list name="notes" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dictionary notes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret column="10" selection-start-column="10" selection-end-column="10" />
-              <folding>
-                <element signature="e#9#99#0" />
-                <element signature="e#162#471#0" />
-                <element signature="e#619#1297#0" />
-                <element signature="e#1651#1698#0" />
-                <element signature="e#1795#1914#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dictionary World MAp.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-              <folding>
-                <element signature="e#26#268#0" />
-                <element signature="e#289#457#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - World.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="351">
               <caret line="242" column="20" selection-start-line="242" selection-start-column="20" selection-end-line="242" selection-end-column="20" />
+=======
+            <state relative-caret-position="118">
+              <caret line="291" column="24" selection-start-line="291" selection-start-column="24" selection-end-line="291" selection-end-column="24" />
+>>>>>>> 4223fecf4096efc81f7a442a06e2c1bcb0efb805
               <folding>
-                <element signature="e#26#262#0" />
-                <element signature="e#25#320#0" />
-                <element signature="e#346#685#0" />
-                <element signature="e#706#992#0" />
-                <element signature="e#1012#1296#0" />
-                <element signature="e#1324#1752#0" />
-                <element signature="e#1771#2397#0" />
-                <element signature="e#2419#2683#0" />
-                <element signature="e#2707#3120#0" />
-                <element signature="e#3141#3569#0" />
-                <element signature="e#3586#3894#0" />
-                <element signature="e#3913#4337#0" />
-                <element signature="e#4366#4690#0" />
-                <element signature="e#4709#5224#0" />
-                <element signature="e#5244#5807#0" />
-                <element signature="e#5826#6382#0" />
-                <element signature="e#7026#7294#0" />
-                <element signature="e#7313#8075#0" />
-                <element signature="e#8090#8603#0" />
+                <element signature="e#26#330#0" />
+                <element signature="e#345#640#0" />
+                <element signature="e#666#1005#0" />
+                <element signature="e#1026#1312#0" />
+                <element signature="e#1332#1616#0" />
+                <element signature="e#1644#2072#0" />
+                <element signature="e#2091#2717#0" />
+                <element signature="e#2739#3003#0" />
+                <element signature="e#3027#3440#0" />
+                <element signature="e#3461#3889#0" />
+                <element signature="e#3906#4214#0" />
+                <element signature="e#4233#4716#0" />
+                <element signature="e#4745#5069#0" />
+                <element signature="e#5088#5603#0" />
+                <element signature="e#5623#6186#0" />
+                <element signature="e#6205#6761#0" />
+                <element signature="e#6785#7437#0" />
+                <element signature="e#7454#7722#0" />
+                <element signature="e#7741#8503#0" />
+                <element signature="e#8518#9031#0" />
+                <element signature="e#9046#9607#0" />
+                <element signature="e#9626#10263#0" />
+                <element signature="e#10293#10713#0" />
+                <element signature="e#10735#10841#0" />
+                <element signature="e#10865#10971#0" />
+                <element signature="e#10993#11099#0" />
+                <element signature="e#11119#11505#0" />
+                <element signature="e#11530#11658#0" />
               </folding>
             </state>
           </provider>
@@ -166,22 +155,15 @@
         <option value="$PROJECT_DIR$/lists-note.py" />
         <option value="$PROJECT_DIR$/Challanges.py" />
         <option value="$PROJECT_DIR$/Dictionary World MAp.py" />
-        <option value="$PROJECT_DIR$/word tries.py" />
-        <option value="$PROJECT_DIR$/object notes 2.py" />
-        <option value="$PROJECT_DIR$/special_Random.py" />
         <option value="$PROJECT_DIR$/world.py" />
         <option value="$PROJECT_DIR$/Object notes.py" />
-        <option value="$PROJECT_DIR$/Anai S.L. Lopez - Object2.py" />
+        <option value="$PROJECT_DIR$/word tries.py" />
+        <option value="$PROJECT_DIR$/new.py" />
+        <option value="$PROJECT_DIR$/Static.py" />
         <option value="$PROJECT_DIR$/Anai S.L. Lopez - Object.py" />
         <option value="$PROJECT_DIR$/Anai S.L. Lopez - World.py" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="513" />
@@ -194,14 +176,11 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Anai S.L. Lopez - World.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Hello World.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -217,28 +196,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.Anai S.L. Lopez - World">
-    <configuration name="Anai S.L. Lopez - Object" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="notes" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anai S.L. Lopez - Object.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Anai S.L. Lopez - World" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -253,6 +210,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anai S.L. Lopez - World.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Dictionary World MAp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Dictionary World MAp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -283,28 +262,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="object notes 2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="notes" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/object notes 2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="word tries" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -318,7 +275,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\vbvo\Documents\GitHub\CSE\notes\Anai S.L. Lopez - World.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/word tries.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="world" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/world.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -328,19 +307,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.Dictionary World MAp" />
       <item itemvalue="Python.word tries" />
+      <item itemvalue="Python.world" />
       <item itemvalue="Python.Object notes" />
-      <item itemvalue="Python.object notes 2" />
-      <item itemvalue="Python.Anai S.L. Lopez - Object" />
       <item itemvalue="Python.Anai S.L. Lopez - World" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Anai S.L. Lopez - World" />
-        <item itemvalue="Python.Anai S.L. Lopez - Object" />
         <item itemvalue="Python.Object notes" />
-        <item itemvalue="Python.object notes 2" />
         <item itemvalue="Python.word tries" />
+        <item itemvalue="Python.world" />
+        <item itemvalue="Python.Dictionary World MAp" />
       </list>
     </recent_temporary>
   </component>
@@ -360,12 +339,14 @@
       <workItem from="1549985206840" duration="950000" />
       <workItem from="1550007038536" duration="466000" />
       <workItem from="1550026562101" duration="706000" />
-      <workItem from="1550027508165" duration="4038000" />
+      <workItem from="1550027508165" duration="4175000" />
+      <workItem from="1550203291115" duration="4077000" />
+      <workItem from="1550288333998" duration="6804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22648000" />
+    <option name="totallyTimeSpent" value="33666000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,7 +358,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.27760968" />
@@ -385,7 +366,7 @@
       <window_info id="Structure" order="2" weight="0.2534413" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.330373" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -395,19 +376,16 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3295082" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3295082" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" order="4" weight="0.32980332" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lucky7.py" />
@@ -450,13 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hello World.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lists-note.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2703">
@@ -485,97 +456,95 @@
     <entry file="file://D:/CS10-LopezEsmeralda-world_map.py" />
     <entry file="file://D:/Final_World_Map.py" />
     <entry file="file://D:/CS10-LopezEsmeralda-Final.py" />
-    <entry file="file://$PROJECT_DIR$/object notes 2.py" />
-    <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - Object.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="25" />
-          <folding>
-            <marker date="1550249833639" expanded="true" signature="23:28" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Object2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <marker date="1550166259666" expanded="true" signature="29:34" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Object notes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="54" selection-start-line="54" selection-end-line="54" selection-end-column="44" />
-          <folding>
-            <element signature="e#387#484#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/special_Random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-          <folding>
-            <marker date="1550079607068" expanded="true" signature="34:35" ph="..." />
-            <marker date="1550079607068" expanded="true" signature="34:57" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dictionary notes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-          <folding>
-            <element signature="e#9#99#0" />
-            <element signature="e#162#471#0" />
-            <element signature="e#619#1297#0" />
-            <element signature="e#1651#1698#0" />
-            <element signature="e#1795#1914#0" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dictionary World MAp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
+        <state relative-caret-position="295">
           <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-          <folding>
-            <element signature="e#26#268#0" />
-            <element signature="e#289#457#0" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/world.py" />
+    <entry file="file://$PROJECT_DIR$/word tries.py" />
+    <entry file="file://$PROJECT_DIR$/Static.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - Object.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Object notes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/special_Random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hello World.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - World.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="351">
           <caret line="242" column="20" selection-start-line="242" selection-start-column="20" selection-end-line="242" selection-end-column="20" />
+=======
+        <state relative-caret-position="118">
+          <caret line="291" column="24" selection-start-line="291" selection-start-column="24" selection-end-line="291" selection-end-column="24" />
+>>>>>>> 4223fecf4096efc81f7a442a06e2c1bcb0efb805
           <folding>
-            <element signature="e#26#262#0" />
-            <element signature="e#25#320#0" />
-            <element signature="e#346#685#0" />
-            <element signature="e#706#992#0" />
-            <element signature="e#1012#1296#0" />
-            <element signature="e#1324#1752#0" />
-            <element signature="e#1771#2397#0" />
-            <element signature="e#2419#2683#0" />
-            <element signature="e#2707#3120#0" />
-            <element signature="e#3141#3569#0" />
-            <element signature="e#3586#3894#0" />
-            <element signature="e#3913#4337#0" />
-            <element signature="e#4366#4690#0" />
-            <element signature="e#4709#5224#0" />
-            <element signature="e#5244#5807#0" />
-            <element signature="e#5826#6382#0" />
-            <element signature="e#7026#7294#0" />
-            <element signature="e#7313#8075#0" />
-            <element signature="e#8090#8603#0" />
+            <element signature="e#26#330#0" />
+            <element signature="e#345#640#0" />
+            <element signature="e#666#1005#0" />
+            <element signature="e#1026#1312#0" />
+            <element signature="e#1332#1616#0" />
+            <element signature="e#1644#2072#0" />
+            <element signature="e#2091#2717#0" />
+            <element signature="e#2739#3003#0" />
+            <element signature="e#3027#3440#0" />
+            <element signature="e#3461#3889#0" />
+            <element signature="e#3906#4214#0" />
+            <element signature="e#4233#4716#0" />
+            <element signature="e#4745#5069#0" />
+            <element signature="e#5088#5603#0" />
+            <element signature="e#5623#6186#0" />
+            <element signature="e#6205#6761#0" />
+            <element signature="e#6785#7437#0" />
+            <element signature="e#7454#7722#0" />
+            <element signature="e#7741#8503#0" />
+            <element signature="e#8518#9031#0" />
+            <element signature="e#9046#9607#0" />
+            <element signature="e#9626#10263#0" />
+            <element signature="e#10293#10713#0" />
+            <element signature="e#10735#10841#0" />
+            <element signature="e#10865#10971#0" />
+            <element signature="e#10993#11099#0" />
+            <element signature="e#11119#11505#0" />
+            <element signature="e#11530#11658#0" />
           </folding>
         </state>
       </provider>
