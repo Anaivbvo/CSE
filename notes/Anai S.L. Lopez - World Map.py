@@ -65,7 +65,6 @@ main_map = {
         'PATHS': {
             'NORTH_WEST': 'WATER_FOUNTAIN',
             'NORTH': 'JANITOR_ROOM',
-            'SOUTH_WEST'
             'SOUTH_EAST': 'BAND_HALL',
             'NORTH_EAST': 'BAND_HALL',
         }
@@ -132,10 +131,9 @@ main_map = {
         'DESCRIPTION': "It's the drum line locker rooms! They are what really hold the band into their top level. Being"
                        " in their locker room is an honor! But unless you're a member or a god tier level junior/senior"
                        " player, you best leave now...",
-        'AV_DIR': "NORTH_WEST: Main_Band_Room, NORTH: Band_Room",
+        'AV_DIR': "NORTH: Band_Room, SOUTH_WEST: Percussion_Lockers",
         'PATHS': {
-            'NORTH': 'BAND_ROOM',
-            'NORTH_WEST': 'MAIN_BAND_ROOM'
+            'NORTH': 'BAND_ROOM'
         }
     },
     'PERCUSSION': {

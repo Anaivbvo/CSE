@@ -15,4 +15,3 @@ R19A.north = parking_lot
 #  Option 2 - Set all at once, modify controller
 R19A = Room("Mr.Wiebe's Room", 'parking_lot')
 parking_lot = Room("Parking Lot", None, "R19A")
-

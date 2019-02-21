@@ -1,6 +1,6 @@
 class Room(object):
-    def __init__(self, name, north=None, north_east=None, north_west=None, south=None, south_east=None,
-                 south_west=None, east=None, west=None, description=None, av_dir=None, paths=None):
+    def __init__(self, name, description=None, av_dir=None, north=None, north_east=None, north_west=None,
+                 south=None, south_east=None, south_west=None, east=None, west=None):
         self.name = name
         self.north = north
         self.north_east = north_east
@@ -12,25 +12,87 @@ class Room(object):
         self.west = west
         self.description = description
         self.av_dir = av_dir
-        self.paths = paths
 
 
 TREE1 = Room("Band_Tree")
 TREE2 = Room("Hangout_Tree")
-TABLE =
-OUTER_STAGE =
-BACK_STAGE =
-STAGE =
-CAFETERIA =
-JANITOR_ROOM =
-WATER_FOUNTAIN =
-FOOD_BOOTHS
-KITCHEN =
-BAND_ROOM =
-OFFICE =
-DRUMLINE =
-PERCUSSION =
-WOODWIND =
-MAIN_BAND_ROOM =
-UNIFORM =
-ORCHESTRA =
+TABLE = Room("Lunch_Table")
+OUTER_STAGE = Room("Amp")
+BACK_STAGE = Room("Back_Stage")
+STAGE = Room("Stage")
+CAFETERIA = Room("Cafeteria")
+JANITOR_ROOM = Room("Janitor's_Room")
+WATER_FOUNTAIN = Room("Water_Fountains")
+FOOD_BOOTHS = Room("Food_Booths")
+KITCHEN = Room("Cafeteria_Kitchen")
+BAND_ROOM = Room("Band_Room_Entrance")
+OFFICE = Room("Director's_Office")
+DRUMLINE = Room("Drumline_Lockers")
+PERCUSSION = Room("Percussion_Lockers")
+WOODWIND = Room("Woodwind_Lockers")
+MAIN_BAND_ROOM = Room("Main_Band_Room")
+UNIFORM = Room("Uniform_Room")
+ORCHESTRA = Room("Orchestra_Room")
+BRASS = Room("Brass_Lockers")
+GUARD = Room("Color_Guard_Lockers")
+BAND_HALL = Room("Band_Hall")
+LOUNGE_HALL = Room("Lounge_Hall")
+STORAGE = Room("Storage_Room")
+TEACHER_LOUNGE = Room("Teacher's_Lounge")
+LOUNGE_TABLE = Room("Lounge_Table")
+OUTER_BAND = Room("Outer_Band")
+OUTER_ORCHESTRA = Room("Outer_Orchestra")
+
+TREE1.north_east = OUTER_BAND
+TREE1.west = TREE2
+TREE2.east = TREE1
+TREE2.west = OUTER_STAGE
+OUTER_STAGE.east = TREE2
+OUTER_STAGE.north = BACK_STAGE
+BACK_STAGE.south = OUTER_STAGE
+BACK_STAGE.north = STAGE
+STAGE.south = BACK_STAGE
+STAGE.north_east = CAFETERIA
+STAGE.north_west = CAFETERIA
+CAFETERIA.south_east = STAGE
+CAFETERIA.south_west = STAGE
+CAFETERIA.north_west = WATER_FOUNTAIN
+CAFETERIA.north = JANITOR_ROOM
+CAFETERIA.south_east = BAND_HALL
+CAFETERIA.north_east = BAND_HALL
+JANITOR_ROOM.north = FOOD_BOOTHS
+JANITOR_ROOM.south = CAFETERIA
+WATER_FOUNTAIN.south = CAFETERIA
+FOOD_BOOTHS.south = CAFETERIA
+FOOD_BOOTHS.east = KITCHEN
+KITCHEN.west = FOOD_BOOTHS
+BAND_ROOM.north = OFFICE
+BAND_ROOM.south = DRUMLINE
+BAND_ROOM.west = MAIN_BAND_ROOM
+OFFICE.north = ORCHESTRA
+OFFICE.south = BAND_ROOM
+DRUMLINE.south_west = PERCUSSION
+DRUMLINE.north = BAND_ROOM
+PERCUSSION.west = WOODWIND
+PERCUSSION.north = MAIN_BAND_ROOM
+PERCUSSION.north_east = DRUMLINE
+WOODWIND.east = PERCUSSION
+WOODWIND.north = MAIN_BAND_ROOM
+MAIN_BAND_ROOM.south_west = WOODWIND
+MAIN_BAND_ROOM.south_east = DRUMLINE
+MAIN_BAND_ROOM.south = PERCUSSION
+MAIN_BAND_ROOM.north = UNIFORM
+MAIN_BAND_ROOM.west = BAND_HALL
+UNIFORM.north = ORCHESTRA
+UNIFORM.south = MAIN_BAND_ROOM
+ORCHESTRA.north_east = GUARD
+ORCHESTRA.north_west = BRASS
+ORCHESTRA.south_east = OFFICE
+ORCHESTRA.south_west = UNIFORM
+ORCHESTRA.west = BAND_HALL
+ORCHESTRA.east = OUTER_ORCHESTRA
+BRASS.south = ORCHESTRA
+BRASS.east = GUARD
+GUARD.west = BRASS
+GUARD.south = ORCHESTRA
+
