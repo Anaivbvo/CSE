@@ -7,7 +7,7 @@ main_map = {
             'WEST': 'TREE2',
             'NORTH_EAST': 'OUTER_BAND'
         }
-    },
+    },  # Outside
     'TREE2': {
         'NAME': "Hang_Out_Tree",
         'DESCRIPTION': "It's the usual tree we hang out at. It has the best shade range, not to big and definitely "
@@ -17,7 +17,7 @@ main_map = {
             'WEST': "TABLE",
             'EAST': 'TREE2'
         }
-    },  # Outside
+    },
     'TABLE': {
         'NAME': "Lunch_Table",
         'DESCRIPTION': "This is the usual lunch table we hang out at. Enough for our circle to hang out at. Great "
