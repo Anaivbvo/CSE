@@ -36,29 +36,29 @@ JANITOR_ROOM = Room("Janitor's_Room", "It's the janitor's storage room. Nothing 
 WATER_FOUNTAIN = Room("Water_Fountains", " This room has no actual walls but it does have around 5 water fountains! "
                                          "This is the best place to get water at. Sure it's the farthest place from "
                                          "the field, but it's worth it for the water.", "SOUTH: Cafeteria.")
-FOOD_BOOTHS = Room("Food_Booths", " This is where you receive the food from the lunch ladies. They have posters of how to eat "
-                       "healthy and nutritious. The posters definitely speak better words than the food itself.. ",
-        'AV_DIR': "EAST: Cafeteria_Kitchen, SOUTH: Cafeteria.")
-KITCHEN = Room("Cafeteria_Kitchen", "The cafeteria's kitchen. They never actually cook anything, but there is always a lot of "
-                       "ingredients here.. ",
-        'AV_DIR': "WEST: Food_Booths.")
-BAND_ROOM = Room("Band_Room_Entrance", "It's the band room! It's our home! Sure it may be your first year but that is alright! The "
-                       "entrance is sometimes the best part! There is a fridge and a lost and found box.",
-        'AV_DIR': "NORTH: Director_Office, SOUTH: Drum-Line_Lockers, WEST: Main_Band_Room")
-OFFICE = Room("Director's_Office", "It's the director's office. There is music, trophies, awards, photos and... dvd cases..?",
-        'AV_DIR': "NORTH: Orchestra_Room, SOUTH: Band_Room entrance.")
-DRUMLINE = Room("Drumline_Lockers", "It's the drum line locker rooms! They are what really hold the band into their top level. Being"
-                       " in their locker room is an honor! But unless you're a member or a god tier level junior/senior"
-                       " player, you best leave now...",
-        'AV_DIR': "NORTH: Band_Room, SOUTH_WEST: Percussion_Lockers")
-PERCUSSION = Room("Percussion_Lockers", "This isn't a room necessarily but more of a section of the room. There are marimbas and drum "
-                       "sets. Never stay here for too long though... The percussion members like their space neat and "
-                       "unoccupied... ",
-        'AV_DIR': "WEST: Wood-Wind_Lockers, NORTH_EAST: Drum-Line_Lockers, NORTH: Main_Band_Room")
-WOODWIND = Room("Woodwind_Lockers", "It's the woodwind lockers! Most everyone hangs around here since there is rarely anyone that "
-                       "takes their instrument from their lockers. Flutes and clarinets always take theirs home.. Saxes"
-                       " though... They always go back and forth from here from lockers to stands.",
-        'AV_DIR': "EAST: Percussion_Lockers, NORTH: Main_Band_room.")
+FOOD_BOOTHS = Room("Food_Booths", " This is where you receive the food from the lunch ladies. They have posters of how "
+                                  "to eat healthy and nutritious. The posters definitely speak better words than the "
+                                  "food itself.. ", "EAST: Cafeteria_Kitchen, SOUTH: Cafeteria.")
+KITCHEN = Room("Cafeteria_Kitchen", "The cafeteria's kitchen. They never actually cook anything, but there is always "
+                                    "a lot of ingredients here.. ", "WEST: Food_Booths.")
+BAND_ROOM = Room("Band_Room_Entrance", "It's the band room! It's our home! Sure it may be your first year but that is "
+                                       "alright! The entrance is sometimes the best part! There is a fridge and a lost"
+                                       " and found box.", "NORTH: Director_Office, SOUTH: Drum-Line_Lockers, WEST: "
+                                                          "Main_Band_Room")
+OFFICE = Room("Director's_Office", "It's the director's office. There is music, trophies, awards, photos and... "
+                                   "dvd cases..?", "NORTH: Orchestra_Room, SOUTH: Band_Room entrance.")
+DRUMLINE = Room("Drumline_Lockers", "It's the drum line locker rooms! They are what really hold the band into their "
+                                    "top level. Being in their locker room is an honor! But unless you're a member or "
+                                    "a god tier level junior/senior player, you best leave now...", "NORTH: Band_Room,"
+                                    " SOUTH_WEST: Percussion_Lockers")
+PERCUSSION = Room("Percussion_Lockers", "This isn't a room necessarily but more of a section of the room. There are "
+                                        "marimbas and drum sets. Never stay here for too long though... The percussion "
+                                        "members like their space neat and unoccupied... ", "WEST: Wood-Wind_Lockers, "
+                                        "NORTH_EAST: Drum-Line_Lockers, NORTH: Main_Band_Room")
+WOODWIND = Room("Woodwind_Lockers", "It's the woodwind lockers! Most everyone hangs around here since there is rarely"
+                                    " anyone that takes their instrument from their lockers. Flutes and clarinets "
+                                    "always take theirs home.. Saxes though... They always go back and forth from here"
+                                    " from lockers to stands.", "EAST: Percussion_Lockers, NORTH: Main_Band_room.")
 MAIN_BAND_ROOM = Room("Main_Band_Room")
 UNIFORM = Room("Uniform_Room")
 ORCHESTRA = Room("Orchestra_Room")
