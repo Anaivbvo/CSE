@@ -39,5 +39,3 @@ while playing:
             pass
     else:
         print("Command not found")
-
-
