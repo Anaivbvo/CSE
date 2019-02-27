@@ -1,5 +1,5 @@
 class Room(object):
-    def __init__(self, name, description=None, av_dir=None, north=None, north_east=None, north_west=None,
+    def __init__(self, name, description, av_dir, north=None, north_east=None, north_west=None,
                  south=None, south_east=None, south_west=None, east=None, west=None):
         self.name = name
         self.north = north
@@ -81,7 +81,7 @@ WOODWIND = Room("Woodwind_Lockers", "It's the woodwind lockers! Most everyone ha
                                     " anyone that takes their instrument from their lockers. Flutes and clarinets "
                                     "always take theirs home.. Saxes though... They always go back and forth from here"
                                     " from lockers to stands.", "EAST: Percussion_Lockers, NORTH: Main_Band_room.")
-MAIN_BAND_ROOM = Room("Main_Band_Room")
+MAIN_BAND_ROOM = Room("Main_Band_Room", "")
 UNIFORM = Room("Uniform_Room")
 ORCHESTRA = Room("Orchestra_Room")
 BRASS = Room("Brass_Lockers")

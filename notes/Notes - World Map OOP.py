@@ -5,6 +5,7 @@ class Room(object):
         self.south = south
         self.east = east
         self.description = description
+        self.characters = []
 
 
 class Player(object):
@@ -22,7 +23,7 @@ class Player(object):
     def find_next_room(self, direction):
         """This method searches the current room so see if a room
         exists in that direction.
-        
+
         :param direction: The direction that you want to move to
         :return: The Room object if it exists, or None if it does not
         """
