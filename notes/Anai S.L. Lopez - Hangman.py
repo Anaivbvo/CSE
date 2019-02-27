@@ -1,4 +1,6 @@
+
 import random
+import string
 
 bank = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple', 'violet']
 word = random.choices(bank)
@@ -9,7 +11,7 @@ list_of_guesses = []
 
 for i in range(0, len(word)):
     found.append("-")
-"""
+
 while guesses_left > 0:
     guess = input("Enter a letter: ")
     for guess in letter_in_word:
@@ -22,4 +24,18 @@ while guesses_left > 0:
     print("Guesses made so far:", list_of_guesses)
 if guesses_left == 0:
     print("You ran out of guesses!")
-"""
+
+import random
+
+Underscore = list(string.punctuation)
+word_bank = ['dog', 'catfish', 'Jose', 'frog', 'gummy',
+             'cat', 'pants', 'dragon', 'lizard', 'blank']
+word = random.choice(word_bank)
+word_bank = list(word)
+
+letter_list = []
+playing = True
+player_won = False
+guess = 8
+
+while guesses_left < 0 and playing:
