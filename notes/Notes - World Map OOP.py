@@ -1,9 +1,10 @@
 class Room(object):
-    def __init__(self, name, north=None, south=None, east=None, ):
+    def __init__(self, name, description, north=None, south=None, east=None):
         self.name = name
         self.north = north
         self.south = south
         self.east = east
+        self.description = description
 
 
 class Player(object):
@@ -19,25 +20,25 @@ class Player(object):
         self.current_location = new_location
 
     def find_next_room(self, direction):
-        """This method searches the current room so see if a room exists in that direction
-
+        """This method searches the current room so see if a room
+        exists in that direction.
+        
         :param direction: The direction that you want to move to
-        :return: The room object if it exists, or None if it doesn't
+        :return: The Room object if it exists, or None if it does not
         """
         name_of_room = getattr(self.current_location, direction)
         return globals()[name_of_room]
 
 
-#  Option 1 - Define as we go
-#  R19A = Room("Mr.Wiebe's Room")
-#  parking_lot = Room("Parking Lot", None, R19A)
+# Option 1 - Define as we go
+# R19A = Room("Mr. Wiebe's Room")
+# parking_lot = Room("Parking Lot", None, R19A)
+#
+# R19A.north = parking_lot
 
-#  R19A.north = parking_lot
-
-#  Option 2 - Set all at once, modify controller
-R19A = Room("Mr.Wiebe's Room", 'parking_lot')
-parking_lot = Room("Parking Lot", None, "R19A")
-
+# Option 2 - Set all at once, modify controller
+R19A = Room("Mr. Wiebe's Room", "This is where you are now", 'parking_lot')
+parking_lot = Room("Parking Lot", "There are a few cars parked here", None, "R19A")
 
 player = Player(R19A)
 
@@ -55,6 +56,6 @@ while playing:
             next_room = player.find_next_room(command)
             player.move(next_room)
         except KeyError:
-            print("I can't go that way.")
+            print("I can't go that way")
     else:
-        print("Command not found")
+        print("Command Not Found")

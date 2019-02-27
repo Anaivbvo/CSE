@@ -13,24 +13,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-<<<<<<< HEAD
-    <SUITE FILE_PATH="coverage/notes$Hello_World.coverage" NAME="Hello World Coverage Results" MODIFIED="1540917846744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Mad_Lib.coverage" NAME="Anai S.L. Lopez - Mad Lib Coverage Results" MODIFIED="1544031455307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Object.coverage" NAME="Anai S.L. Lopez - Object Coverage Results" MODIFIED="1551236129582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$lists_note.coverage" NAME="lists-note Coverage Results" MODIFIED="1544461514881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Challanges.coverage" NAME="Challanges Coverage Results" MODIFIED="1549683819792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Mad_Lib_2.coverage" NAME="Anai S.L. Lopez - Mad Lib 2 Coverage Results" MODIFIED="1544116683656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Fix_it.coverage" NAME="Anai S.L. Lopez - Fix it Coverage Results" MODIFIED="1544206902272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$world.coverage" NAME="world Coverage Results" MODIFIED="1549954489175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$word_tries.coverage" NAME="word tries Coverage Results" MODIFIED="1550030061146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Object_notes.coverage" NAME="Object notes Coverage Results" MODIFIED="1550205130175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Guess_Game.coverage" NAME="Anai S.L. Lopez - Guess Game Coverage Results" MODIFIED="1542388848242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Dictionary_World_MAp.coverage" NAME="Dictionary World MAp Coverage Results" MODIFIED="1549954034312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___World.coverage" NAME="Anai S.L. Lopez - World Coverage Results" MODIFIED="1550299779467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-=======
     <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___World_Map_OOP.coverage" NAME="Anai S.L. Lopez - World Map OOP Coverage Results" MODIFIED="1551115924892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Object_notes.coverage" NAME="Object notes Coverage Results" MODIFIED="1550165457571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
->>>>>>> 60c788df8b2a781224c7f943279a11b5e29cb442
     <SUITE FILE_PATH="coverage/notes$fix_errors.coverage" NAME="fix-errors Coverage Results" MODIFIED="1543858659643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$object_notes_2.coverage" NAME="object notes 2 Coverage Results" MODIFIED="1550079201424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Mad_Lib_2.coverage" NAME="Anai S.L. Lopez - Mad Lib 2 Coverage Results" MODIFIED="1544116683656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -61,34 +45,35 @@
           <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.31" value="2" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.69" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="62" />
-          <entry key="py" value="5790" />
+          <entry key="py" value="5791" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="62" />
-          <entry key="Python" value="5790" />
+          <entry key="Python" value="5791" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="39" />
+          <entry key="py" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="39" />
+          <entry key="Python" value="41" />
         </counts>
       </usages-collector>
     </session>
@@ -99,19 +84,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - Object.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-=======
         <entry file="file://$PROJECT_DIR$/Notes - World Map OOP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="48" column="46" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="48" selection-end-column="46" />
-              <folding>
-                <marker date="1551203028116" expanded="true" signature="597:933" ph="..." />
-              </folding>
+            <state relative-caret-position="460">
+              <caret line="59" selection-start-line="59" selection-end-line="59" />
             </state>
           </provider>
         </entry>
@@ -123,68 +99,8 @@
               <caret line="45" column="58" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
               <folding>
                 <element signature="e#220#556#0" />
-                <element signature="e#661#729#0" />
-                <element signature="e#760#899#0" />
-                <element signature="e#967#1104#0" />
-                <element signature="e#1249#1317#0" />
-                <element signature="e#1420#1494#0" />
-                <element signature="e#1518#1715#0" />
-                <element signature="e#1717#1789#0" />
-                <element signature="e#1821#2021#0" />
-                <element signature="e#2040#2165#0" />
-                <element signature="e#2205#2333#0" />
-                <element signature="e#2399#2680#0" />
-                <element signature="e#2737#2945#0" />
-                <element signature="e#3046#3195#0" />
-                <element signature="e#3264#3463#0" />
-                <element signature="e#3548#3681#0" />
-                <element signature="e#3626#3754#0" />
-                <element signature="e#3845#4131#0" />
-                <element signature="e#4147#4300#0" />
-                <element signature="e#4177#4432#0" />
-                <element signature="e#4569#4743#0" />
-                <element signature="e#4787#5090#0" />
-                <marker date="1551202892599" expanded="true" signature="19:24" ph="..." />
+                <marker date="1551286621137" expanded="true" signature="19:24" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - World Map.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="155" column="68" selection-start-line="152" selection-start-column="23" selection-end-line="155" selection-end-column="68" />
-              <folding>
-                <element signature="e#26#330#0" />
-                <element signature="e#711#1050#0" />
-                <element signature="e#1071#1357#0" />
-                <element signature="e#1377#1661#0" />
-                <element signature="e#1689#2117#0" />
-                <element signature="e#2136#2737#0" />
-                <element signature="e#2759#3023#0" />
-                <element signature="e#3047#3460#0" />
-                <element signature="e#3481#3909#0" />
-                <element signature="e#3926#4234#0" />
-                <element signature="e#4253#4736#0" />
-                <element signature="e#4765#5089#0" />
-                <element signature="e#5108#5583#0" />
-                <element signature="e#5603#6166#0" />
-                <element signature="e#11256#11746#0" />
-                <element signature="e#11768#12271#0" />
-                <element signature="e#12291#12677#0" />
-                <element signature="e#12702#13155#0" />
-              </folding>
->>>>>>> 60c788df8b2a781224c7f943279a11b5e29cb442
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Notes - Dictionary World Map.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -228,17 +144,6 @@
         <option value="$PROJECT_DIR$/special_Random.py" />
         <option value="$PROJECT_DIR$/world.py" />
         <option value="$PROJECT_DIR$/Object notes.py" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/word tries.py" />
-        <option value="$PROJECT_DIR$/new.py" />
-        <option value="$PROJECT_DIR$/Static.py" />
-        <option value="$PROJECT_DIR$/Anai S.L. Lopez - World.py" />
-        <option value="$PROJECT_DIR$/Anai S.L. Lopez - Object.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-=======
         <option value="$PROJECT_DIR$/Anai S.L. Lopez - Object2.py" />
         <option value="$PROJECT_DIR$/World Map OOP.py" />
         <option value="$PROJECT_DIR$/Anai S.L. Lopez - World.py" />
@@ -256,7 +161,6 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
->>>>>>> 60c788df8b2a781224c7f943279a11b5e29cb442
     <option name="x" value="513" />
     <option name="y" value="129" />
     <option name="width" value="699" />
@@ -271,11 +175,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Anai S.L. Lopez - Object.py" />
-=======
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Notes - Dictionary World Map.py" />
->>>>>>> 60c788df8b2a781224c7f943279a11b5e29cb442
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Notes - World Map OOP.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -290,11 +190,7 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Python.Anai S.L. Lopez - Object">
-=======
   <component name="RunManager" selected="Python.Notes - World Map OOP">
->>>>>>> 60c788df8b2a781224c7f943279a11b5e29cb442
     <configuration name="Anai S.L. Lopez - Object" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -317,11 +213,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-<<<<<<< HEAD
-    <configuration name="Anai S.L. Lopez - World" type="PythonConfigurationType" factoryName="Python" temporary="true">
-=======
     <configuration name="Anai S.L. Lopez - World Map OOP" type="PythonConfigurationType" factoryName="Python" temporary="true">
->>>>>>> 60c788df8b2a781224c7f943279a11b5e29cb442
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -334,11 +226,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-<<<<<<< HEAD
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anai S.L. Lopez - World.py" />
-=======
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anai S.L. Lopez - World Map OOP.py" />
->>>>>>> 60c788df8b2a781224c7f943279a11b5e29cb442
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -414,21 +302,6 @@
       <method v="2" />
     </configuration>
     <list>
-<<<<<<< HEAD
-      <item itemvalue="Python.word tries" />
-      <item itemvalue="Python.world" />
-      <item itemvalue="Python.Object notes" />
-      <item itemvalue="Python.Anai S.L. Lopez - World" />
-      <item itemvalue="Python.Anai S.L. Lopez - Object" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.Anai S.L. Lopez - Object" />
-        <item itemvalue="Python.Anai S.L. Lopez - World" />
-        <item itemvalue="Python.Object notes" />
-        <item itemvalue="Python.word tries" />
-        <item itemvalue="Python.world" />
-=======
       <item itemvalue="Python.Anai S.L. Lopez - Object" />
       <item itemvalue="Python.Notes - Objects" />
       <item itemvalue="Python.Notes - World Map OOP" />
@@ -442,7 +315,6 @@
         <item itemvalue="Python.Anai S.L. Lopez - World Map" />
         <item itemvalue="Python.Anai S.L. Lopez - Object" />
         <item itemvalue="Python.Notes - Objects" />
->>>>>>> 60c788df8b2a781224c7f943279a11b5e29cb442
       </list>
     </recent_temporary>
   </component>
@@ -462,23 +334,12 @@
       <workItem from="1549985206840" duration="950000" />
       <workItem from="1550007038536" duration="466000" />
       <workItem from="1550026562101" duration="706000" />
-<<<<<<< HEAD
-      <workItem from="1550027508165" duration="4175000" />
-      <workItem from="1550203291115" duration="4077000" />
-      <workItem from="1550288333998" duration="7558000" />
-      <workItem from="1551224406804" duration="849000" />
-=======
       <workItem from="1550027508165" duration="4038000" />
->>>>>>> 60c788df8b2a781224c7f943279a11b5e29cb442
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="35269000" />
-=======
     <option name="totallyTimeSpent" value="22648000" />
->>>>>>> 60c788df8b2a781224c7f943279a11b5e29cb442
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -602,9 +463,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/Object notes.py">
-=======
     <entry file="file://$PROJECT_DIR$/Notes - Objects.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -613,7 +471,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - World Map.py">
->>>>>>> 60c788df8b2a781224c7f943279a11b5e29cb442
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="155" column="68" selection-start-line="152" selection-start-column="23" selection-end-line="155" selection-end-column="68" />
@@ -653,60 +510,15 @@
           <caret line="45" column="58" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
           <folding>
             <element signature="e#220#556#0" />
-            <element signature="e#661#729#0" />
-            <element signature="e#760#899#0" />
-            <element signature="e#967#1104#0" />
-            <element signature="e#1249#1317#0" />
-            <element signature="e#1420#1494#0" />
-            <element signature="e#1518#1715#0" />
-            <element signature="e#1717#1789#0" />
-            <element signature="e#1821#2021#0" />
-            <element signature="e#2040#2165#0" />
-            <element signature="e#2205#2333#0" />
-            <element signature="e#2399#2680#0" />
-            <element signature="e#2737#2945#0" />
-            <element signature="e#3046#3195#0" />
-            <element signature="e#3264#3463#0" />
-            <element signature="e#3548#3681#0" />
-            <element signature="e#3626#3754#0" />
-            <element signature="e#3845#4131#0" />
-            <element signature="e#4147#4300#0" />
-            <element signature="e#4177#4432#0" />
-            <element signature="e#4569#4743#0" />
-            <element signature="e#4787#5090#0" />
-            <marker date="1551202892599" expanded="true" signature="19:24" ph="..." />
+            <marker date="1551286621137" expanded="true" signature="19:24" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Notes - World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="490">
-          <caret line="48" column="46" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="48" selection-end-column="46" />
-          <folding>
-            <marker date="1551203028116" expanded="true" signature="597:933" ph="..." />
-=======
-<<<<<<< HEAD
-        <state relative-caret-position="122">
-          <caret line="230" column="18" selection-start-line="230" selection-start-column="18" selection-end-line="230" selection-end-column="18" />
-          <folding>
-            <element signature="e#26#330#0" />
-=======
-        <state relative-caret-position="18">
-          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
-          <folding>
-            <marker date="1551202892521" expanded="true" signature="595:931" ph="..." />
->>>>>>> 60c788df8b2a781224c7f943279a11b5e29cb442
->>>>>>> df50e15fcc3ce056ef2f29fc41bfd8864bad8b55
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - Object.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        <state relative-caret-position="460">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
         </state>
       </provider>
     </entry>
