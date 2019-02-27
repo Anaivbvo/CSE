@@ -42,7 +42,7 @@
     <session id="98169467">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.31" value="2" />
           <entry key="project.open.time.36" value="1" />
@@ -56,13 +56,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="62" />
-          <entry key="py" value="5757" />
+          <entry key="py" value="5790" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="62" />
-          <entry key="Python" value="5757" />
+          <entry key="Python" value="5790" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -85,10 +85,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Notes - World Map OOP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+            <state relative-caret-position="490">
+              <caret line="48" column="46" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="48" selection-end-column="46" />
               <folding>
-                <marker date="1551202892521" expanded="true" signature="595:931" ph="..." />
+                <marker date="1551203028116" expanded="true" signature="597:933" ph="..." />
               </folding>
             </state>
           </provider>
@@ -413,7 +413,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.27760968" />
       <window_info id="Favorites" order="1" side_tool="true" weight="0.32980332" />
@@ -600,10 +599,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Notes - World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
+        <state relative-caret-position="490">
+          <caret line="48" column="46" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="48" selection-end-column="46" />
           <folding>
-            <marker date="1551202892521" expanded="true" signature="595:931" ph="..." />
+            <marker date="1551203028116" expanded="true" signature="597:933" ph="..." />
           </folding>
         </state>
       </provider>
