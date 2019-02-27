@@ -7,7 +7,7 @@ main_map = {
             'WEST': 'TREE2',
             'NORTH_EAST': 'OUTER_BAND'
         }
-    },
+    },  # Outside
     'TREE2': {
         'NAME': "Hang_Out_Tree",
         'DESCRIPTION': "It's the usual tree we hang out at. It has the best shade range, not to big and definitely "
@@ -17,7 +17,7 @@ main_map = {
             'WEST': "TABLE",
             'EAST': 'TREE2'
         }
-    },  # Outside
+    },
     'TABLE': {
         'NAME': "Lunch_Table",
         'DESCRIPTION': "This is the usual lunch table we hang out at. Enough for our circle to hang out at. Great "
@@ -65,7 +65,6 @@ main_map = {
         'PATHS': {
             'NORTH_WEST': 'WATER_FOUNTAIN',
             'NORTH': 'JANITOR_ROOM',
-            'SOUTH_WEST'
             'SOUTH_EAST': 'BAND_HALL',
             'NORTH_EAST': 'BAND_HALL',
         }
@@ -132,10 +131,9 @@ main_map = {
         'DESCRIPTION': "It's the drum line locker rooms! They are what really hold the band into their top level. Being"
                        " in their locker room is an honor! But unless you're a member or a god tier level junior/senior"
                        " player, you best leave now...",
-        'AV_DIR': "NORTH_WEST: Main_Band_Room, NORTH: Band_Room",
+        'AV_DIR': "NORTH: Band_Room, SOUTH_WEST: Percussion_Lockers",
         'PATHS': {
-            'NORTH': 'BAND_ROOM',
-            'NORTH_WEST': 'MAIN_BAND_ROOM'
+            'NORTH': 'BAND_ROOM'
         }
     },
     'PERCUSSION': {
