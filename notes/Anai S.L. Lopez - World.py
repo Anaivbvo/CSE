@@ -227,13 +227,13 @@ main_map = {
         'DESCRIPTION': "This is thr band hall. Students have sectionals and solo practices here when ever the director "
                        "lets us. Well, sometimes we just play video games here in groups too.",
         'AV_DIR': "SOUTH_WEST: Cafeteria, NORTH_WEST: Cafeteria, SOUTH_EAST: Main_Band_room, "
-                  "NORTH_EAST: Orchestra_Room, NORTH: Band_Hall",
+                  "NORTH_EAST: Orchestra_Room, NORTH: Lounge_Hall",
         'PATHS': {
             'SOUTH_WEST': "CAFETERIA",
             'SOUTH_EAST': "MAIN_BAND_ROOM",
             'NORTH_WEST': "CAFETERIA",
             'NORTH_EAST': "ORCHESTRA",
-            'NORTH': 'BAND_HALL'
+            'NORTH': 'LOUNGE_HALL'
         }
     },  # Halls
     'LOUNGE_HALL': {

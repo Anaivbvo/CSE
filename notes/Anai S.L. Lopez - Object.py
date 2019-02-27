@@ -3,7 +3,7 @@ class NoteBook(object):
         self.pages = 4
         self.cover = True
         self.cover_title = cover_title
-        self.entries = True
+        self.equipped = True
 
     def rip_page(self):
         print("RIP!!")
@@ -11,30 +11,22 @@ class NoteBook(object):
         self.pages = self.pages - 1
         print(self.pages)
 
-    def write_entry(self):
-        if self.pages == 0:
-            print("You can't write an entry.")
-            print("You have no more pages to write on.")
-            return
-        elif self.pages > 0:
-            input("Write your entry: ")
-            print(input)
-            return
-
     def rip_cover(self):
         print("RIP!!!")
         print("You have ripped the cover of your note book.")
         self.cover = False
 
-<<<<<<< HEAD
-mybook()
+    def throw_book(self):
+        answer = input("do you want to throw book")
+        if answer.lower() is "yes":
+            print("Ypu throw the book!")
+            print("But it's a nice book, so you retrieve it back.")
+        if answer.lower() is "no":
+            print("You don't throw the book.")
 
-print(Object2.RandomWeibe.myrandom())
-=======
 
-my_book = NoteBook("Book1")
+my_book = NoteBook("Note-book No.1")
 
-my_book.write_entry("Entry #1..")
-
-print(Static.RandomMine.myrandom())
->>>>>>> 076e33428de54293e5f3429276b691d4abe91daa
+my_book.rip_cover()
+my_book.rip_page()
+my_book.throw_book()
