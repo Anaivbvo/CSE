@@ -14,6 +14,28 @@ class Room(object):
         self.av_dir = av_dir
 
 
+class Player(object):
+    def __init__(self, starting_location):
+        self.current_location = starting_location
+        self.inventory = []
+
+    def move(self, new_location):
+        """This moves the player to a new room
+
+        :param new_location: The room object of which you are going to
+        """
+        self.current_location = new_location
+
+    def find_next_room(self, direction):
+        """This method searches the current room so see if a room exists in that direction
+
+        :param direction: The direction that you want to move to
+        :return: The room object if it exists, or None if it doesn't
+        """
+        name_of_room = getattr(self.current_location, direction)
+        return globals()[name_of_room]
+
+
 TREE1 = Room("Band_Tree", "This is the nearest tree to the band room. Nothing too special about it.", "WEST: "
              "Hang_Out_Tree, NORTH_EAST: Outside_Band_room")
 TREE2 = Room("Hangout_Tree", "It's the usual tree we hang out at. It has the best shade range, not to big and "
@@ -148,8 +170,26 @@ OUTER_ORCHESTRA.south = OUTER_BAND
 OUTER_ORCHESTRA.west = ORCHESTRA
 OUTER_ORCHESTRA.north_west = LOUNGE_HALL
 
-print(TREE1.name)
-print("-"*5)
-print(TREE1.description)
-print("-"*5)
-print(TREE1.av_dir)
+player = Player(TREE1)
+
+playing = True
+directions = ['north', 'south', 'east', 'west', 'up', 'down', 'north_east', 'north_west', 'south_east', 'south_west']
+
+while playing:
+    print(player.current_location.name)
+    print(player.current_location.description)
+    print(player.current_location.av_dir)
+    command = input(">_")
+    if command.lower() in ['q', 'quit', 'exit']:
+        playing = False
+    elif command.lower() in directions:
+        try:
+            next_room = player.find_next_room(command)
+            player.move(next_room)
+            print("I can't go that way.")
+        except AttributeError:
+            pass
+        except ArithmeticError:
+            pass
+    else:
+        print("Command not found")
