@@ -81,13 +81,32 @@ WOODWIND = Room("Woodwind_Lockers", "It's the woodwind lockers! Most everyone ha
                                     " anyone that takes their instrument from their lockers. Flutes and clarinets "
                                     "always take theirs home.. Saxes though... They always go back and forth from here"
                                     " from lockers to stands.", "EAST: Percussion_Lockers, NORTH: Main_Band_room.")
-MAIN_BAND_ROOM = Room("Main_Band_Room", "")
-UNIFORM = Room("Uniform_Room")
-ORCHESTRA = Room("Orchestra_Room")
-BRASS = Room("Brass_Lockers")
-GUARD = Room("Color_Guard_Lockers")
-BAND_HALL = Room("Band_Hall")
-LOUNGE_HALL = Room("Lounge_Hall")
+MAIN_BAND_ROOM = Room("Main_Band_Room", "This is the main band room. This is where most classes and practice takes "
+                                        "place. No matter if you're a part of orchestra, choir, jazz, concert, etc, "
+                                        "this is the main used room.", "SOUTH_WEST: Wood-Wind_Lockers, SOUTH: "
+                                        "Percussion_Lockers, SOUTH_EAST: Drum-Line_Lockers, NORTH: "
+                                                                       "Uniform_Storage_Room, WEST: Band_Hall")
+UNIFORM = Room("Uniform_Room", "This is where we keep the band uniforms as well as any extra snacks, water bottles, "
+               "and other stuff. A storage room of course.", "NORTH: Orchestra_Room, SOUTH: Main_Band_Room")
+ORCHESTRA = Room("Orchestra_Room" "The orchestra room isn't always used. Sometimes when we have study hall, half the "
+                 "class decides  to practice solo here. There's a piano and lockers here as well. This room is mainly "
+                 "used by orchestra members when they practice as well as color guard members.", "NORTH_WEST: "
+                 "Brass_Lockers, NORTH_EAST: Color_Guard_Lockers, WEST: Band_Hall, SOUTH_WEST: Uniform_Room, "
+                 "SOUTH_EAST: Director_Office, EAST: ")
+BRASS = Room("Brass_Lockers", "The brass lockers. You see the members always hanging around here having a good time "
+             "talking or practicing. The lockers are very neat compared to the woodwinds actually! This may be because "
+             "how organized the brass section leaders are!", "SOUTH: Orchestra_Room, EAST: Color_Guard_Lockers")
+GUARD = Room("Color_Guard_Lockers", "It's the color guard's locker room. This is much more of a room since the color "
+             "guard change into their outfits here. As well as have their props such as flags and rifles here. The "
+             "color guard are ones who don't like waiting, you best hurry and leave before they catch you in here!",
+             "WEST: Brass_Lockers, SOUTH: Orchestra_Room")
+BAND_HALL = Room("Band_Hall", "This is thr band hall. Students have sectionals and solo practices here when ever the "
+                 "director lets us. Well, sometimes we just play video games here in groups too.", "SOUTH_WEST: "
+                 "Cafeteria, NORTH_WEST: Cafeteria, SOUTH_EAST: Main_Band_room, NORTH_EAST: Orchestra_Room, "
+                 "NORTH: Lounge_Hall")
+LOUNGE_HALL = Room("Lounge_Hall", "Band members practice here too. But majority of the psace is occupied by old broken"
+                   " stands and unused carts.", "SOUTH: Band_Hall, NORTH: Storage_Room, EAST: Outer_Orchestra_Room, "
+                                                "NORTH_EAST: Teacher_Lounge_Room")
 STORAGE = Room("Storage_Room")
 TEACHER_LOUNGE = Room("Teacher's_Lounge")
 LOUNGE_TABLE = Room("Lounge_Table")

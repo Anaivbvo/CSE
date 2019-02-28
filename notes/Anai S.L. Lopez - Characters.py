@@ -30,4 +30,4 @@ Director = Teacher("Band Director", "It's the band director. A very nice, funny,
 playing = True
 
 while playing:
-    
+    Director.talk_to()

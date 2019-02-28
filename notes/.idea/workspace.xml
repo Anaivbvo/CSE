@@ -20,8 +20,9 @@
     <SUITE FILE_PATH="coverage/notes$Notes___World_Map_OOP.coverage" NAME="Notes - World Map OOP Coverage Results" MODIFIED="1551288689672" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$word_tries.coverage" NAME="word tries Coverage Results" MODIFIED="1550030061146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Fix_it.coverage" NAME="Anai S.L. Lopez - Fix it Coverage Results" MODIFIED="1544206902272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Notes___Inheritance.coverage" NAME="Notes - Inheritance Coverage Results" MODIFIED="1551375407315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Hello_World.coverage" NAME="Hello World Coverage Results" MODIFIED="1540917846744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___World_Map_OOP.coverage" NAME="Anai S.L. Lopez - World Map OOP Coverage Results" MODIFIED="1551115924892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___World_Map_OOP.coverage" NAME="Anai S.L. Lopez - World Map OOP Coverage Results" MODIFIED="1551374526183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Object_notes.coverage" NAME="Object notes Coverage Results" MODIFIED="1550165457571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$fix_errors.coverage" NAME="fix-errors Coverage Results" MODIFIED="1543858659643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$object_notes_2.coverage" NAME="object notes 2 Coverage Results" MODIFIED="1550079201424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -36,45 +37,45 @@
     <SUITE FILE_PATH="coverage/notes$gambling_game_lucky7.coverage" NAME="gambling_game_lucky7 Coverage Results" MODIFIED="1542302659389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___World_Map.coverage" NAME="Anai S.L. Lopez - World Map Coverage Results" MODIFIED="1551115807863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$World_Map_OOP.coverage" NAME="World Map OOP Coverage Results" MODIFIED="1550682714054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Characters.coverage" NAME="Anai S.L. Lopez - Characters Coverage Results" MODIFIED="1551289349026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Characters.coverage" NAME="Anai S.L. Lopez - Characters Coverage Results" MODIFIED="1551289442080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Object.coverage" NAME="Anai S.L. Lopez - Object Coverage Results" MODIFIED="1551114306026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="98169467">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.31" value="2" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.54" value="2" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.65" value="1" />
           <entry key="project.open.time.69" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="62" />
-          <entry key="py" value="7155" />
+          <entry key="py" value="8035" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="62" />
-          <entry key="Python" value="7155" />
+          <entry key="Python" value="8035" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="47" />
+          <entry key="py" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="47" />
+          <entry key="Python" value="49" />
         </counts>
       </usages-collector>
     </session>
@@ -88,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/Notes - World Map OOP.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="261">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -96,10 +97,77 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - World Map OOP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1444">
-              <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
+            <state relative-caret-position="248">
+              <caret line="107" column="48" selection-start-line="107" selection-start-column="48" selection-end-line="107" selection-end-column="48" />
               <folding>
-                <marker date="1551288156307" expanded="true" signature="19:24" ph="..." />
+                <element signature="e#210#546#0" />
+                <element signature="e#575#1286#0" />
+                <element signature="e#1391#1459#0" />
+                <element signature="e#1490#1629#0" />
+                <element signature="e#1697#1834#0" />
+                <element signature="e#1979#2047#0" />
+                <element signature="e#2150#2224#0" />
+                <element signature="e#2248#2445#0" />
+                <element signature="e#2447#2519#0" />
+                <element signature="e#2551#2751#0" />
+                <element signature="e#2770#2895#0" />
+                <element signature="e#2935#3063#0" />
+                <element signature="e#3129#3410#0" />
+                <element signature="e#3467#3723#0" />
+                <element signature="e#3807#3956#0" />
+                <element signature="e#4019#4276#0" />
+                <element signature="e#4278#4411#0" />
+                <element signature="e#4448#4576#0" />
+                <element signature="e#4667#4967#0" />
+                <element signature="e#4969#5058#0" />
+                <element signature="e#5100#5389#0" />
+                <element signature="e#5391#5513#0" />
+                <element signature="e#5551#5932#0" />
+                <element signature="e#6026#6247#0" />
+                <element signature="e#6292#6470#0" />
+                <element signature="e#6577#6724#0" />
+                <element signature="e#6790#7087#0" />
+                <element signature="e#7109#7320#0" />
+                <element signature="e#7321#7608#0" />
+                <element signature="e#7679#7977#0" />
+                <element signature="e#8086#8278#0" />
+                <element signature="e#8274#8439#0" />
+                <element signature="e#8471#8604#0" />
+                <element signature="e#8605#8756#0" />
+                <marker date="1551375407206" expanded="false" signature="19:24" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - World Map.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="238" column="23" selection-start-line="238" selection-start-column="23" selection-end-line="240" selection-end-column="119" />
+              <folding>
+                <element signature="e#26#330#0" />
+                <element signature="e#356#696#0" />
+                <element signature="e#711#1050#0" />
+                <element signature="e#1071#1357#0" />
+                <element signature="e#1377#1661#0" />
+                <element signature="e#1689#2117#0" />
+                <element signature="e#2136#2737#0" />
+                <element signature="e#2759#3023#0" />
+                <element signature="e#3047#3460#0" />
+                <element signature="e#3481#3909#0" />
+                <element signature="e#3926#4234#0" />
+                <element signature="e#4253#4736#0" />
+                <element signature="e#4765#5089#0" />
+                <element signature="e#5108#5583#0" />
+                <element signature="e#5603#6166#0" />
+                <element signature="e#6185#6741#0" />
+                <element signature="e#6765#7417#0" />
+                <element signature="e#7434#7827#0" />
+                <element signature="e#7846#8608#0" />
+                <element signature="e#8623#9136#0" />
+                <element signature="e#9151#9712#0" />
+                <element signature="e#9731#10372#0" />
               </folding>
             </state>
           </provider>
@@ -108,29 +176,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Notes - Objects.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-173">
-              <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - Object.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="17">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Notes - Inheritance.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+              <folding>
+                <marker date="1551375854138" expanded="true" signature="22:27" ph="..." />
+                <marker date="1551375854138" expanded="true" signature="99:104" ph="..." />
+                <marker date="1551375854138" expanded="true" signature="868:1111" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - Characters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+            <state relative-caret-position="239">
+              <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
               <folding>
-                <marker date="1551289408729" expanded="true" signature="22:27" ph="..." />
-                <marker date="1551289408729" expanded="true" signature="233:1077" ph="..." />
+                <marker date="1551289442002" expanded="true" signature="22:27" ph="..." />
+                <marker date="1551289442002" expanded="true" signature="233:1077" ph="..." />
               </folding>
             </state>
           </provider>
@@ -179,10 +252,11 @@
         <option value="$PROJECT_DIR$/World Map OOP.py" />
         <option value="$PROJECT_DIR$/Anai S.L. Lopez - World.py" />
         <option value="$PROJECT_DIR$/Anai S.L. Lopez - Object.py" />
-        <option value="$PROJECT_DIR$/Anai S.L. Lopez - World Map.py" />
         <option value="$PROJECT_DIR$/Notes - World Map OOP.py" />
-        <option value="$PROJECT_DIR$/Anai S.L. Lopez - World Map OOP.py" />
         <option value="$PROJECT_DIR$/Anai S.L. Lopez - Characters.py" />
+        <option value="$PROJECT_DIR$/Anai S.L. Lopez - World Map.py" />
+        <option value="$PROJECT_DIR$/Anai S.L. Lopez - World Map OOP.py" />
+        <option value="$PROJECT_DIR$/Notes - Inheritance.py" />
       </list>
     </option>
   </component>
@@ -207,7 +281,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Anai S.L. Lopez - Object.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Anai S.L. Lopez - World Map.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -222,7 +296,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Anai S.L. Lopez - Characters">
+  <component name="RunManager" selected="Python.Notes - Inheritance">
     <configuration name="Anai S.L. Lopez - Characters" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -237,28 +311,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anai S.L. Lopez - Characters.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Anai S.L. Lopez - Object" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="notes" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Anai S.L. Lopez - Object.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -311,6 +363,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Notes - Inheritance" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="notes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Notes - Inheritance.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Notes - World Map OOP" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="notes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -334,19 +408,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Anai S.L. Lopez - Object" />
       <item itemvalue="Python.Notes - World Map OOP" />
       <item itemvalue="Python.Anai S.L. Lopez - World Map OOP" />
       <item itemvalue="Python.Anai S.L. Lopez - World Map" />
       <item itemvalue="Python.Anai S.L. Lopez - Characters" />
+      <item itemvalue="Python.Notes - Inheritance" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Notes - Inheritance" />
+        <item itemvalue="Python.Anai S.L. Lopez - World Map OOP" />
         <item itemvalue="Python.Anai S.L. Lopez - Characters" />
         <item itemvalue="Python.Notes - World Map OOP" />
-        <item itemvalue="Python.Anai S.L. Lopez - World Map OOP" />
         <item itemvalue="Python.Anai S.L. Lopez - World Map" />
-        <item itemvalue="Python.Anai S.L. Lopez - Object" />
       </list>
     </recent_temporary>
   </component>
@@ -486,44 +560,10 @@
     <entry file="file://$PROJECT_DIR$/Notes - Static.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - World Map.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="155" column="68" selection-start-line="152" selection-start-column="23" selection-end-line="155" selection-end-column="68" />
-          <folding>
-            <element signature="e#26#330#0" />
-            <element signature="e#711#1050#0" />
-            <element signature="e#1071#1357#0" />
-            <element signature="e#1377#1661#0" />
-            <element signature="e#1689#2117#0" />
-            <element signature="e#2136#2737#0" />
-            <element signature="e#2759#3023#0" />
-            <element signature="e#3047#3460#0" />
-            <element signature="e#3481#3909#0" />
-            <element signature="e#3926#4234#0" />
-            <element signature="e#4253#4736#0" />
-            <element signature="e#4765#5089#0" />
-            <element signature="e#5108#5583#0" />
-            <element signature="e#5603#6166#0" />
-            <element signature="e#11256#11746#0" />
-            <element signature="e#11768#12271#0" />
-            <element signature="e#12291#12677#0" />
-            <element signature="e#12702#13155#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Notes - Dictionary World Map.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
           <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Notes - World Map OOP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
@@ -537,34 +577,118 @@
     <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - Object.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Notes - Objects.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - World Map OOP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1444">
-          <caret line="83" column="41" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="41" />
-          <folding>
-            <marker date="1551288156307" expanded="true" signature="19:24" ph="..." />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - Characters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        <state relative-caret-position="239">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
           <folding>
-            <marker date="1551289408729" expanded="true" signature="22:27" ph="..." />
-            <marker date="1551289408729" expanded="true" signature="233:1077" ph="..." />
+            <marker date="1551289442002" expanded="true" signature="22:27" ph="..." />
+            <marker date="1551289442002" expanded="true" signature="233:1077" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - World Map OOP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="107" column="48" selection-start-line="107" selection-start-column="48" selection-end-line="107" selection-end-column="48" />
+          <folding>
+            <element signature="e#210#546#0" />
+            <element signature="e#575#1286#0" />
+            <element signature="e#1391#1459#0" />
+            <element signature="e#1490#1629#0" />
+            <element signature="e#1697#1834#0" />
+            <element signature="e#1979#2047#0" />
+            <element signature="e#2150#2224#0" />
+            <element signature="e#2248#2445#0" />
+            <element signature="e#2447#2519#0" />
+            <element signature="e#2551#2751#0" />
+            <element signature="e#2770#2895#0" />
+            <element signature="e#2935#3063#0" />
+            <element signature="e#3129#3410#0" />
+            <element signature="e#3467#3723#0" />
+            <element signature="e#3807#3956#0" />
+            <element signature="e#4019#4276#0" />
+            <element signature="e#4278#4411#0" />
+            <element signature="e#4448#4576#0" />
+            <element signature="e#4667#4967#0" />
+            <element signature="e#4969#5058#0" />
+            <element signature="e#5100#5389#0" />
+            <element signature="e#5391#5513#0" />
+            <element signature="e#5551#5932#0" />
+            <element signature="e#6026#6247#0" />
+            <element signature="e#6292#6470#0" />
+            <element signature="e#6577#6724#0" />
+            <element signature="e#6790#7087#0" />
+            <element signature="e#7109#7320#0" />
+            <element signature="e#7321#7608#0" />
+            <element signature="e#7679#7977#0" />
+            <element signature="e#8086#8278#0" />
+            <element signature="e#8274#8439#0" />
+            <element signature="e#8471#8604#0" />
+            <element signature="e#8605#8756#0" />
+            <marker date="1551375407206" expanded="false" signature="19:24" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - World Map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="238" column="23" selection-start-line="238" selection-start-column="23" selection-end-line="240" selection-end-column="119" />
+          <folding>
+            <element signature="e#26#330#0" />
+            <element signature="e#356#696#0" />
+            <element signature="e#711#1050#0" />
+            <element signature="e#1071#1357#0" />
+            <element signature="e#1377#1661#0" />
+            <element signature="e#1689#2117#0" />
+            <element signature="e#2136#2737#0" />
+            <element signature="e#2759#3023#0" />
+            <element signature="e#3047#3460#0" />
+            <element signature="e#3481#3909#0" />
+            <element signature="e#3926#4234#0" />
+            <element signature="e#4253#4736#0" />
+            <element signature="e#4765#5089#0" />
+            <element signature="e#5108#5583#0" />
+            <element signature="e#5603#6166#0" />
+            <element signature="e#6185#6741#0" />
+            <element signature="e#6765#7417#0" />
+            <element signature="e#7434#7827#0" />
+            <element signature="e#7846#8608#0" />
+            <element signature="e#8623#9136#0" />
+            <element signature="e#9151#9712#0" />
+            <element signature="e#9731#10372#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes - World Map OOP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Notes - Inheritance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <folding>
+            <marker date="1551375854138" expanded="true" signature="22:27" ph="..." />
+            <marker date="1551375854138" expanded="true" signature="99:104" ph="..." />
+            <marker date="1551375854138" expanded="true" signature="868:1111" ph="..." />
           </folding>
         </state>
       </provider>
