@@ -88,11 +88,11 @@ MAIN_BAND_ROOM = Room("Main_Band_Room", "This is the main band room. This is whe
                                                                        "Uniform_Storage_Room, WEST: Band_Hall")
 UNIFORM = Room("Uniform_Room", "This is where we keep the band uniforms as well as any extra snacks, water bottles, "
                "and other stuff. A storage room of course.", "NORTH: Orchestra_Room, SOUTH: Main_Band_Room")
-ORCHESTRA = Room("Orchestra_Room" "The orchestra room isn't always used. Sometimes when we have study hall, half the "
+ORCHESTRA = Room("Orchestra_Room", "The orchestra room isn't always used. Sometimes when we have study hall, half the "
                  "class decides  to practice solo here. There's a piano and lockers here as well. This room is mainly "
                  "used by orchestra members when they practice as well as color guard members.", "NORTH_WEST: "
                  "Brass_Lockers, NORTH_EAST: Color_Guard_Lockers, WEST: Band_Hall, SOUTH_WEST: Uniform_Room, "
-                 "SOUTH_EAST: Director_Office, EAST: ")
+                 "SOUTH_EAST: Director_Office, EAST: Outer_Orchestra")
 BRASS = Room("Brass_Lockers", "The brass lockers. You see the members always hanging around here having a good time "
              "talking or practicing. The lockers are very neat compared to the woodwinds actually! This may be because "
              "how organized the brass section leaders are!", "SOUTH: Orchestra_Room, EAST: Color_Guard_Lockers")
@@ -107,11 +107,19 @@ BAND_HALL = Room("Band_Hall", "This is thr band hall. Students have sectionals a
 LOUNGE_HALL = Room("Lounge_Hall", "Band members practice here too. But majority of the psace is occupied by old broken"
                    " stands and unused carts.", "SOUTH: Band_Hall, NORTH: Storage_Room, EAST: Outer_Orchestra_Room, "
                                                 "NORTH_EAST: Teacher_Lounge_Room")
-STORAGE = Room("Storage_Room")
-TEACHER_LOUNGE = Room("Teacher's_Lounge")
-LOUNGE_TABLE = Room("Lounge_Table")
-OUTER_BAND = Room("Outer_Band")
-OUTER_ORCHESTRA = Room("Outer_Orchestra")
+STORAGE = Room("Storage_Room", "This room has tables and chairs. A lot of them seem to be broken. It's not very bright "
+               "in here for the lights are very dim..", "SOUTH: Lounge_Hall")
+TEACHER_LOUNGE = Room("Teacher's_Lounge", "It's the teacher's lounge room. A lot of teachers spent there time here "
+                      "during lunch. Though why the lounge room is so far from other classes as well as near the band "
+                      "room, is a weird placement..", "SOUTH_EAST: Lounge_Hall, EAST: Lounge_Table")
+LOUNGE_TABLE = Room("Lounge_Table", "This is an area outside the teacher's lounge table. Sometimes students hang here "
+                    "during lunch. Sometimes sectionals happen here too. Well.. it tends to be a battle between low "
+                    "brass and saxes for this spot.", "WEST: Teacher_Lounge, SOUTH: Outside_Orchestra_Room")
+OUTER_BAND = Room("Outer_Band", "This is outside the band room. A lot of band member hang ut here during lunch and "
+                  "Break.", "SOUTH_EAST: Band_Tree, NORTH: Outside_Orchestra_Room, WEST: Band_Room")
+OUTER_ORCHESTRA = Room("Outer_Orchestra", "This is outside the orchestra room. Members don;t hang here as often except "
+                       "during lunch.", "SOUTH: Outside_Band_Room, WEST: Orchestra_Room, NORTH: Lounge_Table, "
+                                        "NORTH_WEST: Lounge_Hall")
 
 # --
 
