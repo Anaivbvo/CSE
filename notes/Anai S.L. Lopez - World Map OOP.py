@@ -204,7 +204,7 @@ while playing:
     print(player.current_location.description)
     print(player.current_location.av_dir)
     command = input(">_")
-    if command.upper() in ['q', 'quit', 'exit']:
+    if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     elif command.upper() in directions:
         try:
