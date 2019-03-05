@@ -21,16 +21,15 @@ class Player(object):
 
     def move(self, new_location):
         """This moves the player to a new room
-
         :param new_location: The room object of which you are going to
         """
         self.current_location = new_location
 
     def find_next_room(self, direction):
-        """This method searches the current room so see if a room exists in that direction
-
+        """This method searches the current room so see if a room
+        exists in that direction.
         :param direction: The direction that you want to move to
-        :return: The room object if it exists, or None if it doesn't
+        :return: The Room object if it exists, or None if it does not
         """
         name_of_room = getattr(self.current_location, direction)
         return globals()[name_of_room]
@@ -49,10 +48,9 @@ BACK_STAGE = Room("Back_Stage", "It's the back of the stage. There's really no n
 STAGE = Room("Stage", "The school's main stage. Band performances, mainly concert happen here! When the lights shine "
                       "on you, it's the best feeling! Oh, and theatre kids do their plays here to. ", "NORTH_WEST: "
                       "Cafeteria, NORTH_EAST: Cafeteria.")
-CAFETERIA = Room("Cafeteria", "It's the school's cafeteria. Though the tables and chairs are put away, so we have "
-                 "sectionals in here sometimes. Well it depends on who gets here first, the saxes or anyone else.",
-                 "NORTH_WEST: Water_Fountains, NORTH: Janitor_Storage_Room, SOUTH_EAST: Band_Hall, NORTH_EAST: "
-                 "Band_Hall.")
+CAFETERIA = Room("Cafeteria", "It's the school's cafeteria. The tables and chairs are put away, so we have sectionals "
+                 "in here sometimes. Well it depends on who gets here first, the saxes or anyone else.", "TH_WEST:"
+                 " Water_Fountains, NORTH: Janitor_Storage_Room, SOUTH_EAST: Band_Hall, NORTH_EAST: Band_Hall.")
 JANITOR_ROOM = Room("Janitor's_Room", "It's the janitor's storage room. Nothing special about it since it's always "
                                       "closed.. ", "NORTH: Food_Booths.")
 WATER_FOUNTAIN = Room("Water_Fountains", " This room has no actual walls but it does have around 5 water fountains! "
@@ -96,10 +94,9 @@ ORCHESTRA = Room("Orchestra_Room", "The orchestra room isn't always used. Someti
 BRASS = Room("Brass_Lockers", "The brass lockers. You see the members always hanging around here having a good time "
              "talking or practicing. The lockers are very neat compared to the woodwinds actually! This may be because "
              "how organized the brass section leaders are!", "SOUTH: Orchestra_Room, EAST: Color_Guard_Lockers")
-GUARD = Room("Color_Guard_Lockers", "It's the color guard's locker room. This is much more of a room since the color "
-             "guard change into their outfits here. As well as have their props such as flags and rifles here. The "
-             "color guard are ones who don't like waiting, you best hurry and leave before they catch you in here!",
-             "WEST: Brass_Lockers, SOUTH: Orchestra_Room")
+GUARD = Room("Color_Guard_Lockers", "It's the color guard's locker room. The color guard change into their outfits "
+             "here. As well as have their props such as flags and rifles here. The guard don't like waiting, you best "
+             "hurry and leave before they catch you in here!", "WEST: Brass_Lockers, SOUTH: Orchestra_Room")
 BAND_HALL = Room("Band_Hall", "This is thr band hall. Students have sectionals and solo practices here when ever the "
                  "director lets us. Well, sometimes we just play video games here in groups too.", "SOUTH_WEST: "
                  "Cafeteria, NORTH_WEST: Cafeteria, SOUTH_EAST: Main_Band_room, NORTH_EAST: Orchestra_Room, "
@@ -200,23 +197,20 @@ OUTER_ORCHESTRA.north_west = LOUNGE_HALL
 player = Player(TREE1)
 
 playing = True
-directions = ['north', 'south', 'east', 'west', 'up', 'down', 'north_east', 'north_west', 'south_east', 'south_west']
+directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'NORTH_EAST', 'NORTH_WEST', 'SOUTH_EAST', 'SOUTH_WEST']
 
 while playing:
     print(player.current_location.name)
     print(player.current_location.description)
     print(player.current_location.av_dir)
     command = input(">_")
-    if command.lower() in ['q', 'quit', 'exit']:
+    if command.upper() in ['q', 'quit', 'exit']:
         playing = False
-    elif command.lower() in directions:
+    elif command.upper() in directions:
         try:
             next_room = player.find_next_room(command)
             player.move(next_room)
-            print("I can't go that way.")
-        except AttributeError:
-            pass
-        except ArithmeticError:
-            pass
+        except KeyError:
+            print("I can't go that way")
     else:
-        print("Command not found")
+        print("Command Not Found")
