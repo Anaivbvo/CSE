@@ -31,92 +31,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - World Map OOP.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="50" column="58" lean-forward="true" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
-              <folding>
-                <element signature="e#1391#1459#0" />
-                <element signature="e#1490#1629#0" />
-                <element signature="e#1697#1834#0" />
-                <element signature="e#1979#2047#0" />
-                <element signature="e#2150#2224#0" />
-                <element signature="e#2248#2445#0" />
-                <element signature="e#2447#2519#0" />
-                <element signature="e#2551#2751#0" />
-                <element signature="e#2770#2895#0" />
-                <element signature="e#2935#3063#0" />
-                <element signature="e#3129#3410#0" />
-                <element signature="e#3467#3723#0" />
-                <element signature="e#3807#3956#0" />
-                <element signature="e#4019#4276#0" />
-                <element signature="e#4278#4411#0" />
-                <element signature="e#4448#4576#0" />
-                <element signature="e#4667#4967#0" />
-                <element signature="e#4969#5058#0" />
-                <element signature="e#5100#5389#0" />
-                <element signature="e#5391#5513#0" />
-                <element signature="e#5551#5932#0" />
-                <element signature="e#6026#6290#0" />
-                <element signature="e#6292#6544#0" />
-                <element signature="e#6577#6723#0" />
-                <element signature="e#6807#7107#0" />
-                <element signature="e#7109#7289#0" />
-                <element signature="e#7321#7589#0" />
-                <element signature="e#7679#7994#0" />
-                <element signature="e#8085#8271#0" />
-                <element signature="e#8273#8435#0" />
-                <element signature="e#8471#8603#0" />
-                <element signature="e#8605#8756#0" />
-                <element signature="e#8804#8971#0" />
-                <element signature="e#9014#9260#0" />
-                <element signature="e#9346#9600#0" />
-                <element signature="e#9688#9798#0" />
-                <element signature="e#9916#10034#0" />
-                <element signature="e#10035#10172#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - Dictionary World Map.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="292" column="112" selection-start-line="291" selection-start-column="23" selection-end-line="292" selection-end-column="112" />
-              <folding>
-                <element signature="e#26#330#0" />
-                <element signature="e#356#696#0" />
-                <element signature="e#711#1050#0" />
-                <element signature="e#1071#1357#0" />
-                <element signature="e#1377#1661#0" />
-                <element signature="e#1689#2117#0" />
-                <element signature="e#2136#2737#0" />
-                <element signature="e#2759#3023#0" />
-                <element signature="e#3047#3460#0" />
-                <element signature="e#3481#3909#0" />
-                <element signature="e#3926#4234#0" />
-                <element signature="e#4253#4736#0" />
-                <element signature="e#4765#5089#0" />
-                <element signature="e#5108#5583#0" />
-                <element signature="e#5603#6166#0" />
-                <element signature="e#6185#6741#0" />
-                <element signature="e#6765#7417#0" />
-                <element signature="e#7434#7827#0" />
-                <element signature="e#7846#8608#0" />
-                <element signature="e#8623#9136#0" />
-                <element signature="e#9151#9712#0" />
-                <element signature="e#9731#10372#0" />
-                <element signature="e#10402#10899#0" />
-                <element signature="e#10916#11236#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -346,7 +261,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24716000" />
+    <option name="totallyTimeSpent" value="24751000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -359,7 +274,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.27760968" />
       <window_info id="Favorites" order="1" side_tool="true" weight="0.32980332" />
@@ -518,39 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - Dictionary World Map.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="292" column="112" selection-start-line="291" selection-start-column="23" selection-end-line="292" selection-end-column="112" />
-          <folding>
-            <element signature="e#26#330#0" />
-            <element signature="e#356#696#0" />
-            <element signature="e#711#1050#0" />
-            <element signature="e#1071#1357#0" />
-            <element signature="e#1377#1661#0" />
-            <element signature="e#1689#2117#0" />
-            <element signature="e#2136#2737#0" />
-            <element signature="e#2759#3023#0" />
-            <element signature="e#3047#3460#0" />
-            <element signature="e#3481#3909#0" />
-            <element signature="e#3926#4234#0" />
-            <element signature="e#4253#4736#0" />
-            <element signature="e#4765#5089#0" />
-            <element signature="e#5108#5583#0" />
-            <element signature="e#5603#6166#0" />
-            <element signature="e#6185#6741#0" />
-            <element signature="e#6765#7417#0" />
-            <element signature="e#7434#7827#0" />
-            <element signature="e#7846#8608#0" />
-            <element signature="e#8623#9136#0" />
-            <element signature="e#9151#9712#0" />
-            <element signature="e#9731#10372#0" />
-            <element signature="e#10402#10899#0" />
-            <element signature="e#10916#11236#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - World Map OOP.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
@@ -594,6 +475,39 @@
             <element signature="e#9688#9798#0" />
             <element signature="e#9916#10034#0" />
             <element signature="e#10035#10172#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Anai S.L. Lopez - Dictionary World Map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="292" column="112" selection-start-line="291" selection-start-column="23" selection-end-line="292" selection-end-column="112" />
+          <folding>
+            <element signature="e#26#330#0" />
+            <element signature="e#356#696#0" />
+            <element signature="e#711#1050#0" />
+            <element signature="e#1071#1357#0" />
+            <element signature="e#1377#1661#0" />
+            <element signature="e#1689#2117#0" />
+            <element signature="e#2136#2737#0" />
+            <element signature="e#2759#3023#0" />
+            <element signature="e#3047#3460#0" />
+            <element signature="e#3481#3909#0" />
+            <element signature="e#3926#4234#0" />
+            <element signature="e#4253#4736#0" />
+            <element signature="e#4765#5089#0" />
+            <element signature="e#5108#5583#0" />
+            <element signature="e#5603#6166#0" />
+            <element signature="e#6185#6741#0" />
+            <element signature="e#6765#7417#0" />
+            <element signature="e#7434#7827#0" />
+            <element signature="e#7846#8608#0" />
+            <element signature="e#8623#9136#0" />
+            <element signature="e#9151#9712#0" />
+            <element signature="e#9731#10372#0" />
+            <element signature="e#10402#10899#0" />
+            <element signature="e#10916#11236#0" />
           </folding>
         </state>
       </provider>
