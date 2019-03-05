@@ -16,6 +16,50 @@
     <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___Characters.coverage" NAME="Anai S.L. Lopez - Characters Coverage Results" MODIFIED="1551414604301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/notes$Anai_S_L__Lopez___World_Map_OOP.coverage" NAME="Anai S.L. Lopez - World Map OOP Coverage Results" MODIFIED="1551415221650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
+  <component name="FUSProjectUsageTrigger">
+    <session id="98169467">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.31" value="2" />
+          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.54" value="2" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.69" value="1" />
+          <entry key="project.opened" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="62" />
+          <entry key="py" value="8035" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="62" />
+          <entry key="Python" value="8035" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="49" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="49" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="notes" />
+=======
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -29,6 +73,7 @@
     </option>
     <expand />
     <select />
+>>>>>>> 803435ec77704e47470cfe5be3ef2ea07a13124b
   </component>
   <component name="FileEditorManager">
     <leaf />
@@ -273,7 +318,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+=======
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+<<<<<<< HEAD
+=======
+    <editor active="true" />
+>>>>>>> 803435ec77704e47470cfe5be3ef2ea07a13124b
+>>>>>>> dd67fa0a6e0eb65024a843fe08762ca1b2ee56bb
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.27760968" />
       <window_info id="Favorites" order="1" side_tool="true" weight="0.32980332" />
