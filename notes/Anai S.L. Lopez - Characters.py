@@ -1,3 +1,6 @@
+Social_Level = 0
+
+
 class Teacher(object):
     def __init__(self, name, description):
         self.name = name
@@ -13,13 +16,15 @@ class Teacher(object):
         print("You greeted the Director in a ", answer, "manner.")
         print("DIRECTOR:")
         if answer.upper() == greetings[0]:
-            print("Morning! Hope you're ready for a productive day today! Do your best on the field today!")
+            print("'Morning! Hope you're ready for a productive day today! Do your best on the field today!'")
+            print("You walked away feeling even happier than before! You're determined to do your best!")
         elif answer.upper() == greetings[1]:
-            print("Not enough rest? Make sure to step out of practice if you're not feeling well. Get some water too"
-                  " when you need it.")
+            print("'Not enough rest? Make sure to step out of practice if you're not feeling well. Get some water too"
+                  " when you need it.'")
+            print("Hmm, that gave you enough motivation fot the day, how nice.")
         elif answer.upper() == greetings[2]:
-            print("Oh? Where's that enthusiasm? C'mon get some water and get ready for practice like you've never done"
-                  " before!")
+            print("'Oh? Where's that enthusiasm? C'mon get some water and get ready for practice like you've never done"
+                  " before!'")
         else:
             print("That's not a greeting!")
             print("Well... the director is gone now..")
