@@ -46,7 +46,7 @@ class SectionLeader(object):
             print("Hm.. That's probably the nicest they'll be to you for now.")
         elif answer.upper() == greetings2[1]:
             print("'Uh, is something wrong? I'm bad at talking to newbies so if something is wrong step out of practice"
-                  "when you need to.")
+                  " when you need to.")
             print("...")
             print("How nice of them!")
         elif answer.upper() == greetings2[2]:
@@ -58,12 +58,46 @@ class SectionLeader(object):
             print("I don't know what you were trying to say and nor either did your section leader...")
 
 
+class Student(object):
+    def __init__(self, name, description):
+        self.name = name
+        self.description = description
+
+    def talk_to(self):
+        greetings3 = ['HAPPY', 'SAD', 'AVOID']
+        print("It's another student!")
+        print(Andrea.name)
+        print(Andrea.description)
+        print("How do you greet her? happy? sad? or avoid?")
+        answer = input(">_")
+        print("You greeted your them in a", answer, "manner.")
+        print("ANDREA:")
+        if answer.upper() == greetings3[0]:
+            print("'Oh hey there! Hope you're ready for today! Do your best!'")
+            print("Huh.. You seem hyped, she's great at cheering someone up! Well don't fail her, do your best!")
+        elif answer.upper() == greetings3[1]:
+            print("'Is something wrong? Put yourself first! If you step out i'll play 2x as loud for you!'")
+            print(".. Stepping out won't be needed, seems her words cheered you up right off the bat!")
+        elif answer.upper() == greetings3[2]:
+            print("'...'")
+            print("...")
+            print("Hm,, that was rude,, Say hi to her next time >:-(")
+        else:
+            print("'...?'")
+            print("huh.. she's in your section, don't be shy! Say hi to her next time.")
+
+
 Director = Teacher("Band Director", "A very nice, funny, and welcoming man. Very talented when it comes to music and "
                                     "knowledge on how to care for cats too.")
 Sax_Section_Leader = SectionLeader("Sax Section Leader", "You are part of the saxes, therefore under the lead of The "
                                    "Sax Section leader! Incredibly talented, you don't see them often but they always "
                                    "get work done.")
+Andrea = Student("Andrea", "A really nice freshmen. She's a first year too, but her confidence and optimism cheers "
+                           "you to do your best as well!")
 Director.talk_to()
 print("You walked away from your director..")
 print("Oh who's that?")
 Sax_Section_Leader.talk_to()
+print("Oh hey there's a student..  who is it..?")
+print("Oh it's a sax member!!")
+Andrea.talk_to()
