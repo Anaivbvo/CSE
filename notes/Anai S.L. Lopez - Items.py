@@ -1,8 +1,14 @@
-health_level = 50
-social_level = 0
-reed_harm = False
+HealthLevel = 50
+SocialLevel = 0
 
 # Consumable
+
+
+class Reed(object):
+    def __init__(self, name, description,):
+        self.name = name
+        self.description = description
+        self.ReedHarm = False
 
 
 class Consumable(object):
@@ -10,30 +16,43 @@ class Consumable(object):
         self.name = name
 
 
-class Sweet(Consumable):
-    def __init__(self, name):
-        super(Sweet, self).__init__(name)
-
-
-class AppleSlices(Sweet):
-    def __init__(self, name, reed_harm):
+class AppleSlices(Consumable):
+    def __init__(self, name, description, health, harm):
         super(AppleSlices, self).__init__(name)
-        self.reed_harm = True
-
-
-# Equipment
-class Equipment(object):
-    def __init__(self, name):
         self.name = name
+        self.description = description
+        self.health = health
+        self.harm = harm
 
 
-# Instruments
-class Instruments(object):
-    def __init__(self, name):
+class Gum(Consumable):
+    def __init__(self, name, description, health):
+        super(Gum, self).__init__(name)
         self.name = name
+        self.description = description
+        self.health = health
+        self.ReedHarm = False
 
+    def chew_gum(self):
+        ReedHarm = True
+        HealthLevel =+ 2
 
-# Papers
-class Papers(object):
-    def __init__(self, name):
+class Noodle(Consumable):
+    def __init__(self, name, description, health, harm):
+        super(Noodle, self).__init__(name)
         self.name = name
+        self.description = description
+        self.health = health
+        self.harm = harm
+
+
+class Fries(Consumable):
+    def __init__(self, name, description, health, harm):
+        super(Fries, self).__init__(name)
+        self.name = name
+        self.description = description
+        self.health = health
+        self.harm = harm
+
+
+MyReed = Reed("My reed", "just a reed")
