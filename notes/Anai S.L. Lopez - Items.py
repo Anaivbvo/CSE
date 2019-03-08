@@ -8,12 +8,15 @@ class Reed(object):
     def __init__(self, name, description,):
         self.name = name
         self.description = description
-        self.ReedHarm = False
+        self.ReedHarm = 20
 
 
 class Consumable(object):
     def __init__(self, name):
         self.name = name
+
+    def eat(self):
+        MyReed.
 
 
 class AppleSlices(Consumable):
@@ -33,9 +36,6 @@ class Gum(Consumable):
         self.health = health
         self.ReedHarm = False
 
-    def chew_gum(self):
-        ReedHarm = True
-        HealthLevel =+ 2
 
 class Noodle(Consumable):
     def __init__(self, name, description, health, harm):
