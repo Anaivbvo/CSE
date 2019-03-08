@@ -1,22 +1,20 @@
-HealthLevel = 50
+HealthLevel = 100
 SocialLevel = 0
+ReedLevel = 100
 
 # Consumable
 
 
 class Reed(object):
-    def __init__(self, name, description,):
+    def __init__(self, name, description):
         self.name = name
         self.description = description
-        self.ReedHarm = 20
+        self.ReedHarm = False
 
 
 class Consumable(object):
     def __init__(self, name):
         self.name = name
-
-    def eat(self):
-        MyReed.
 
 
 class AppleSlices(Consumable):
@@ -55,4 +53,3 @@ class Fries(Consumable):
         self.harm = harm
 
 
-MyReed = Reed("My reed", "just a reed")
