@@ -1,8 +1,12 @@
+import random
+
+
 # Player
 class Player(object):
-    def __init__(self, name, description):
+    def __init__(self, name, description, rank):
         self.name = name
         self.description = description
+        self.rank = rank
         self.health = health
         self.social = social
         self.hydration = hydration
@@ -17,14 +21,7 @@ class Character(object):
         self.rank = rank
         self.social_plus = social_plus
         self.inventory = []
-
-
-class ItemShop(Character):
-    def __init__(self, name, description, location, selling, wants):
-        super(Character, self).__init__(name, description)
-        self.location = location
-        self.selling = selling
-        self.wants = wants
+        self.want = []
 
     def trade(self):
         print("((What would like from ", Character.name, "?))")
@@ -60,3 +57,10 @@ class ItemShop(Character):
         elif wanted_item not in Character.inventory:
             print(Character.name, ":")
             print("'Sorry pal, don't have that on me right now. You can try asking others.")
+
+
+me = Player("me", "it's me", "freshmen")
+me.inventory = ["hat", "glasses", "sax_reed"]
+upperclassmen = Character("sophomore", "they're in your section, a 2nd year.", "sophomore")
+upperclassmen.inventory = ["cork_grease", "sax_strap", "water"]
+upperclassmen.trade()
