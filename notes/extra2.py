@@ -3,13 +3,11 @@ import random
 
 # Player
 class Player(object):
-    def __init__(self, name, description, rank):
+    def __init__(self, name, description, rank, social):
         self.name = name
         self.description = description
         self.rank = rank
-        self.health = health
         self.social = social
-        self.hydration = hydration
         self.inventory = []
 
 
@@ -19,9 +17,7 @@ class Character(object):
         self.name = name
         self.description = description
         self.rank = rank
-        self.social_plus = social_plus
         self.inventory = []
-        self.want = []
 
     def trade(self):
         print("((What would like from ", Character.name, "?))")
@@ -45,6 +41,8 @@ class Character(object):
                     Player.inventory.append(wanted_item)
                     Character.inventory.remove(wanted_item)
                     print("((Awesome! You know have ", wanted_item, " but lost ", character_want, ".")
+                    Player.social += 5
+                    print("((You gained plus 5 on your social level!")
                 elif answer.upper() in no:
                     print(Character.name, ":")
                     print("'Aw that's too bad, well maybe someone else might have the item for a different price.")
@@ -59,7 +57,7 @@ class Character(object):
             print("'Sorry pal, don't have that on me right now. You can try asking others.")
 
 
-me = Player("me", "it's me", "freshmen")
+me = Player("me", "it's me", "freshmen", 10)
 me.inventory = ["hat", "glasses", "sax_reed"]
 upperclassmen = Character("sophomore", "they're in your section, a 2nd year.", "sophomore")
 upperclassmen.inventory = ["cork_grease", "sax_strap", "water"]
