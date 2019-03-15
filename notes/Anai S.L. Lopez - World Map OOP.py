@@ -1,3 +1,6 @@
+import extra2
+
+
 class Room(object):
     def __init__(self, name, description, av_dir, north=None, north_east=None, north_west=None,
                  south=None, south_east=None, south_west=None, east=None, west=None):
@@ -206,11 +209,18 @@ while playing:
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
-    elif command.upper() in directions:
+    if command.lower() in ['i', 'inventory']:
+        print(extra2.Player.inventory)
+    if command.lower() in ['trade', 't']:
+        extra2.upperclassmen.trade()
+
+    if command.upper() in directions:
         try:
-            next_room = player.find_next_room(command)
-            player.move(next_room)
+            room_name = getattr(player.current_location, command)
+            room_object = globals()[room_name]
+
+            player.move(room_object)
         except KeyError:
-            print("I can't go that way")
+            print("")
     else:
-        print("Command Not Found")
+        print("die")
