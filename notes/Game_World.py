@@ -200,7 +200,7 @@ OUTER_ORCHESTRA.north_west = LOUNGE_HALL
 player = Player(TREE1)
 
 playing = True
-directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'NORTH_EAST', 'NORTH_WEST', 'SOUTH_EAST', 'SOUTH_WEST']
+directions = ['north', 'south', 'east', 'west', 'north_east', 'north_west', 'south_east', 'south_west']
 
 while playing:
     print(player.current_location.name)
@@ -213,12 +213,12 @@ while playing:
         print(Game_Characters.Person.inventory)
     if command.lower() in ['trade', 't']:
         Game_Characters.upperclassmen.trade()
-    if command.upper() in directions:
+    if command.lower() in directions:
         try:
             room_name = getattr(player.current_location, command)
             room_object = globals()[room_name]
             player.move(room_object)
         except KeyError:
-            print("")
+            print("error")
     else:
-        print("die")
+        print("can't go that way")
