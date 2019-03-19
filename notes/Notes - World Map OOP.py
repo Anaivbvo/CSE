@@ -28,6 +28,7 @@ class Player(object):
         name_of_room = getattr(self.current_location, direction)
         return globals()[name_of_room]
 
+
 # Option 1 - Define as we go
 # R19A = Room("Mr. Wiebe's Room")
 # parking_lot = Room("Parking Lot", None, R19A)
@@ -35,8 +36,6 @@ class Player(object):
 # R19A.north = parking_lot
 
 # Option 2 - Set all at once, modify controller
-
-
 R19A = Room("Mr. Wiebe's Room", "This is where you are now", 'parking_lot')
 parking_lot = Room("Parking Lot", "There are a few cars parked here", None, "R19A")
 

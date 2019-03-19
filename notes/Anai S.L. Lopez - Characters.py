@@ -1,4 +1,7 @@
-Social_Level = 0
+class Player(object):
+    def __init__(self, name, social):
+        self.name = name
+        self.social = social
 
 
 class Teacher(object):
@@ -49,15 +52,24 @@ class SectionLeader(object):
                   "soon'")
             print("...")
             print("Hm.. That's probably the nicest they'll be to you for now.")
+            Player.social = + 5
+            print("you gained +5 in your social level")
+            print("social level ::", Player.social)
         elif answer.upper() == greetings2[1]:
             print("'Uh, is something wrong? I'm bad at talking to newbies so if something is wrong step out of practice"
                   " when you need to.")
             print("...")
             print("How nice of them!")
+            Player.social = + 5
+            print("you gained +5 in your social level")
+            print("social level ::", Player.social)
         elif answer.upper() == greetings2[2]:
             print("'...'")
             print("...")
             print("Hm,, you made it a bit too obvious..")
+            Player.social = - 3
+            print("you gained -3 in your social level")
+            print("social level ::", Player.social)
         else:
             print("'...?'")
             print("I don't know what you were trying to say and nor either did your section leader...")
@@ -80,18 +92,28 @@ class Student(object):
         if answer.upper() == greetings3[0]:
             print("'Oh hey there! Hope you're ready for today! Do your best!'")
             print("Huh.. You seem hyped, she's great at cheering someone up! Well don't fail her, do your best!")
+            Player.social = + 5
+            print("you gained +5 in your social level")
+            print("social level ::", Player.social)
         elif answer.upper() == greetings3[1]:
             print("'Is something wrong? Put yourself first! If you step out i'll play 2x as loud for you!'")
             print(".. Stepping out won't be needed, seems her words cheered you up right off the bat!")
+            Player.social = + 5
+            print("you gained +5 in your social level")
+            print("social level ::", Player.social)
         elif answer.upper() == greetings3[2]:
             print("'...'")
             print("...")
             print("Hm,, that was rude,, Say hi to her next time >:-(")
+            Player.social = - 3
+            print("you gained -3 in your social level")
+            print("social level ::", Player.social)
         else:
             print("'...?'")
-            print("huh.. she's in your section, don't be shy! Say hi to her next time.")
+            print("huh.. she's in your section, don't be shy! oh she left.. Say hi to her next time.")
 
 
+me = Player("me", 10)
 Director = Teacher("Band Director", "A very nice, funny, and welcoming man. Very talented when it comes to music and "
                                     "knowledge on how to care for cats too.")
 Sax_Section_Leader = SectionLeader("Sax Section Leader", "You are part of the saxes, therefore under the lead of The "
