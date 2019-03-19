@@ -2,16 +2,16 @@
 class Player(object):
     def __init__(self, name):
         self.name = name
-        self.health = 0
+        self.health = 10
         self.social = 10
         self.hydration = 20
         self.inventory = []
 
-    def health_gained(self, amount):
-        self.health += amount
+    def health_gained(self, amount1):
+        self.health += amount1
 
-    def hydration_gained(self, amount1):
-        self.hydration += amount1
+    def hydration_gained(self, amount2):
+        self.hydration += amount2
 
     def eat(self):
         print("Do you want to eat this item?")
@@ -24,66 +24,57 @@ class Player(object):
         if answer.upper() in ['NO']:
             print("You have decided to not eat the ", Consumable, ".")
 
+    def hydration_level(self):
+        if self.hydration < 5:
+            print("You're hydration levels are low! Be sure you are drinking the necessary amount of water.")
+            print("this year's summer is hotter than usual. Drink water next time you have the chance.")
+            print(self.hydration)
 
-# Consumable
-class Consumable(object):
-    def __init__(self, name, health, hydration):
-        super(Consumable, self).__init__(name)
-        self.health = health
-        self.hydration = hydration
+    def health_level(self):
+        if self.health < 5:
+            print("You are running low on health! make sure you're eating properly and staying hydrated!")
+            print(self.health)
+
+    def passing_out(self):
 
 
-# Solids
-class Apples(Consumable):
+# Consumables
+
+class Apple(object):
     def __init__(self, name, description):
-        super(Apples, self).__init__(name, health=12, hydration=2)
         self.name = name
         self.description = description
-        self.amount = Player.health + 12
-        self.amount1 = Player.hydration + 2
+        self.amount1 = 5
+        self.amount2 = 3
 
 
-class Gum(Consumable):
+class Fries(object):
     def __init__(self, name, description):
-        super(Gum, self).__init__(name, health=0, hydration=0)
         self.name = name
         self.description = description
-        self.amount = Player.health + 0
-        self.amount1 = Player.hydration + 0
-
-
-class Noodles(Consumable):
-    def __init__(self, name, description):
-        super(Noodles, self).__init__(name, health=10, hydration=4)
-        self.name = name
-        self.description = description
-        self.amount = Player.health + 10
-        self.amount1 = Player.hydration + 4
-
-
-class Fries(Consumable):
-    def __init__(self, name, description):
-        super(Fries, self).__init__(name, health=8, hydration=-5)
-        self.name = name
-        self.description = description
-        self.amount = Player.health + 4
-        self.amount1 = Player.hydration - 5
+        self.amount1 = 7
+        self.amount2 = -3
 
 
 # Liquids
-class FreshWater(Consumable):
+
+class FreshWater(object):
     def __init__(self, name, description):
-        super(FreshWater, self).__init__(name, health=0, hydration=15)
         self.name = name
         self.description = description
-        self.amount = Player.health + 0
-        self.amount1 = Player.hydration + 15
+        self.amount1 = 0
+        self.amount2 = 10
 
 
-class FountainWater(Consumable):
+class SportsDrink(object):
     def __init__(self, name, description):
-        super(FountainWater, self).__init__(name, health=0, hydration=5)
         self.name = name
         self.description = description
-        self.amount = Player.health + 0
-        self.amount1 = Player.hydration + 5
+        self.amount1 = 0
+        self.amount2 = 12
+
+
+# Health items
+
+
+class SunScreen(object)
