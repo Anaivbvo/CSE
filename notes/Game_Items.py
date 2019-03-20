@@ -36,6 +36,11 @@ class Player(object):
             print(self.health)
 
     def passing_out(self):
+        if self.hydration and self.health == 0:
+            print("You've passed out.")
+            print("Both your health and hydration levels were low.")
+            print("You have been sent home. Due to not being able to survive through the camp, you will not be able to"
+                  " attend camp.")
 
 
 # Consumables
