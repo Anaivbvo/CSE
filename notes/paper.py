@@ -95,3 +95,28 @@ print(Cody.name, "-", Cody.description, "-", Cody.rank)
 print("You ask Cody in search for paper!")
 Cody.inventory = ['water', 'alto reed 3.5', 'neck strap', 'cap', 'flip book']
 Cody.trade()
+print("Seems like they didn't have it either.. You go look for one last person... your section leader..")
+
+
+class Characters(object):
+    def __init__(self, name, description, rank, sorry, alright):
+        self.name = name
+        self.description = description
+        self.rank = rank
+        self.sorry = sorry
+        self.alright = alright
+        self.inventory = []
+
+    def trade(self):
+        print("((What would like from ", self.name, "?))")
+        print(self.inventory)
+        wanted_item = input(">_")
+        if wanted_item.upper() in ['PAPER']:
+            print(self.name, ":")
+            print("Haha sorry no can do!")
+            print("The director asked me first for paper! I'm on my way to giving ")
+
+Andrew = Characters("Andrew", "Senior Section Leader Andrew", "Senior", "Hm,", "Alright,")
+print("You ask Andrew in search for paper!")
+Andrew.inventory = ['alto reed 4', 'paper', '1st chair music', 'water', 'neck strap']
+Andrew.trade()
