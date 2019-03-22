@@ -38,8 +38,8 @@ class Player(object):
         return globals()[name_of_room]
 
 
-TREE1 = Room("Band_Tree", "This is the nearest tree to the band room. Nothing too special about it.", "WEST: "
-             "Hang_Out_Tree, NORTH_EAST: Outside_Band_room")
+TREE1 = Room("Band_Tree", "This is the nearest tree to the band room. Nothing too special about it.", "west: "
+             "Hang_Out_Tree, north_east: Outside_Band_room")
 TREE2 = Room("Hangout_Tree", "It's the usual tree we hang out at. It has the best shade range, not to big and "
                              "definitely not to small. ", "WEST: Lunch_Table, EAST: Band_Tree")
 TABLE = Room("Lunch_Table", "This is the usual lunch table we hang out at. Enough for our circle to hang out at. "
@@ -200,7 +200,7 @@ OUTER_ORCHESTRA.north_west = LOUNGE_HALL
 player = Player(TREE1)
 
 playing = True
-directions = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'NORTH_EAST', 'NORTH_WEST', 'SOUTH_EAST', 'SOUTH_WEST']
+directions = ['north', 'south', 'east', 'west', 'north_east', 'north_west', 'south_east', 'south_west']
 
 while playing:
     print(player.current_location.name)
@@ -210,17 +210,12 @@ while playing:
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False
     if command.lower() in ['i', 'inventory']:
-        print(extra2.Player.inventory)
-    if command.lower() in ['trade', 't']:
-        extra2.upperclassmen.trade()
-
-    if command.upper() in directions:
+        print(player.inventory)
+    if command.lower() in directions:
         try:
-            room_name = getattr(player.current_location, command)
+            room_name = getattr(player.current_location, command.lower())
             room_object = globals()[room_name]
 
             player.move(room_object)
         except KeyError:
             print("")
-    else:
-        print("die")

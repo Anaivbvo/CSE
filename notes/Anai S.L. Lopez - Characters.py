@@ -9,7 +9,8 @@ class Teacher(object):
         self.name = name
         self.description = description
 
-    def talk_to(self):
+    @staticmethod
+    def talk_to():
         greetings = ['CHEERFUL', 'TIRED', 'NEUTRAL']
         print("There's the director!")
         print(Director.name)
@@ -38,7 +39,8 @@ class SectionLeader(object):
         self.name = name
         self.description = description
 
-    def talk_to(self):
+    @staticmethod
+    def talk_to():
         greetings2 = ['HAPPY', 'SAD', 'AVOID']
         print("There's your section leader!")
         print(Sax_Section_Leader.name)
@@ -52,24 +54,24 @@ class SectionLeader(object):
                   "soon'")
             print("...")
             print("Hm.. That's probably the nicest they'll be to you for now.")
-            Player.social = + 5
+            me.social += 5
             print("you gained +5 in your social level")
-            print("social level ::", Player.social)
+            print("social level ::", me.social)
         elif answer.upper() == greetings2[1]:
             print("'Uh, is something wrong? I'm bad at talking to newbies so if something is wrong step out of practice"
                   " when you need to.")
             print("...")
             print("How nice of them!")
-            Player.social = + 5
+            me.social += 5
             print("you gained +5 in your social level")
-            print("social level ::", Player.social)
+            print("social level ::", me.social)
         elif answer.upper() == greetings2[2]:
             print("'...'")
             print("...")
             print("Hm,, you made it a bit too obvious..")
-            Player.social = - 3
+            me.social -= 3
             print("you gained -3 in your social level")
-            print("social level ::", Player.social)
+            print("social level ::", me.social)
         else:
             print("'...?'")
             print("I don't know what you were trying to say and nor either did your section leader...")
@@ -80,7 +82,8 @@ class Student(object):
         self.name = name
         self.description = description
 
-    def talk_to(self):
+    @staticmethod
+    def talk_to():
         greetings3 = ['HAPPY', 'SAD', 'AVOID']
         print("It's another student!")
         print(Andrea.name)
@@ -92,22 +95,22 @@ class Student(object):
         if answer.upper() == greetings3[0]:
             print("'Oh hey there! Hope you're ready for today! Do your best!'")
             print("Huh.. You seem hyped, she's great at cheering someone up! Well don't fail her, do your best!")
-            Player.social = + 5
+            me.social += 5
             print("you gained +5 in your social level")
-            print("social level ::", Player.social)
+            print("social level ::", me.social)
         elif answer.upper() == greetings3[1]:
             print("'Is something wrong? Put yourself first! If you step out i'll play 2x as loud for you!'")
             print(".. Stepping out won't be needed, seems her words cheered you up right off the bat!")
-            Player.social = + 5
+            me.social += 5
             print("you gained +5 in your social level")
-            print("social level ::", Player.social)
+            print("social level ::", me.social)
         elif answer.upper() == greetings3[2]:
             print("'...'")
             print("...")
             print("Hm,, that was rude,, Say hi to her next time >:-(")
-            Player.social = - 3
+            me.social -= 3
             print("you gained -3 in your social level")
-            print("social level ::", Player.social)
+            print("social level ::", me.social)
         else:
             print("'...?'")
             print("huh.. she's in your section, don't be shy! oh she left.. Say hi to her next time.")
