@@ -156,7 +156,6 @@ class Characters(object):
                     print(self.sorry, "you're better off asking someone else..")
 
 
-
 Andrew = Characters("Andrew", "Senior Section Leader Andrew", "Senior", "Hm,", "Alright,")
 print("You ask Andrew in search for paper!")
 Andrew.inventory = ['alto reed 4', 'paper', '1st chair music', 'water', 'neck strap']

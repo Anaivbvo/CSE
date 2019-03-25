@@ -214,8 +214,6 @@ while playing:
     if command.lower() in directions:
         try:
             room_name = getattr(player.current_location, command.lower())
-            room_object = globals()[room_name]
-
-            player.move(room_object)
+            player.move(room_name)
         except KeyError:
-            print("")
+            print("Error: Can't go that way")
