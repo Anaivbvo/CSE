@@ -116,6 +116,7 @@ class Characters(object):
             print("Haha sorry no can do!")
             print("The director asked me first for paper! I'm on my way to giving ")
 
+
 Andrew = Characters("Andrew", "Senior Section Leader Andrew", "Senior", "Hm,", "Alright,")
 print("You ask Andrew in search for paper!")
 Andrew.inventory = ['alto reed 4', 'paper', '1st chair music', 'water', 'neck strap']
