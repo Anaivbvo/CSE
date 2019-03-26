@@ -212,6 +212,8 @@ while playing:
         playing = False
     if command.lower() in ['i', 'inventory']:
         print(player.inventory)
+    if command.lower() in ['t', 'trade']:
+        Characters.trade
     if command.lower() in directions:
         try:
             room_name = getattr(player.current_location, command.lower())
