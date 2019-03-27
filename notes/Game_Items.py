@@ -58,3 +58,9 @@ class Items(object):
 
 
 Water = ConsumableLiquid("Water", "Fresh cold water! perfect for a hot day! a plus 20 on your hydration level!", 20)
+Milk = ConsumableLiquid("Milk", "School milk. It's cold too.", -1)
+Arizona = ConsumableLiquid("Arizona", "nayeli", 5)
+GrossSamwitch = ConsumableSolid("sandwich", "a chicken sandwich from the school food.", -5)
+print("%s: %s" % (Water.name, Water.description))
+Water.drink()
+GrossSamwitch.eat()
