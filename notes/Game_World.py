@@ -1,5 +1,4 @@
 import Game_Items
-import Game_Characters
 
 
 class Room(object):
@@ -213,7 +212,7 @@ while playing:
     if command.lower() in ['i', 'inventory']:
         print(player.inventory)
     if command.lower() in ['t', 'trade']:
-        Characters.trade
+        Game_Items(Max.trade())
     if command.lower() in directions:
         try:
             room_name = getattr(player.current_location, command.lower())
