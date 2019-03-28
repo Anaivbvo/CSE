@@ -138,7 +138,8 @@ class Characters(object):
 
     def trade(self):
         print("((What would like from ", self.name, "?))")
-        print(self.inventory)
+        for num, item in enumerate(self.inventory):
+            print(str(num + 1) + ": " + item.name)
         wanted_item = input(">_")
         if wanted_item in self.inventory:
             character_want = random.choice(me.inventory)
