@@ -1,6 +1,3 @@
-import Game_Items
-
-
 class Room(object):
     def __init__(self, name, description, av_dir, north=None, north_east=None, north_west=None,
                  south=None, south_east=None, south_west=None, east=None, west=None):
@@ -212,10 +209,11 @@ while playing:
     if command.lower() in ['i', 'inventory']:
         print(player.inventory)
     if command.lower() in ['t', 'trade']:
-        Game_Items(Max.trade())
+        print(" ")
     if command.lower() in directions:
         try:
             room_name = getattr(player.current_location, command.lower())
             player.move(room_name)
         except KeyError:
             print("Error: Can't go that way")
+    if command.lower() 
