@@ -49,6 +49,17 @@ class Items(object):
         self.name = name
         self.description = description
 
+    def pickup(self):
+        print("Would you like to pick up this item?")
+        answer = input(">_")
+        if answer.upper() in ['YES']:
+            me.inventory.append(self)
+            print("you picked up:", self.name)
+            print(me.inventory)
+        if answer.upper() in ['NO']:
+            print("you did not pick up:", self.name)
+            print(me.inventory)
+
 
 class ConsumableLiquid(Items):
     def __init__(self, name, description, hydration_plus, social_plus):

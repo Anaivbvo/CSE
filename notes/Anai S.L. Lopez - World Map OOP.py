@@ -2,7 +2,7 @@ import extra2
 
 
 class Room(object):
-    def __init__(self, name, description, av_dir, north=None, north_east=None, north_west=None,
+    def __init__(self, name, description, av_dir, long_desc, north=None, north_east=None, north_west=None,
                  south=None, south_east=None, south_west=None, east=None, west=None):
         self.name = name
         self.north = north
@@ -15,6 +15,7 @@ class Room(object):
         self.west = west
         self.description = description
         self.av_dir = av_dir
+        self.long_desc = long_desc
 
 
 class Player(object):
@@ -39,21 +40,33 @@ class Player(object):
 
 
 TREE1 = Room("Band_Tree", "This is the nearest tree to the band room. Nothing too special about it.", "west: "
-             "Hang_Out_Tree, north_east: Outside_Band_room")
-TREE2 = Room("Hangout_Tree", "It's the usual tree we hang out at. It has the best shade range, not to big and "
-                             "definitely not to small. ", "WEST: Lunch_Table, EAST: Band_Tree")
+             "Hang_Out_Tree, north_east: Outside_Band_room", "This is the nearest tree to the band room. A lot of "
+             "upperclassmen like to hang around here before school starts. You can often find junior to senior "
+             "upperclassmen here.")
+TREE2 = Room("Hangout_Tree", "It's the usual tree we hang out at. It has the best shade range, not too big and "
+             "definitely not to small. ", "WEST: Lunch_Table, EAST: Band_Tree", "You'de expect there to be a lot of "
+             "members hanging here.. Though rarely anyone tends to show up here. That's why it's our hang out tree. ")
 TABLE = Room("Lunch_Table", "This is the usual lunch table we hang out at. Enough for our circle to hang out at. "
-                            "Great shade as well.", "WEST: Amp, EAST: Hang_Out_Tree.")
+             "Great shade as well.", "WEST: Amp, EAST: Hang_Out_Tree.", "A small lunch table next to the hangout tree."
+             " It's a nice spot for lunch, near the band room as well as the cafeteria.")
 OUTER_STAGE = Room("Amp", "The amp. It's stairs and wide stage is the best place to have fun and rest at.", "NORTH: "
-                          "Back_Stage, EAST: Lunch_Table.", )
+                   "Back_Stage, EAST: Lunch_Table.", "Jazz tends to perform for school afternoon events here. Sometimes"
+                   " marching band gets to perform songs here as well. We have our visual square practices here. best "
+                   "hope no teachers come walking around.. The visuals are awkward to do around others.")
 BACK_STAGE = Room("Back_Stage", "It's the back of the stage. There's really no need to be here. ", "NORTH_WEST: "
-                                "Stage, NORTH_EAST: Stage.")
+                  "Stage, NORTH_EAST: Stage.", "Occasionally you can find theatre kids hanging around here.. Something"
+                  " had happened between band and theatre kids 2 years ago. Though uperclassmen won't mention what this"
+                  " event was about, it seems to have seperated these two groups into almost purely enemies.. You'd "
+                  "best hurry out of here..")
 STAGE = Room("Stage", "The school's main stage. Band performances, mainly concert happen here! When the lights shine "
-                      "on you, it's the best feeling! Oh, and theatre kids do their plays here to. ", "NORTH_WEST: "
-                      "Cafeteria, NORTH_EAST: Cafeteria.")
-CAFETERIA = Room("Cafeteria", "It's the school's cafeteria. The tables and chairs are put away, so we have sectionals "
-                 "in here sometimes. Well it depends on who gets here first, the saxes or anyone else.", "TH_WEST:"
-                 " Water_Fountains, NORTH: Janitor_Storage_Room, SOUTH_EAST: Band_Hall, NORTH_EAST: Band_Hall.")
+             "on you, it's the best feeling! Oh, and theatre kids do their plays here to. ", "NORTH_WEST: Cafeteria, "
+             "NORTH_EAST: Cafeteria.", "Saxes  tends to have sectionals here.. They tend to be the only ones close to "
+             "theatre kids compared to the rest of the band sections, that's why they get to have sectionals here "
+             "peacfully while theatre kids rehaearse and work on the stage.")
+CAFETERIA = Room("Cafeteria", "It's the school's cafeteria. The tables and chairs are put away most times.", "TH_WEST:"
+                 " Water_Fountains, NORTH: Janitor_Storage_Room, SOUTH_EAST: Band_Hall, NORTH_EAST: Band_Hall.", "A lot"
+                 " of sections tend to have practice here. It can get awkward with theatre kids appearing on stage. "
+                 "Only groups to show up here are horns and saxes. Tends to be fights on who gets to practice here.")
 JANITOR_ROOM = Room("Janitor's_Room", "It's the janitor's storage room. Nothing special about it since it's always "
                                       "closed.. ", "NORTH: Food_Booths.")
 WATER_FOUNTAIN = Room("Water_Fountains", " This room has no actual walls but it does have around 5 water fountains! "
@@ -203,9 +216,9 @@ playing = True
 directions = ['north', 'south', 'east', 'west', 'north_east', 'north_west', 'south_east', 'south_west']
 
 while playing:
-    print(player.current_location.name)
-    print(player.current_location.description)
-    print(player.current_location.av_dir)
+    print("-", player.current_location.name)
+    print("-", player.current_location.description)
+    print("-", player.current_location.av_dir)
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit']:
         playing = False

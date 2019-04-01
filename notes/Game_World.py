@@ -216,4 +216,6 @@ while playing:
             player.move(room_name)
         except KeyError:
             print("Error: Can't go that way")
-    if command.lower() 
+    else:
+        print("_")
+
