@@ -123,4 +123,3 @@ class Characters(object):
         print("-" * 1)
         print(self.group)
         print("-" * 1)
-

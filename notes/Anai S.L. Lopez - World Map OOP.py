@@ -68,21 +68,23 @@ CAFETERIA = Room("Cafeteria", "It's the school's cafeteria. The tables and chair
                  " of sections tend to have practice here. It can get awkward with theatre kids appearing on stage. "
                  "Only groups to show up here are horns and saxes. Tends to be fights on who gets to practice here.")
 JANITOR_ROOM = Room("Janitor's_Room", "It's the janitor's storage room. Nothing special about it since it's always "
-                                      "closed.. ", "NORTH: Food_Booths.")
-WATER_FOUNTAIN = Room("Water_Fountains", " This room has no actual walls but it does have around 5 water fountains! "
-                                         "This is the best place to get water at. Sure it's the farthest place from "
-                                         "the field, but it's worth it for the water.", "SOUTH: Cafeteria.")
-FOOD_BOOTHS = Room("Food_Booths", " This is where you receive the food from the lunch ladies. They have posters of how "
-                                  "to eat healthy and nutritious. The posters definitely speak better words than the "
-                                  "food itself.. ", "EAST: Cafeteria_Kitchen, SOUTH: Cafeteria.")
+                    "closed.. ", "NORTH: Food_Booths.", "This room tends to be closed majority of the time. It's "
+                    "rumored the lower brass have the key to the room.. Though that hasn'e been confirmed yet.")
+WATER_FOUNTAIN = Room("Water_Fountains", " This room has no actual walls but it does have around 5 water fountains!",
+                      "SOUTH: Cafeteria.", "This is the best place to get water at. It has the coldest water in the "
+                      "school. Though it is really far from the field, it's worth it for a cold drink.")
+FOOD_BOOTHS = Room("Food_Booths", " This is where you receive the food from the lunch ladies. ",
+                   "EAST: Cafeteria_Kitchen, SOUTH: Cafeteria.", "They have posters of how to eat healthy and "
+                   "nutritious. Sometime's the food seems to be a lot healthier than the food itself.. ")
 KITCHEN = Room("Cafeteria_Kitchen", "The cafeteria's kitchen. They never actually cook anything, but there is always "
-                                    "a lot of ingredients here.. ", "WEST: Food_Booths.")
-BAND_ROOM = Room("Band_Room_Entrance", "It's the band room! It's our home! Sure it may be your first year but that is "
-                                       "alright! The entrance is sometimes the best part! There is a fridge and a lost"
-                                       " and found box.", "NORTH: Director_Office, SOUTH: Drum-Line_Lockers, WEST: "
-                                                          "Main_Band_Room")
-OFFICE = Room("Director's_Office", "It's the director's office. There is music, trophies, awards, photos and... "
-                                   "dvd cases..?", "NORTH: Orchestra_Room, SOUTH: Band_Room entrance.")
+               "a lot of ingredients here.. ", "WEST: Food_Booths.", " There tends to be boxes of fruit snacks. A lot "
+               "of milk cartons and juice boxes here too.. Or at least tends to be. As for now.. It's quite empty.")
+BAND_ROOM = Room("Band_Room_Entrance", "It's the band room! There is a fridge and a lost and found box.", "NORTH: "
+                 "Director_Office, SOUTH: Drum-Line_Lockers, WEST: Main_Band_Room", "Once entering the band room, you "
+                 "feel at home. This is where you'll make all your best memories!")
+OFFICE = Room("Director's_Office", "It's the director's office. ", "NORTH: Orchestra_Room, SOUTH: Band_Room entrance.",
+              "There is music, trophies, awards, photos and... dvd cases?, No ones allowed in the office. Only Section"
+              "Leaders and Drum Majors are allowed to")
 DRUMLINE = Room("Drumline_Lockers", "It's the drum line locker rooms! They are what really hold the band into their "
                                     "top level. Being in their locker room is an honor! But unless you're a member or "
                                     "a god tier level junior/senior player, you best leave now...", "NORTH: Band_Room,"
@@ -224,6 +226,8 @@ while playing:
         playing = False
     if command.lower() in ['i', 'inventory']:
         print(player.inventory)
+    if command.lower() in ['check', 'c']:
+        print(player.current_location.long_desc)
     if command.lower() in directions:
         try:
             room_name = getattr(player.current_location, command.lower())

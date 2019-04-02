@@ -1,3 +1,6 @@
+import Game_Items
+
+
 class Room(object):
     def __init__(self, name, description, av_dir, north=None, north_east=None, north_west=None,
                  south=None, south_east=None, south_west=None, east=None, west=None):
@@ -12,6 +15,7 @@ class Room(object):
         self.west = west
         self.description = description
         self.av_dir = av_dir
+        self.object = []
 
 
 class Player(object):
