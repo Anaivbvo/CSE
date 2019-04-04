@@ -62,5 +62,4 @@ Milk = ConsumableLiquid("Milk", "School milk. It's cold too.", -1)
 Arizona = ConsumableLiquid("Arizona", "nayeli", 5)
 GrossSamwitch = ConsumableSolid("sandwich", "a chicken sandwich from the school food.", -5)
 print("%s: %s" % (Water.name, Water.description))
-Water.drink()
-GrossSamwitch.eat()
+
