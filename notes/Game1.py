@@ -1,6 +1,7 @@
 import random
 
-# Rooms ----------
+
+# Map---------
 class Room(object):
     def __init__(self, name, description, av_dir, long_desc, north=None, north_east=None, north_west=None,
                  south=None, south_east=None, south_west=None, east=None, west=None):
@@ -46,10 +47,10 @@ class Player(object):
         return globals()[name_of_room]
 
     def health_gained(self, amount1):
-        self.health += amount1
+        self.health_level += amount1
 
     def hydration_gained(self, amount2):
-        self.hydration += amount2
+        self.hydration_level += amount2
 
     @staticmethod
     def eat():
