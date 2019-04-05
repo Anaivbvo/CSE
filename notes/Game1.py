@@ -121,7 +121,8 @@ ALTO2A = Music("Second Chair Alto", "Music for the second chairs.. Which seems t
 
 
 class Characters(object):
-    def __init__(self, name, description, check, rank, grade, group, sorry, alright, them, last_year, this_year, section):
+    def __init__(self, name, description, check, rank, grade, group, sorry, alright, them, last_year, this_year,
+                 section):
         self.name = name
         self.description = description
         self.check = check
@@ -229,23 +230,44 @@ class Characters(object):
         print("-" * 1)
 
 
+# EXAMPLE -----
 Max = Characters("Max", "Senior High brass section leader", "Max is the high brass section leader. Not as energetic as"
                  " the sophomores but very energetic for a senior section leader. Vey talkative as he is proud of his"
                  " section. Has also been dating the 2nd guard captain for 3 years.", "Section Leader", "Senior/12th",
                  "High brass/Horns", "ah sorry,", "cool then,", "I'm Max! The high brass section leader! I've done "
                  "marching band all four years! Thanks to that i have the best girl by my side and the most talented "
-                 "section!", "Last year was great!.. That's a lie.. We won sweeps the year before, but for what ever "
-                 "reason we've all gone downhill.. Do your best this year! Who knows! We might win something above "
-                 "1st!", "This year seems to be starting really off.. Don't let that bother you though, just do your "
-                 "best!", "High brass? They're the best! We are the best!",)
+                 "section!", "Last year was great!.. That's a lie.. We won "
+                 "sweeps the year before, but for what ever reason we've all gone downhill.. Do your best this year! "
+                 "Who knows! We might win something above 1st!", "This year seems to be starting really off.. Don't "
+                 "let that bother you though, just do your best!", "High brass? They're the best! We're the best!",
+                 )
+# DRUM MAJORS -----
 DML = Characters("Drum Major L", "Parade Drum Major", "Incredibly talented Tenor player. Known for being an incredible"
-                 " player with knowledge in multiple instruments.", "Drum Major", "Junior/11th", "Saxes", "Sorry,",
+                 " player with knowledge in multiple instruments.", "Drum Major", "Junior/11th", "DM, Saxes", "Sorry,",
                  "Okay then,", "I'm L. The Parade Drum Major. I've been an alumni from the school's feeder. I've been "
                  "playing Tenor Sax since i was in 3rd grade and i've been getting better since then.", "Last year was "
-                 "my first year as parade drum major. I started off roughly but we all do, and we all improve.", "", "You can consider "
-                 "the Drum majors as their own section, but i came from the saxes. They're a good section. There's "
-                 "not much I can say about it.")
+                 "my first year as parade drum major. I started off roughly but we all do, and we all improve.", "This"
+                 " year seems to be off to a good start. I can't make much assumptions about it yet.", "You can "
+                 "consider the Drum majors as their own section, but i came from the saxes. They're a good section. "
+                 "There's not much I can say about it.")
 
+DMJ = Characters("Drum Major J", "Head Field Drum Major", "Incredibly talented player of multiple instruments. Has been"
+                 " head drum major since freshmen year. Rumors say he had made it to the top ranks due to an upper "
+                 "class men being related to him. Though records show no one with the same last name as him in the past"
+                 "8 years.", "Drum Major", "Junior/11th", "DM, Saxes", "Hm,", "Well,", "I'm J, the Head Drum major of "
+                 "the band.", "Last year we had won sweeps. I expect the band to win again, if the first years don't"
+                 " mess it up..", "I expect the first years to put their all into the band. If not, there's no reason"
+                 " for them being here.", "Section..? Thee's only 3 drum majors, you can consider that a section.")
+
+DMC = Characters("Drum Major C", "Event Drum Major", "He's incredibly nice and chill. Despite being drum major, he is"
+                 "more known for being very chill and a friend to most everyone. Plays multiple low instruments rather"
+                 " than high ones.", "Drum Major", "Junior/11th", "DM, Saxes, Brass", "Sorry bud,", "Cool!", "Hey, i'm"
+                 "C! I'm a brass player and sax player! Oh drum major too. I take control and lead during school and"
+                 "football game events! Lead bari player in most events when the other drum majors are the ones"
+                 " conducting too.", "Last year was my first year as drum major! A great time and i look forward to "
+                 "the rest of my years coming!", "This year i know it's going to be great! Do you're best!", "I was "
+                 "part of the Saxes my middle school years. I started brass such as trombone and tuba my first two "
+                 "years of high school! Both sections are great and i know both will keep up the good work!")
 
 class Room(object):
     def __init__(self, name, description, av_dir, long_desc, north=None, north_east=None, north_west=None,
@@ -517,11 +539,11 @@ while playing:
         print(me.inventory)
     if command.lower() in ['check', 'c']:
         print(me.current_location.long_desc)
+    if command.lower() in ['t', 'talk']:
+        Room.Characters.talk()
     if command.lower() in directions:
         try:
             room_name = getattr(me.current_location, command.lower())
             me.move(room_name)
         except KeyError:
             print("Error: Can't go that way")
-
-
