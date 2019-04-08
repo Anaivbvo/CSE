@@ -1,7 +1,8 @@
 import random
 
 
-# Items ----------
+# ITEMS ----------------------------------------------------------------------------------------------------------------
+
 class Items(object):
     def __init__(self, name, description):
         self.name = name
@@ -88,37 +89,7 @@ class Music(Items):
         self.social_plus = social_plus
 
 
-WATER = ConsumableLiquid("Water", "Fresh and cold water you brought from home! It even has ice!", 15, 5)
-MILK = ConsumableLiquid("Milk", "Cold school plain milk. Nothing special about it.", 7, 2)
-SPORTS_DRINK = ConsumableLiquid("Sports Drink", "This is the usual brand of sports drink everyone brings to camp. "
-                                "Refreshing, fruity, and energy giving!", 10, 15)
-ARIZONA = ConsumableLiquid("Arizona", "This is most everyone's favorite juice. This can most definitely bring up your "
-                                      "social level, though how sweet it is, it may not be as nice with your health "
-                                      "level.", 4, 8)
-REBEL = ConsumableLiquid("Rebel Energy Drink", "Every one loves this energy drink! Though it's not as healthy as water,"
-                                               " everyone craves for this after practice.", 2, 15)
-APPLE = ConsumableSolid("Apple", "A nice red apple! Sweet but solid! Though everyone likes junk food, no one could "
-                                 "decline a nice apple!", 10, 5)
-FRIES = ConsumableSolid("Mac's Fries", "Everyone loves fried! Though it'snot the healthiest item, but that doesnt stop"
-                                       " anyone from eating them!", 10, 15)
-BURGER = ConsumableSolid("Mac's Burger", "A cheese burger! If you'd compare this to Mac's Fries, you'd think the "
-                                         "burger was the side option. Though this is a whole meal for anyone after "
-                                         "practice!", 8, 12)
-SANDWICH = ConsumableSolid("School Sandwich", "Since this is a school food, you never know if this sandwich is any "
-                                              "good or bad...", random.randint(-20, 20), random.randint(-5, 5))
-SALAD = ConsumableSolid("Salad", "School's salad. This is a surprise whether you feel better or worse after eating "
-                                 "this...", random.randint(-10, 10), random.randint(-5, 5))
-SUN_SCREEN = HealthItems("Sun Screen", "Sun screen helps you stay protected! This is the type the band provides to "
-                         "every student. Safe for every student and very protective!", 25,)
-ENERGY_SHOT = HealthItems("Energy", "A mini energy drink! Has the necessary proteins and energy giving for incoming"
-                          " activities.", 10)
-ALTO1A = Music("First chair Alto", "Alto Section Leader's music. A rare item to get a hold of since they are always"
-                                   " organized with their music!", "Saxes", "1st", 20)
-ALTO1B = Music("2nd First chair Alto", "Music for the next in command! although this is 1st chair music, it seems to "
-                                       "be just a tad different from the Section leader's music.", "Saxes", "1st", 15)
-ALTO2A = Music("Second Chair Alto", "Music for the second chairs.. Which seems to be majority of the section. Not too"
-                                    "different from the 1st chair.. except everything.", "Saxes", "2nd", 5)
-
+# CHARACTERS -----------------------------------------------------------------------------------------------------------
 
 class Characters(object):
     def __init__(self, name, description, check, rank, grade, group, sorry, alright, them, last_year, this_year,
@@ -230,44 +201,7 @@ class Characters(object):
         print("-" * 1)
 
 
-# EXAMPLE -----
-Max = Characters("Max", "Senior High brass section leader", "Max is the high brass section leader. Not as energetic as"
-                 " the sophomores but very energetic for a senior section leader. Vey talkative as he is proud of his"
-                 " section. Has also been dating the 2nd guard captain for 3 years.", "Section Leader", "Senior/12th",
-                 "High brass/Horns", "ah sorry,", "cool then,", "I'm Max! The high brass section leader! I've done "
-                 "marching band all four years! Thanks to that i have the best girl by my side and the most talented "
-                 "section!", "Last year was great!.. That's a lie.. We won "
-                 "sweeps the year before, but for what ever reason we've all gone downhill.. Do your best this year! "
-                 "Who knows! We might win something above 1st!", "This year seems to be starting really off.. Don't "
-                 "let that bother you though, just do your best!", "High brass? They're the best! We're the best!",
-                 )
-# DRUM MAJORS -----
-DML = Characters("Drum Major L", "Parade Drum Major", "Incredibly talented Tenor player. Known for being an incredible"
-                 " player with knowledge in multiple instruments.", "Drum Major", "Junior/11th", "DM, Saxes", "Sorry,",
-                 "Okay then,", "I'm L. The Parade Drum Major. I've been an alumni from the school's feeder. I've been "
-                 "playing Tenor Sax since i was in 3rd grade and i've been getting better since then.", "Last year was "
-                 "my first year as parade drum major. I started off roughly but we all do, and we all improve.", "This"
-                 " year seems to be off to a good start. I can't make much assumptions about it yet.", "You can "
-                 "consider the Drum majors as their own section, but i came from the saxes. They're a good section. "
-                 "There's not much I can say about it.")
-
-DMJ = Characters("Drum Major J", "Head Field Drum Major", "Incredibly talented player of multiple instruments. Has been"
-                 " head drum major since freshmen year. Rumors say he had made it to the top ranks due to an upper "
-                 "class men being related to him. Though records show no one with the same last name as him in the past"
-                 "8 years.", "Drum Major", "Junior/11th", "DM, Saxes", "Hm,", "Well,", "I'm J, the Head Drum major of "
-                 "the band.", "Last year we had won sweeps. I expect the band to win again, if the first years don't"
-                 " mess it up..", "I expect the first years to put their all into the band. If not, there's no reason"
-                 " for them being here.", "Section..? Thee's only 3 drum majors, you can consider that a section.")
-
-DMC = Characters("Drum Major C", "Event Drum Major", "He's incredibly nice and chill. Despite being drum major, he is"
-                 "more known for being very chill and a friend to most everyone. Plays multiple low instruments rather"
-                 " than high ones.", "Drum Major", "Junior/11th", "DM, Saxes, Brass", "Sorry bud,", "Cool!", "Hey, i'm"
-                 "C! I'm a brass player and sax player! Oh drum major too. I take control and lead during school and"
-                 "football game events! Lead bari player in most events when the other drum majors are the ones"
-                 " conducting too.", "Last year was my first year as drum major! A great time and i look forward to "
-                 "the rest of my years coming!", "This year i know it's going to be great! Do you're best!", "I was "
-                 "part of the Saxes my middle school years. I started brass such as trombone and tuba my first two "
-                 "years of high school! Both sections are great and i know both will keep up the good work!")
+# MAPS -----------------------------------------------------------------------------------------------------------------
 
 class Room(object):
     def __init__(self, name, description, av_dir, long_desc, north=None, north_east=None, north_west=None,
@@ -288,10 +222,10 @@ class Room(object):
         self.characters = []
 
 
+# PLAYER ---------------------------------------------------------------------------------------------------------------
+
 class Player(object):
-    def __init__(self, name, description, health_level, hydration_level, social_level, starting_location):
-        self.name = name
-        self.description = description
+    def __init__(self, health_level, hydration_level, social_level, starting_location):
         self.health_level = health_level
         self.hydration_level = hydration_level
         self.social_level = social_level
@@ -344,6 +278,79 @@ class Player(object):
             print(self.health_level())
 
 
+# ITEMS ----------------------------------------------------------------------------------------------------------------
+WATER = ConsumableLiquid("Water", "Fresh and cold water you brought from home! It even has ice!", 15, 5)
+MILK = ConsumableLiquid("Milk", "Cold school plain milk. Nothing special about it.", 7, 2)
+SPORTS_DRINK = ConsumableLiquid("Sports Drink", "This is the usual brand of sports drink everyone brings to camp. "
+                                "Refreshing, fruity, and energy giving!", 10, 15)
+ARIZONA = ConsumableLiquid("Arizona", "This is most everyone's favorite juice. This can most definitely bring up your "
+                                      "social level, though how sweet it is, it may not be as nice with your health "
+                                      "level.", 4, 8)
+REBEL = ConsumableLiquid("Rebel Energy Drink", "Every one loves this energy drink! Though it's not as healthy as water,"
+                                               " everyone craves for this after practice.", 2, 15)
+APPLE = ConsumableSolid("Apple", "A nice red apple! Sweet but solid! Though everyone likes junk food, no one could "
+                                 "decline a nice apple!", 10, 5)
+FRIES = ConsumableSolid("Mac's Fries", "Everyone loves fried! Though it'snot the healthiest item, but that doesnt stop"
+                                       " anyone from eating them!", 10, 15)
+BURGER = ConsumableSolid("Mac's Burger", "A cheese burger! If you'd compare this to Mac's Fries, you'd think the "
+                                         "burger was the side option. Though this is a whole meal for anyone after "
+                                         "practice!", 8, 12)
+SANDWICH = ConsumableSolid("School Sandwich", "Since this is a school food, you never know if this sandwich is any "
+                                              "good or bad...", random.randint(-20, 20), random.randint(-5, 5))
+SALAD = ConsumableSolid("Salad", "School's salad. This is a surprise whether you feel better or worse after eating "
+                                 "this...", random.randint(-10, 10), random.randint(-5, 5))
+SUN_SCREEN = HealthItems("Sun Screen", "Sun screen helps you stay protected! This is the type the band provides to "
+                         "every student. Safe for every student and very protective!", 25,)
+ENERGY_SHOT = HealthItems("Energy", "A mini energy drink! Has the necessary proteins and energy giving for incoming"
+                          " activities.", 10)
+ALTO1A = Music("First chair Alto", "Alto Section Leader's music. A rare item to get a hold of since they are always"
+                                   " organized with their music!", "Saxes", "1st", 20)
+ALTO1B = Music("2nd First chair Alto", "Music for the next in command! although this is 1st chair music, it seems to "
+                                       "be just a tad different from the Section leader's music.", "Saxes", "1st", 15)
+ALTO2A = Music("Second Chair Alto", "Music for the second chairs.. Which seems to be majority of the section. Not too"
+                                    "different from the 1st chair.. except everything.", "Saxes", "2nd", 5)
+
+# CHARACTERS -----------------------------------------------------------------------------------------------------------
+# EXAMPLE -----
+Max = Characters("Max", "Senior High brass section leader", "Max is the high brass section leader. Not as energetic as"
+                 " the sophomores but very energetic for a senior section leader. Vey talkative as he is proud of his"
+                 " section. Has also been dating the 2nd guard captain for 3 years.", "Section Leader", "Senior/12th",
+                 "High brass/Horns", "ah sorry,", "cool then,", "I'm Max! The high brass section leader! I've done "
+                 "marching band all four years! Thanks to that i have the best girl by my side and the most talented "
+                 "section!", "Last year was great!.. That's a lie.. We won "
+                 "sweeps the year before, but for what ever reason we've all gone downhill.. Do your best this year! "
+                 "Who knows! We might win something above 1st!", "This year seems to be starting really off.. Don't "
+                 "let that bother you though, just do your best!", "High brass? They're the best! We're the best!",
+                 )
+# DRUM MAJORS -----
+DML = Characters("Drum Major L", "Parade Drum Major", "Incredibly talented Tenor player. Known for being an incredible"
+                 " player with knowledge in multiple instruments.", "Drum Major", "Junior/11th", "DM, Saxes", "Sorry,",
+                 "Okay then,", "I'm L. The Parade Drum Major. I've been an alumni from the school's feeder. I've been "
+                 "playing Tenor Sax since i was in 3rd grade and i've been getting better since then.", "Last year was "
+                 "my first year as parade drum major. I started off roughly but we all do, and we all improve.", "This"
+                 " year seems to be off to a good start. I can't make much assumptions about it yet.", "You can "
+                 "consider the Drum majors as their own section, but i came from the saxes. They're a good section. "
+                 "There's not much I can say about it.")
+
+DMJ = Characters("Drum Major J", "Head Field Drum Major", "Incredibly talented player of multiple instruments. Has been"
+                 " head drum major since freshmen year. Rumors say he had made it to the top ranks due to an upper "
+                 "class men being related to him. Though records show no one with the same last name as him in the past"
+                 "8 years.", "Drum Major", "Junior/11th", "DM, Saxes", "Hm,", "Well,", "I'm J, the Head Drum major of "
+                 "the band.", "Last year we had won sweeps. I expect the band to win again, if the first years don't"
+                 " mess it up..", "I expect the first years to put their all into the band. If not, there's no reason"
+                 " for them being here.", "Section..? Thee's only 3 drum majors, you can consider that a section.")
+
+DMC = Characters("Drum Major C", "Event Drum Major", "He's incredibly nice and chill. Despite being drum major, he is"
+                 "more known for being very chill and a friend to most everyone. Plays multiple low instruments rather"
+                 " than high ones.", "Drum Major", "Junior/11th", "DM, Saxes, Brass", "Sorry bud,", "Cool!", "Hey, i'm"
+                 "C! I'm a brass player and sax player! Oh drum major too. I take control and lead during school and"
+                 "football game events! Lead bari player in most events when the other drum majors are the ones"
+                 " conducting too.", "Last year was my first year as drum major! A great time and i look forward to "
+                 "the rest of my years coming!", "This year i know it's going to be great! Do you're best!", "I was "
+                 "part of the Saxes my middle school years. I started brass such as trombone and tuba my first two "
+                 "years of high school! Both sections are great and i know both will keep up the good work!")
+
+# MAP ------------------------------------------------------------------------------------------------------------------
 TREE1 = Room("Band_Tree", "This is the nearest tree to the band room. Nothing too special about it.", "west: "
              "Hang_Out_Tree, north_east: Outside_Band_room", "This is the nearest tree to the band room. A lot of "
              "upperclassmen like to hang around here before school starts. You can often find junior to senior "
@@ -444,12 +451,6 @@ OUTER_ORCHESTRA = Room("Outer_Orchestra", "This is outside the orchestra room.",
                        "often except during lunch.")
 
 
-# ME ------------
-me = Player("me", "it's me", 10, 10, 10, TREE1)
-me.inventory = [ARIZONA, APPLE, WATER]
-
-# --
-
 TREE1.north_east = OUTER_BAND
 TREE1.west = TREE2
 TREE2.east = TREE1
@@ -525,25 +526,66 @@ OUTER_ORCHESTRA.west = ORCHESTRA
 OUTER_ORCHESTRA.north_west = LOUNGE_HALL
 
 
+# PLAYING CONTROL ------------------------------------------------------------------------------------------------------
+
 playing = True
 directions = ['north', 'south', 'east', 'west', 'north_east', 'north_west', 'south_east', 'south_west']
 
+Player = Player(10, 10, 10, TREE1)
+
+
+print("PRESS:")
+print(" 'q', 'quit', 'ee', or 'exit':")
+print("To exit and end game.")
+print("-")
+print("'i' or 'inventory':")
+print("To check inventory.")
+print("-")
+print("'c', or 'check':")
+print("To check the room's longer description.")
+print("-")
+print("'t', or 'talk':")
+print("To talk to the room's characters.")
+print("-")
+print("'commands':")
+print("To see the commands again.")
+print("-")
+
 while playing:
-    print("-", me.current_location.name)
-    print("-", me.current_location.description)
-    print("-", me.current_location.av_dir)
+    print("-", Player.current_location.name)
+    print("-", Player.current_location.description)
+    print("-", Player.current_location.av_dir)
     command = input(">_")
-    if command.lower() in ['q', 'quit', 'exit']:
+    if command.lower() in ['q', 'quit', 'exit', 'ee']:
         playing = False
     if command.lower() in ['i', 'inventory']:
-        print(me.inventory)
+        print(Player.inventory)
     if command.lower() in ['check', 'c']:
-        print(me.current_location.long_desc)
+        print("*****")
+        print(Player.current_location.long_desc)
+        print("*****")
     if command.lower() in ['t', 'talk']:
         Room.Characters.talk()
+    if command.lower() in ['commands']:
+        print("PRESS:")
+        print(" 'q', 'quit', 'ee', or 'exit':")
+        print("To exit and end game.")
+        print("-")
+        print("'i' or 'inventory':")
+        print("To check inventory.")
+        print("-")
+        print("'c', or 'check':")
+        print("To check the room's longer description.")
+        print("-")
+        print("'t', or 'talk':")
+        print("To talk to the room's characters.")
+        print("-")
+        print("'commands':")
+        print("To see the commands again.")
+        print("-")
     if command.lower() in directions:
         try:
-            room_name = getattr(me.current_location, command.lower())
-            me.move(room_name)
+            room_name = getattr(Player.current_location, command.lower())
+            Player.move(room_name)
         except KeyError:
             print("Error: Can't go that way")
