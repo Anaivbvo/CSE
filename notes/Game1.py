@@ -78,6 +78,14 @@ class HealthItems(Items):
             print("you've gained:", self.health_plus, "in your health level!")
 
 
+class Wearable(HealthItems):
+    def __init__(self, name):
+        super(Wearable, self).__init__(name, description, health_plus)
+        self.name = name
+        self.description = description
+        self.health_plus = health_plus
+
+
 class Music(Items):
     def __init__(self, name, description, section, chair, social_plus):
         super(Music, self).__init__(name, description)
@@ -279,6 +287,7 @@ class Player(object):
 
 
 # ITEMS ----------------------------------------------------------------------------------------------------------------
+# Liquids -----
 WATER = ConsumableLiquid("Water", "Fresh and cold water you brought from home! It even has ice!", 15, 5)
 MILK = ConsumableLiquid("Milk", "Cold school plain milk. Nothing special about it.", 7, 2)
 SPORTS_DRINK = ConsumableLiquid("Sports Drink", "This is the usual brand of sports drink everyone brings to camp. "
@@ -288,6 +297,7 @@ ARIZONA = ConsumableLiquid("Arizona", "This is most everyone's favorite juice. T
                                       "level.", 4, 8)
 REBEL = ConsumableLiquid("Rebel Energy Drink", "Every one loves this energy drink! Though it's not as healthy as water,"
                                                " everyone craves for this after practice.", 2, 15)
+# Solids -----
 APPLE = ConsumableSolid("Apple", "A nice red apple! Sweet but solid! Though everyone likes junk food, no one could "
                                  "decline a nice apple!", 10, 5)
 FRIES = ConsumableSolid("Mac's Fries", "Everyone loves fried! Though it'snot the healthiest item, but that doesnt stop"
@@ -299,10 +309,12 @@ SANDWICH = ConsumableSolid("School Sandwich", "Since this is a school food, you 
                                               "good or bad...", random.randint(-20, 20), random.randint(-5, 5))
 SALAD = ConsumableSolid("Salad", "School's salad. This is a surprise whether you feel better or worse after eating "
                                  "this...", random.randint(-10, 10), random.randint(-5, 5))
+# Health -----
 SUN_SCREEN = HealthItems("Sun Screen", "Sun screen helps you stay protected! This is the type the band provides to "
                          "every student. Safe for every student and very protective!", 25,)
 ENERGY_SHOT = HealthItems("Energy", "A mini energy drink! Has the necessary proteins and energy giving for incoming"
                           " activities.", 10)
+# Music -----
 ALTO1A = Music("First chair Alto", "Alto Section Leader's music. A rare item to get a hold of since they are always"
                                    " organized with their music!", "Saxes", "1st", 20)
 ALTO1B = Music("2nd First chair Alto", "Music for the next in command! although this is 1st chair music, it seems to "
