@@ -527,6 +527,7 @@ directions = ['north', 'south', 'east', 'west', 'north_east', 'north_west', 'sou
 Player = Player("me", "it's me", 10, 10, 10, TREE1)
 
 print("===***************************************")
+print("COMMANDS::                               *")
 print("PRESS:                                   *")
 print(" 'q', 'quit', 'ee', or 'exit':           *")
 print("To exit and end game.                    *")
@@ -544,7 +545,8 @@ print("'commands':                              *")
 print("To see the commands again.               *")
 print("===***************************************")
 
-while playing:
+
+    while playing:
     print("-", Player.current_location.name)
     print("-", Player.current_location.description)
     print("-", Player.current_location.av_dir)
@@ -561,6 +563,7 @@ while playing:
         Room.Characters.talk()
     if command.lower() in ['commands']:
         print("===***************************************")
+        print("COMMANDS::                               *")
         print("PRESS:                                   *")
         print(" 'q', 'quit', 'ee', or 'exit':           *")
         print("To exit and end game.                    *")
@@ -583,3 +586,6 @@ while playing:
             Player.move(room_name)
         except KeyError:
             print("Error: Can't go that way")
+        if command.lower() in short_directions:
+            pos = short_directions.index.(command.lower())
+            command = directions[pos]
