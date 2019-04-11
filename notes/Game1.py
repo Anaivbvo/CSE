@@ -297,16 +297,7 @@ ALTO2A = Music("Second Chair Alto", "Music for the second chairs.. Which seems t
                                     "different from the 1st chair.. except everything.", "Saxes", "2nd", 5)
 
 # CHARACTERS -----------------------------------------------------------------------------------------------------------
-# EXAMPLE -----
-MAX = Characters("Max", "Senior High brass section leader", "Max is the high brass section leader. Not as energetic as"
-                 " the sophomores but very energetic for a senior section leader. Vey talkative as he is proud of his"
-                 " section. Has also been dating the 2nd guard captain for 3 years.", "Section Leader", "Senior/12th",
-                 "High brass/Horns", "ah sorry,", "cool then,", "I'm Max! The high brass section leader! I've done "
-                 "marching band all four years! Thanks to that i have the best girl by my side and the most talented "
-                 "section!", "Last year was great!.. That's a lie.. We won "
-                 "sweeps the year before, but for what ever reason we've all gone downhill.. Do your best this year! "
-                 "Who knows! We might win something above 1st!", "This year seems to be starting really off.. Don't "
-                 "let that bother you though, just do your best!", "High brass? They're the best! We're the best!",)
+
 # DIRECTOR -----
 DIRECTOR = Characters("Director", "Band Director", "The band director is one of the nicest people you'll ever meet. "
                       "He's always ready to help you when you need it. He's also the type of person to wear converse "
@@ -342,6 +333,34 @@ DMC = Characters("Drum Major C", "Event Drum Major", "He's incredibly nice and c
                  "the rest of my years coming!", "This year i know it's going to be great! Do you're best!", "I was "
                  "part of the Saxes my middle school years. I started brass such as trombone and tuba my first two "
                  "years of high school! Both sections are great and i know both will keep up the good work!")
+# SAXES ------
+SAX_SL = Characters("Section Leader Ave", "Senior Saxophone Section Leader Ave")
+# FLUTES -----
+FLUTE_SL = Characters("Section Leader Ari", "Senior Flute Section Leader Ari")
+# CLARINETS -----
+CLARINET_SL = Characters()
+# LOW_WINDS -----
+LW_SL = Characters()
+# TRUMPETS -----
+TRUMPET_SL = Characters()
+# HIGH BRASS -----
+MAX = Characters("Max", "Senior High brass section leader", "Max is the high brass section leader. Not as energetic as"
+                 " the sophomores but very energetic for a senior section leader. Vey talkative as he is proud of his"
+                 " section. Has also been dating the 2nd guard captain for 3 years.", "Section Leader", "Senior/12th",
+                 "High brass/Horns", "ah sorry,", "cool then,", "I'm Max! The high brass section leader! I've done "
+                 "marching band all four years! Thanks to that i have the best girl by my side and the most talented "
+                 "section!", "Last year was great!.. That's a lie.. We won "
+                 "sweeps the year before, but for what ever reason we've all gone downhill.. Do your best this year! "
+                 "Who knows! We might win something above 1st!", "This year seems to be starting really off.. Don't "
+                 "let that bother you though, just do your best!", "High brass? They're the best! We're the best!",)
+# LOW BRASS -----
+LB_SL = Characters()
+# PIT ------
+PIT_SL = Characters()
+# DRUMLINE -----
+DL_SL = Characters
+# GUARD -----
+GUARD_SL = Characters()
 
 # MAP ------------------------------------------------------------------------------------------------------------------
 TREE1 = Room("Band_Tree", "This is the nearest tree to the band room. Nothing too special about it.", "west: "
