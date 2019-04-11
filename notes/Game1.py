@@ -523,30 +523,12 @@ OUTER_ORCHESTRA.north_west = LOUNGE_HALL
 
 playing = True
 directions = ['north', 'south', 'east', 'west', 'north_east', 'north_west', 'south_east', 'south_west']
+short_directions = ['n', 's', 'e', 'w', 'ne', 'nw', 'se', 'sw']
 
 Player = Player("me", "it's me", 10, 10, 10, TREE1)
 
-print("===***************************************")
-print("COMMANDS::                               *")
-print("PRESS:                                   *")
-print(" 'q', 'quit', 'ee', or 'exit':           *")
-print("To exit and end game.                    *")
-print("===                                      *")
-print("'i' or 'inventory':                      *")
-print("To check inventory.                      *")
-print("===                                      *")
-print("'c', or 'check':                         *")
-print("To check the room's longer description.  *")
-print("===                                      *")
-print("'t', or 'talk':                          *")
-print("To talk to the room's characters.        *")
-print("===                                      *")
-print("'commands':                              *")
-print("To see the commands again.               *")
-print("===***************************************")
 
-
-    while playing:
+while playing:
     print("-", Player.current_location.name)
     print("-", Player.current_location.description)
     print("-", Player.current_location.av_dir)
@@ -587,5 +569,30 @@ print("===***************************************")
         except KeyError:
             print("Error: Can't go that way")
         if command.lower() in short_directions:
-            pos = short_directions.index.(command.lower())
+            pos = short_directions.index(command.lower())
             command = directions[pos]
+            try:
+                room_name = getattr(Player.current_location, command.lower())
+                Player.move(room_name)
+            except KeyError:
+                print("Error: Can't go that way")
+
+
+print("===***************************************")
+print("COMMANDS::                               *")
+print("PRESS:                                   *")
+print(" 'q', 'quit', 'ee', or 'exit':           *")
+print("To exit and end game.                    *")
+print("===                                      *")
+print("'i' or 'inventory':                      *")
+print("To check inventory.                      *")
+print("===                                      *")
+print("'c', or 'check':                         *")
+print("To check the room's longer description.  *")
+print("===                                      *")
+print("'t', or 'talk':                          *")
+print("To talk to the room's characters.        *")
+print("===                                      *")
+print("'commands':                              *")
+print("To see the commands again.               *")
+print("===***************************************")
