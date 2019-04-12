@@ -215,7 +215,7 @@ class Characters(object):
             print(self.sorry, "don't have that on me right now. You can try asking others.")
             print("is there anything else you want?")
             answer = input(">_")
-            if answer.upper() in ['YES']:
+            if answer.upper() in ['YES', self.inventory]:
                 return self.trade()
             elif answer.upper() in ['NO']:
                 print(self.sorry, "you're better off asking someone else..")
@@ -334,15 +334,25 @@ DMC = Characters("Drum Major C", "Event Drum Major", "He's incredibly nice and c
                  "part of the Saxes my middle school years. I started brass such as trombone and tuba my first two "
                  "years of high school! Both sections are great and i know both will keep up the good work!")
 # SAXES ------
-SAX_SL = Characters("Section Leader Ave", "Senior Saxophone Section Leader Ave")
+SAX_SL = Characters("Section Leader Ave", "Senior Saxophone Section Leader Ave", "Ave has played alto sax since 2nd"
+                    "grade. He's attended multiple music camps in order to improve. Many say he was suggested for "
+                    "Section Leader his sophomore year. He alo intended on running for Drum major, but the director "
+                    "needed him to stay back and teach this year's freshmen.", "Section Leader", "Senior/12th",
+                    "Saxophone", "Uh,", "Yeah alright then,", "I'm Ave. Sax Section Leader. I expect you to work hard"
+                    " and put in all effort you can. Also, don't skip practice, when we have sectionals, i expect you"
+                    " attend them.", "Last year was bad. We could have done better. A lot of the best players left "
+                    "last year. I don't expect us to do well this year.", "If this year get's any worse, i'll lose "
+                    "hope for tha band. This year's freshmen don't seem any good...", "The sax section.. We're family.")
 # FLUTES -----
-FLUTE_SL = Characters("Section Leader Ari", "Senior Flute Section Leader Ari")
+FLUTE_SL = Characters("Section Leader Ari", "Senior Flute Section Leader Ari", "Ari has been a promising player since"
+                     " she started her freshmen year. Incredibly kind and understanding to her section. She get")
 # CLARINETS -----
-CLARINET_SL = Characters()
+CLARINET_SL = Characters("Section Leader Liz", "Senior Clarinet Section Leader Liz")
+CLARINET_SL2 = Characters("Section Leader Kim", "Junior Clarinet Section Leader Kim")
 # LOW_WINDS -----
-LW_SL = Characters()
+LW_SL = Characters("Section Leader Joaan", "Sophomore Low Wind Section Leader Joaan")
 # TRUMPETS -----
-TRUMPET_SL = Characters()
+TRUMPET_SL = Characters("Section Leader Cole", "Senior Trumpet Section Leader Cole")
 # HIGH BRASS -----
 MAX = Characters("Max", "Senior High brass section leader", "Max is the high brass section leader. Not as energetic as"
                  " the sophomores but very energetic for a senior section leader. Vey talkative as he is proud of his"
@@ -354,13 +364,13 @@ MAX = Characters("Max", "Senior High brass section leader", "Max is the high bra
                  "Who knows! We might win something above 1st!", "This year seems to be starting really off.. Don't "
                  "let that bother you though, just do your best!", "High brass? They're the best! We're the best!",)
 # LOW BRASS -----
-LB_SL = Characters()
+LB_SL = Characters("Section Leader Bryan", "Junior Low Brass Section Leader Bryan")
 # PIT ------
-PIT_SL = Characters()
+PIT_SL = Characters("Percussion Leader Vi", "Senior Percussion Leader Vi")
 # DRUMLINE -----
-DL_SL = Characters
+DL_SL = Characters("Drum Captain Van", "Senior Drum Captain Van")
 # GUARD -----
-GUARD_SL = Characters()
+GUARD_SL = Characters("Guard Captain Tiana", "Senior Guard Captain Tiana")
 
 # MAP ------------------------------------------------------------------------------------------------------------------
 TREE1 = Room("Band_Tree", "This is the nearest tree to the band room. Nothing too special about it.", "west: "
@@ -562,7 +572,7 @@ while playing:
         print("*****")
     if command.lower() in ['t', 'talk']:
         Room.Characters.talk()
-    if command.lower() in ['commands']:
+    if command.lower() in ['commands', 'command']:
         print("===***************************************")
         print("COMMANDS::                               *")
         print("PRESS:                                   *")
