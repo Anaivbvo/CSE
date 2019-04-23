@@ -319,8 +319,8 @@ DML = Characters("Drum Major L", "Parade Drum Major", "Incredibly talented Tenor
 DMJ = Characters("Drum Major J", "Head Field Drum Major", "Incredibly talented player of multiple instruments. Has been"
                  " head drum major since freshmen year. Rumors say he had made it to the top ranks due to an upper "
                  "class men being related to him. Though records show no one with the same last name as him in the past"
-                 "8 years.", "Drum Major", "Junior/11th", "DM, Saxes", "Hm,", "Well,", "I'm J, the Head Drum major of "
-                 "the band.", "Last year we had won sweeps. I expect the band to win again, if the first years don't"
+                 "10 years.", "Drum Major", "Junior/11th", "DM, Saxes", "Hm,", "Well,", "I'm J, the Head Drum major of "
+                 "the band.", "2 years ago we had won sweeps. I expect the band to win again, if the first years don't"
                  " mess it up..", "I expect the first years to put their all into the band. If not, there's no reason"
                  " for them being here.", "Section..? Thee's only 3 drum majors, you can consider that a section.")
 
@@ -345,32 +345,46 @@ SAX_SL = Characters("Section Leader Ave", "Senior Saxophone Section Leader Ave",
                     "hope for tha band. This year's freshmen don't seem any good...", "The sax section.. We're family.")
 # FLUTES -----
 FLUTE_SL = Characters("Section Leader Ari", "Senior Flute Section Leader Ari", "Ari has been a promising player since"
-                     " she started her freshmen year. Incredibly kind and understanding to her section. She get")
+                      " she started her freshmen year. Incredibly kind and understanding to her section.", "Section "
+                      "Leader", "Senior/12th", "Flutes", "Excuse me", "Good,", "I'm Ari. The Flute's section leader."
+                      "I don't have much to say. When you need help, feel free to come talk to me.", "Last year we had"
+                      " managed to get average awards an average band can get. The year before, we had managed to get"
+                      " the highest awards such as sweeps and onwards... No pressure, but do hope everyone tries "
+                      "their hardest.", "This year we have managed to convince more 8th graders to join the band. I "
+                      "just hope their talent level is as big as their freshmen ego.", "The flute section, we're here "
+                      "to help each other out, as well as put all our efforts to be better players. No one slacks off,"
+                      " we're elegant and graceful people as well as players.")
 # CLARINETS -----
-CLARINET_SL = Characters("Section Leader Liz", "Senior Clarinet Section Leader Liz")
-CLARINET_SL2 = Characters("Section Leader Kim", "Junior Clarinet Section Leader Kim")
+CLARINET_SL = Characters("Section Leader Liz", "Senior Clarinet Section Leader Liz", "Senior Section Leader Liz "
+                         "learned to play clarinet since 2nd grade. She has been on top of all her classes since then."
+                         " She was the class pet in all her classes and had managed to become clarinet leader each "
+                         "year. This is her 2nd year as section leader.", "Section Leader", "Senior/12th", "Clarinets",
+                         "Pardon,", "That's great", "I'm Elizabeth, but everyone calls me Liz. I'm the clarinet's"
+                         " section leader! I'm so happy to see how big this section is, I hope the sections grows even"
+                         " mre after i leave.", "last year", "this year", "section")
+CLARINET_SL2 = Characters("Section Leader Kim", "Junior Clarinet Section Leader Kim", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
 # LOW_WINDS -----
-LW_SL = Characters("Section Leader Joaan", "Sophomore Low Wind Section Leader Joaan")
+LW_SL = Characters("Section Leader Joaan", "Sophomore Low Wind Section Leader Joaan", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
 # TRUMPETS -----
-TRUMPET_SL = Characters("Section Leader Cole", "Senior Trumpet Section Leader Cole")
+TRUMPET_SL = Characters("Section Leader Cole", "Senior Trumpet Section Leader Cole", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
 # HIGH BRASS -----
 MAX = Characters("Max", "Senior High brass section leader", "Max is the high brass section leader. Not as energetic as"
                  " the sophomores but very energetic for a senior section leader. Vey talkative as he is proud of his"
                  " section. Has also been dating the 2nd guard captain for 3 years.", "Section Leader", "Senior/12th",
                  "High brass/Horns", "ah sorry,", "cool then,", "I'm Max! The high brass section leader! I've done "
                  "marching band all four years! Thanks to that i have the best girl by my side and the most talented "
-                 "section!", "Last year was great!.. That's a lie.. We won "
-                 "sweeps the year before, but for what ever reason we've all gone downhill.. Do your best this year! "
-                 "Who knows! We might win something above 1st!", "This year seems to be starting really off.. Don't "
-                 "let that bother you though, just do your best!", "High brass? They're the best! We're the best!",)
+                 "section!", "Last year was great!.. That's a lie.. We won sweeps the year before, but for what ever "
+                 "reason we've all gone downhill.. Do your best this year! Who knows! We might win something above "
+                 "1st!", "This year seems to be starting really off.. Don't let that bother you though, just do your "
+                 "best!", "High brass? They're the best! We're the best!")
 # LOW BRASS -----
-LB_SL = Characters("Section Leader Bryan", "Junior Low Brass Section Leader Bryan")
+LB_SL = Characters("Section Leader Bryan", "Junior Low Brass Section Leader Bryan", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
 # PIT ------
-PIT_SL = Characters("Percussion Leader Vi", "Senior Percussion Leader Vi")
+PIT_SL = Characters("Percussion Leader Vi", "Senior Percussion Leader Vi", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
 # DRUMLINE -----
-DL_SL = Characters("Drum Captain Van", "Senior Drum Captain Van")
+DL_SL = Characters("Drum Captain Van", "Senior Drum Captain Van", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
 # GUARD -----
-GUARD_SL = Characters("Guard Captain Tiana", "Senior Guard Captain Tiana")
+GUARD_SL = Characters("Guard Captain Tiana", "Senior Guard Captain Tiana", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
 
 # MAP ------------------------------------------------------------------------------------------------------------------
 TREE1 = Room("Band_Tree", "This is the nearest tree to the band room. Nothing too special about it.", "west: "
@@ -389,15 +403,15 @@ OUTER_STAGE = Room("Amp", "The amp. It's stairs and wide stage is the best place
                    "hope no teachers come walking around.. The visuals are awkward to do around others.")
 BACK_STAGE = Room("Back_Stage", "It's the back of the stage. There's really no need to be here. ", "NORTH_WEST: "
                   "Stage, NORTH_EAST: Stage.", "Occasionally you can find theatre kids hanging around here.. Something"
-                  " had happened between band and theatre kids 2 years ago. Though uperclassmen won't mention what this"
+                  " had happened between band and theatre kids 2 years ago. Though upperclassmen won't mention what so"
                   " event was about, it seems to have seperated these two groups into almost purely enemies.. You'd "
                   "best hurry out of here..")
 STAGE = Room("Stage", "The school's main stage. Band performances, mainly concert happen here! When the lights shine "
              "on you, it's the best feeling! Oh, and theatre kids do their plays here to. ", "NORTH_WEST: Cafeteria, "
-             "NORTH_EAST: Cafeteria.", "Saxes  tends to have sectionals here.. They tend to be the only ones close to "
+             "NORTH_EAST: Cafeteria.", "Saxes tends to have sectionals here.. They tend to be the only ones close to "
              "theatre kids compared to the rest of the band sections, that's why they get to have sectionals here "
              "peacfully while theatre kids rehaearse and work on the stage.")
-CAFETERIA = Room("Cafeteria", "It's the school's cafeteria. The tables and chairs are put away most times.", "TH_WEST:"
+CAFETERIA = Room("Cafeteria", "It's the school's cafeteria. Tables and chairs are put away most times.", "NORTH_WEST:"
                  " Water_Fountains, NORTH: Janitor_Storage_Room, SOUTH_EAST: Band_Hall, NORTH_EAST: Band_Hall.", "A lot"
                  " of sections tend to have practice here. It can get awkward with theatre kids appearing on stage. "
                  "Only groups to show up here are horns and saxes. Tends to be fights on who gets to practice here.")
@@ -409,7 +423,7 @@ WATER_FOUNTAIN = Room("Water_Fountains", " This room has no actual walls but it 
                       "school. Though it is really far from the field, it's worth it for a cold drink.")
 FOOD_BOOTHS = Room("Food_Booths", " This is where you receive the food from the lunch ladies. ",
                    "EAST: Cafeteria_Kitchen, SOUTH: Cafeteria.", "They have posters of how to eat healthy and "
-                   "nutritious. Sometime's the food seems to be a lot healthier than the food itself.. ")
+                   "nutritious. Sometime's the plates seems to be a lot healthier than the food itself.. ")
 KITCHEN = Room("Cafeteria_Kitchen", "The cafeteria's kitchen. They never actually cook anything, but there is always "
                "a lot of ingredients here.. ", "WEST: Food_Booths.", " There tends to be boxes of fruit snacks. A lot "
                "of milk cartons and juice boxes here too.. Or at least tends to be. As for now.. It's quite empty.")
