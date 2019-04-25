@@ -21,371 +21,6 @@ class Room(object):
         self.characters = []
 
 
-class Player(object):
-    def __init__(self, name, description, health_level, hydration_level, social_level, starting_location):
-        self.name = name
-        self.description = description
-        self.health_level = health_level
-        self.hydration_level = hydration_level
-        self.social_level = social_level
-        self.current_location = starting_location
-        self.inventory = []
-
-    def move(self, new_location):
-        """This moves the player to a new room
-        :param new_location: The room object of which you are going to
-        """
-        self.current_location = new_location
-
-    def find_next_room(self, direction):
-        """This method searches the current room so see if a room
-        exists in that direction.
-        :param direction: The direction that you want to move to
-        :return: The Room object if it exists, or None if it does not
-        """
-        name_of_room = getattr(self.current_location, direction)
-        return globals()[name_of_room]
-
-    def health_gained(self, amount1):
-        self.health_level += amount1
-
-    def hydration_gained(self, amount2):
-        self.hydration_level += amount2
-
-    def hydration_level_low(self):
-        if self.hydration_level() < 5:
-            print("You're hydration levels are low! Be sure you are drinking the necessary amount of water.")
-            print("this year's summer is hotter than usual. Drink water next time you have the chance.")
-            print(self.hydration_level())
-
-    def health_level_low(self):
-        if self.health_level() < 5:
-            print("You're hydration levels are low! Be sure you are eating well and healthy!!")
-            print("We're doing a lot of work than last year! Eat well when you get the chance.")
-            print(self.health_level())
-
-
-# Items ----------
-
-class Items(object):
-    def __init__(self, name, description):
-        self.name = name
-        self.description = description
-
-    def pickup(self):
-        print("Would you like to pick up this item?")
-        answer = input(">_")
-        if answer.upper() in ['YES']:
-            me.inventory.append(self)
-            print("you picked up:", self.name)
-            print(me.inventory)
-        if answer.upper() in ['NO']:
-            print("you did not pick up:", self.name)
-            print(me.inventory)
-
-
-class ConsumableLiquid(Items):
-    def __init__(self, name, description, hydration_plus, social_plus):
-        super(ConsumableLiquid, self).__init__(name, description)
-        self.name = name
-        self.description = description
-        self.hydration_plus = hydration_plus
-        self.social_plus = social_plus
-
-    def drink(self):
-        print("Would you like to drink:", self.name, "?")
-        answer = input(">_")
-        if answer.lower() in ['yes']:
-            print("You drank: ", self.name)
-            me.hydration_level += self.hydration_plus
-            print("You've gained: ", self.hydration_plus, "on hydration level!")
-        elif answer.lower() in ['no']:
-            print("You save", self.name, "for later.")
-        else:
-            self.drink()
-
-
-class ConsumableSolid(Items):
-    def __init__(self, name, description, health_plus, social_plus):
-        super(ConsumableSolid, self).__init__(name, description)
-        self.name = name
-        self.description = description
-        self.health_plus = health_plus
-        self.social_plus = social_plus
-
-    def eat(self):
-        print("Would you like to eat: ", self.name, "?")
-        answer = input(">_")
-        if answer.lower() in ['yes']:
-            print("You ate:", self.name)
-            me.health_level += self.health_plus
-            print("You've gained: ", self.health_plus, "on health level!")
-        elif answer.lower() in ['no']:
-            print("You save", self.name, "for later.")
-        else:
-            self.eat()
-
-
-class HealthItems(Items):
-    def __init__(self, name, description, health_plus):
-        super(HealthItems, self).__init__(name, description)
-        self.name = name
-        self.description = description
-        self.health_plus = health_plus
-
-    def use(self):
-        print("Would you like to use the item?")
-        answer = input(">_")
-        if answer in ['yes']:
-            print("you used the item: ", self.name)
-            me.health_level += self.health_plus
-            print("you've gained:", self.health_plus, "in your health level!")
-
-
-class Wearable(HealthItems):
-    def __init__(self, name):
-        super(Wearable, self).__init__(name, description, health_plus)
-        self.name = name
-        self.description = description
-        self.health_plus = health_plus
-
-
-class Music(Items):
-    def __init__(self, name, description, section, chair, social_plus):
-        super(Music, self).__init__(name, description)
-        self.name = name
-        self.description = description
-        self.section = section
-        self.section = section
-        self.chair = chair
-        self.social_plus = social_plus
-
-
-# CHARACTERS -----------------------------------------------------------------------------------------------------------
-
-class Characters(object):
-    def __init__(self, name, description, check, rank, grade, group, sorry, alright, them, last_year, this_year,
-                 section):
-        self.name = name
-        self.description = description
-        self.check = check
-        self.rank = rank
-        self.grade = grade
-        self.group = group
-        self.sorry = sorry
-        self.alright = alright
-        self.them = them
-        self.last_year = last_year
-        self.this_year = this_year
-        self.section = section
-        self.inventory = []
-
-    def trade(self):
-        print("((What would like from ", self.name, "?))")
-        for num, item in enumerate(self.inventory):
-            print(str(num + 1) + ": " + item.name)
-        wanted_item = input(">_")
-        if wanted_item.upper() in [self.inventory]:
-            character_want = random.choice(Plyer.inventory)
-            print("'Alright I see, well in return I would like ", character_want, ".'")
-            print("((Do you have the item?))")
-            if character_want in Player.inventory:
-                print(Player.inventory)
-                print("((You do have the item, trade?))")
-                answer = input(">_")
-                if answer.upper() in ['YES']:
-                    print(self.name, ":")
-                    print(self.alright, "looks like you got a deal!'")
-                    Player.inventory.remove(character_want)
-                    self.inventory.append(character_want)
-                    Player.inventory.append(wanted_item)
-                    self.inventory.remove(wanted_item)
-                    print("((Awesome! You know have ", wanted_item, " but lost ", character_want, ".")
-                    print("((You gained plus 5 on your social level!")
-                elif answer.upper() in ['NO']:
-                    print(self.name, ":")
-                    print(self.sorry, ", well maybe someone else might have", wanted_item, "for a different price.")
-            elif character_want not in Player.inventory:
-                print(Player.inventory)
-                print("((Hmm.. Seems like you don't have the item...))")
-                print(self.name, ":")
-                print("'Oh well... I'm sure someone else might be able to trade ", wanted_item, "for something ya got.")
-        elif wanted_item.upper() not in self.inventory:
-            print(self.name, ":")
-            print(self.sorry, "don't have that on me right now. You can try asking others.")
-            print("is there anything else you want?")
-            answer = input(">_")
-            if answer.upper() in ['YES', self.inventory]:
-                return self.trade()
-            elif answer.upper() in ['NO']:
-                print(self.sorry, "you're better off asking someone else..")
-
-    def talk_to(self):
-        print("You've approached: ", self.name)
-        print("What would you like to talk about?")
-        print("'1. Them', '2. Band last year', '3. Band this year', '4. Their section'")
-        answer = input(">_")
-        if answer.lower() in ['Them', 'them', '1']:
-            print(self.them)
-            print("-"*5)
-            print("You've learned more about:", self.name)
-        elif answer.lower() in ['Band last year', 'Band Last Year', 'band last year', '2']:
-            print(self.last_year)
-            print("-" * 5)
-            print("You know now more about the band and about", self.name, "!")
-        elif answer.lower() in ['Band this year', 'Band This Year', 'band this year', '3']:
-            print(self.this_year)
-            print("-" * 5)
-            print("You now know how", self.name, "really thinks of your year, whether its a good or bad thing..")
-        elif answer.lower() in ['Their section', 'their section', 'Their Section', '4']:
-            print(self.section)
-            print("-" * 5)
-            print("You now know now more about", self.name, "and the", self.group)
-        else:
-            print("??? Do you wan't to repeat that again?")
-            self.talk_to()
-
-    def check(self):
-        print("This is:", self.name)
-        print("-"*3)
-        print(self.name)
-        print("-" * 1)
-        print(self.description)
-        print("-" * 1)
-        print(self.rank)
-        print("-" * 1)
-        print(self.grade)
-        print("-" * 1)
-        print(self.group)
-        print("-" * 1)
-
-
-# ITEMS ----------------------------------------------------------------------------------------------------------------
-# Liquids -----
-WATER = ConsumableLiquid("Water", "Fresh and cold water you brought from home! It even has ice!", 15, 5)
-MILK = ConsumableLiquid("Milk", "Cold school plain milk. Nothing special about it.", 7, 2)
-SPORTS_DRINK = ConsumableLiquid("Sports Drink", "This is the usual brand of sports drink everyone brings to camp. "
-                                "Refreshing, fruity, and energy giving!", 10, 15)
-ARIZONA = ConsumableLiquid("Arizona", "This is most everyone's favorite juice. This can most definitely bring up your "
-                                      "social level, though how sweet it is, it may not be as nice with your health "
-                                      "level.", 4, 8)
-REBEL = ConsumableLiquid("Rebel Energy Drink", "Every one loves this energy drink! Though it's not as healthy as water,"
-                                               " everyone craves for this after practice.", 2, 15)
-# Solids -----
-APPLE = ConsumableSolid("Apple", "A nice red apple! Sweet but solid! Though everyone likes junk food, no one could "
-                                 "decline a nice apple!", 10, 5)
-FRIES = ConsumableSolid("Mac's Fries", "Everyone loves fried! Though it'snot the healthiest item, but that doesnt stop"
-                                       " anyone from eating them!", 10, 15)
-BURGER = ConsumableSolid("Mac's Burger", "A cheese burger! If you'd compare this to Mac's Fries, you'd think the "
-                                         "burger was the side option. Though this is a whole meal for anyone after "
-                                         "practice!", 8, 12)
-SANDWICH = ConsumableSolid("School Sandwich", "Since this is a school food, you never know if this sandwich is any "
-                                              "good or bad...", random.randint(-20, 20), random.randint(-5, 5))
-SALAD = ConsumableSolid("Salad", "School's salad. This is a surprise whether you feel better or worse after eating "
-                                 "this...", random.randint(-10, 10), random.randint(-5, 5))
-# Health -----
-SUN_SCREEN = HealthItems("Sun Screen", "Sun screen helps you stay protected! This is the type the band provides to "
-                         "every student. Safe for every student and very protective!", 25,)
-ENERGY_SHOT = HealthItems("Energy", "A mini energy drink! Has the necessary proteins and energy giving for incoming"
-                          " activities.", 10)
-# Music -----
-ALTO1A = Music("First chair Alto", "Alto Section Leader's music. A rare item to get a hold of since they are always"
-                                   " organized with their music!", "Saxes", "1st", 20)
-ALTO1B = Music("2nd First chair Alto", "Music for the next in command! although this is 1st chair music, it seems to "
-                                       "be just a tad different from the Section leader's music.", "Saxes", "1st", 15)
-ALTO2A = Music("Second Chair Alto", "Music for the second chairs.. Which seems to be majority of the section. Not too"
-                                    "different from the 1st chair.. except everything.", "Saxes", "2nd", 5)
-
-# CHARACTERS -----------------------------------------------------------------------------------------------------------
-
-# DIRECTOR -----
-DIRECTOR = Characters("Director", "Band Director", "The band director is one of the nicest people you'll ever meet. "
-                      "He's always ready to help you when you need it. He's also the type of person to wear converse "
-                      "to a formal concert.", "Director", "Adult", "Director", "Director", "Cool, awesome,",
-                      "Whoops, sorry", "Last year we had a few up and down moments. But it's alright! We'll do better "
-                      "this year and put in twice as much hard work than the last!", "This year I plan to have twice "
-                      "as many fundraisers I as well plan to have as many competitions. So be prepared.", "I'm the "
-                      "director of the band. Haha, not much of a section.")
-# DRUM MAJORS ------
-DML = Characters("Drum Major L", "Parade Drum Major", "Incredibly talented Tenor player. Known for being an incredible"
-                 " player with knowledge in multiple instruments.", "Drum Major", "Junior/11th", "DM, Saxes", "Sorry,",
-                 "Okay then,", "I'm L. The Parade Drum Major. I've been an alumni from the school's feeder. I've been "
-                 "playing Tenor Sax since i was in 3rd grade and i've been getting better since then.", "Last year was "
-                 "my first year as parade drum major. I started off roughly but we all do, and we all improve.", "This"
-                 " year seems to be off to a good start. I can't make much assumptions about it yet.", "You can "
-                 "consider the Drum majors as their own section, but i came from the saxes. They're a good section. "
-                 "There's not much I can say about it.")
-
-DMJ = Characters("Drum Major J", "Head Field Drum Major", "Incredibly talented player of multiple instruments. Has been"
-                 " head drum major since freshmen year. Rumors say he had made it to the top ranks due to an upper "
-                 "class men being related to him. Though records show no one with the same last name as him in the past"
-                 "10 years.", "Drum Major", "Junior/11th", "DM, Saxes", "Hm,", "Well,", "I'm J, the Head Drum major of "
-                 "the band.", "2 years ago we had won sweeps. I expect the band to win again, if the first years don't"
-                 " mess it up..", "I expect the first years to put their all into the band. If not, there's no reason"
-                 " for them being here.", "Section..? Thee's only 3 drum majors, you can consider that a section.")
-
-DMC = Characters("Drum Major C", "Event Drum Major", "He's incredibly nice and chill. Despite being drum major, he is"
-                 "more known for being very chill and a friend to most everyone. Plays multiple low instruments rather"
-                 " than high ones.", "Drum Major", "Junior/11th", "DM, Saxes, Brass", "Sorry bud,", "Cool!", "Hey, i'm"
-                 "C! I'm a brass player and sax player! Oh drum major too. I take control and lead during school and"
-                 "football game events! Lead bari player in most events when the other drum majors are the ones"
-                 " conducting too.", "Last year was my first year as drum major! A great time and i look forward to "
-                 "the rest of my years coming!", "This year i know it's going to be great! Do you're best!", "I was "
-                 "part of the Saxes my middle school years. I started brass such as trombone and tuba my first two "
-                 "years of high school! Both sections are great and i know both will keep up the good work!")
-# SAXES ------
-SAX_SL = Characters("Section Leader Ave", "Senior Saxophone Section Leader Ave", "Ave has played alto sax since 2nd"
-                    "grade. He's attended multiple music camps in order to improve. Many say he was suggested for "
-                    "Section Leader his sophomore year. He alo intended on running for Drum major, but the director "
-                    "needed him to stay back and teach this year's freshmen.", "Section Leader", "Senior/12th",
-                    "Saxophone", "Uh,", "Yeah alright then,", "I'm Ave. Sax Section Leader. I expect you to work hard"
-                    " and put in all effort you can. Also, don't skip practice, when we have sectionals, i expect you"
-                    " attend them.", "Last year was bad. We could have done better. A lot of the best players left "
-                    "last year. I don't expect us to do well this year.", "If this year get's any worse, i'll lose "
-                    "hope for tha band. This year's freshmen don't seem any good...", "The sax section.. We're family.")
-# FLUTES -----
-FLUTE_SL = Characters("Section Leader Ari", "Senior Flute Section Leader Ari", "Ari has been a promising player since"
-                      " she started her freshmen year. Incredibly kind and understanding to her section.", "Section "
-                      "Leader", "Senior/12th", "Flutes", "Excuse me", "Good,", "I'm Ari. The Flute's section leader."
-                      "I don't have much to say. When you need help, feel free to come talk to me.", "Last year we had"
-                      " managed to get average awards an average band can get. The year before, we had managed to get"
-                      " the highest awards such as sweeps and onwards... No pressure, but do hope everyone tries "
-                      "their hardest.", "This year we have managed to convince more 8th graders to join the band. I "
-                      "just hope their talent level is as big as their freshmen ego.", "The flute section, we're here "
-                      "to help each other out, as well as put all our efforts to be better players. No one slacks off,"
-                      " we're elegant and graceful people as well as players.")
-# CLARINETS -----
-CLARINET_SL = Characters("Section Leader Liz", "Senior Clarinet Section Leader Liz", "Senior Section Leader Liz "
-                         "learned to play clarinet since 2nd grade. She has been on top of all her classes since then."
-                         " She was the class pet in all her classes and had managed to become clarinet leader each "
-                         "year. This is her 2nd year as section leader.", "Section Leader", "Senior/12th", "Clarinets",
-                         "Pardon,", "That's great", "I'm Elizabeth, but everyone calls me Liz. I'm the clarinet's"
-                         " section leader! I'm so happy to see how big this section is, I hope the sections grows even"
-                         " mre after i leave.", "last year", "this year", "section")
-CLARINET_SL2 = Characters("Section Leader Kim", "Junior Clarinet Section Leader Kim", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
-# LOW_WINDS -----
-LW_SL = Characters("Section Leader Joaan", "Sophomore Low Wind Section Leader Joaan", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
-# TRUMPETS -----
-TRUMPET_SL = Characters("Section Leader Cole", "Senior Trumpet Section Leader Cole", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
-# HIGH BRASS -----
-MAX = Characters("Max", "Senior High brass section leader", "Max is the high brass section leader. Not as energetic as"
-                 " the sophomores but very energetic for a senior section leader. Vey talkative as he is proud of his"
-                 " section. Has also been dating the 2nd guard captain for 3 years.", "Section Leader", "Senior/12th",
-                 "High brass/Horns", "ah sorry,", "cool then,", "I'm Max! The high brass section leader! I've done "
-                 "marching band all four years! Thanks to that i have the best girl by my side and the most talented "
-                 "section!", "Last year was great!.. That's a lie.. We won sweeps the year before, but for what ever "
-                 "reason we've all gone downhill.. Do your best this year! Who knows! We might win something above "
-                 "1st!", "This year seems to be starting really off.. Don't let that bother you though, just do your "
-                 "best!", "High brass? They're the best! We're the best!")
-# LOW BRASS -----
-LB_SL = Characters("Section Leader Bryan", "Junior Low Brass Section Leader Bryan", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
-# PIT ------
-PIT_SL = Characters("Percussion Leader Vi", "Senior Percussion Leader Vi", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
-# DRUMLINE -----
-DL_SL = Characters("Drum Captain Van", "Senior Drum Captain Van", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
-# GUARD -----
-GUARD_SL = Characters("Guard Captain Tiana", "Senior Guard Captain Tiana", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
-
 # MAP ------------------------------------------------------------------------------------------------------------------
 TREE1 = Room("Band_Tree", "This is the nearest tree to the band room. Nothing too special about it.", "west: "
              "Hang_Out_Tree, north_east: Outside_Band_room", "This is the nearest tree to the band room. A lot of "
@@ -562,8 +197,383 @@ OUTER_ORCHESTRA.west = ORCHESTRA
 OUTER_ORCHESTRA.north_west = LOUNGE_HALL
 
 
-# PLAYING CONTROL ------------------------------------------------------------------------------------------------------
+class Player(object):
+    def __init__(self, name, description, health_level, hydration_level, social_level, starting_location):
+        self.name = name
+        self.description = description
+        self.health_level = health_level
+        self.hydration_level = hydration_level
+        self.social_level = social_level
+        self.current_location = starting_location
+        self.inventory = []
 
+    def move(self, new_location):
+        """This moves the player to a new room
+        :param new_location: The room object of which you are going to
+        """
+        self.current_location = new_location
+
+    def find_next_room(self, direction):
+        """This method searches the current room so see if a room
+        exists in that direction.
+        :param direction: The direction that you want to move to
+        :return: The Room object if it exists, or None if it does not
+        """
+        name_of_room = getattr(self.current_location, direction)
+        return globals()[name_of_room]
+
+    def health_gained(self, amount1):
+        self.health_level += amount1
+
+    def hydration_gained(self, amount2):
+        self.hydration_level += amount2
+
+    def hydration_level_low(self):
+        if self.hydration_level() < 5:
+            print("You're hydration levels are low! Be sure you are drinking the necessary amount of water.")
+            print("this year's summer is hotter than usual. Drink water next time you have the chance.")
+            print(self.hydration_level())
+
+    def health_level_low(self):
+        if self.health_level() < 5:
+            print("You're hydration levels are low! Be sure you are eating well and healthy!!")
+            print("We're doing a lot of work than last year! Eat well when you get the chance.")
+            print(self.health_level())
+
+
+me = Player("me", "it's me", 10, 10, 10, TREE1)
+
+
+# Items ----------
+class Items(object):
+    def __init__(self, name, description):
+        self.name = name
+        self.description = description
+
+    def pickup(self):
+        print("Would you like to pick up this item?")
+        answer = input(">_")
+        if answer.upper() in ['YES']:
+            me.inventory.append(self)
+            print("you picked up:", self.name)
+            print(me.inventory)
+        if answer.upper() in ['NO']:
+            print("you did not pick up:", self.name)
+            print(me.inventory)
+
+
+class ConsumableLiquid(Items):
+    def __init__(self, name, description, hydration_plus, social_plus):
+        super(ConsumableLiquid, self).__init__(name, description)
+        self.name = name
+        self.description = description
+        self.hydration_plus = hydration_plus
+        self.social_plus = social_plus
+
+    def drink(self):
+        print("Would you like to drink:", self.name, "?")
+        answer = input(">_")
+        if answer.lower() in ['yes']:
+            print("You drank: ", self.name)
+            me.hydration_level += self.hydration_plus
+            print("You've gained: ", self.hydration_plus, "on hydration level!")
+        elif answer.lower() in ['no']:
+            print("You save", self.name, "for later.")
+        else:
+            self.drink()
+
+
+class ConsumableSolid(Items):
+    def __init__(self, name, description, health_plus, social_plus):
+        super(ConsumableSolid, self).__init__(name, description)
+        self.name = name
+        self.description = description
+        self.health_plus = health_plus
+        self.social_plus = social_plus
+
+    def eat(self):
+        print("Would you like to eat: ", self.name, "?")
+        answer = input(">_")
+        if answer.lower() in ['yes']:
+            print("You ate:", self.name)
+            me.health_level += self.health_plus
+            print("You've gained: ", self.health_plus, "on health level!")
+        elif answer.lower() in ['no']:
+            print("You save", self.name, "for later.")
+        else:
+            self.eat()
+
+
+class HealthItems(Items):
+    def __init__(self, name, description, health_plus):
+        super(HealthItems, self).__init__(name, description)
+        self.name = name
+        self.description = description
+        self.health_plus = health_plus
+
+    def use(self):
+        print("Would you like to use the item?")
+        answer = input(">_")
+        if answer in ['yes']:
+            print("you used the item: ", self.name)
+            me.health_level += self.health_plus
+            print("you've gained:", self.health_plus, "in your health level!")
+
+
+class Wearable(HealthItems):
+    def __init__(self, name, description, health_plus):
+        super(Wearable, self).__init__(name, description, health_plus)
+        self.name = name
+        self.description = description
+        self.health_plus = health_plus
+
+
+class Music(Items):
+    def __init__(self, name, description, section, chair, social_plus):
+        super(Music, self).__init__(name, description)
+        self.name = name
+        self.description = description
+        self.section = section
+        self.section = section
+        self.chair = chair
+        self.social_plus = social_plus
+
+
+# CHARACTERS -----------------------------------------------------------------------------------------------------------
+
+class Characters(object):
+    def __init__(self, name, description, check, rank, grade, group, sorry, alright, them, last_year, this_year,
+                 section):
+        self.name = name
+        self.description = description
+        self.check = check
+        self.rank = rank
+        self.grade = grade
+        self.group = group
+        self.sorry = sorry
+        self.alright = alright
+        self.them = them
+        self.last_year = last_year
+        self.this_year = this_year
+        self.section = section
+        self.inventory = []
+
+    def trade(self):
+        print("((What would like from ", self.name, "?))")
+        for num, item in enumerate(self.inventory):
+            print(str(num + 1) + ": " + item.name)
+        wanted_item = input(">_")
+        if wanted_item.upper() in [self.inventory]:
+            character_want = random.choice(Player.inventory)
+            print("'Alright I see, well in return I would like ", character_want, ".'")
+            print("((Do you have the item?))")
+            if character_want in Player.inventory:
+                print(Player.inventory)
+                print("((You do have the item, trade?))")
+                answer = input(">_")
+                if answer.upper() in ['YES']:
+                    print(self.name, ":")
+                    print(self.alright, "looks like you got a deal!'")
+                    Player.inventory.remove(character_want)
+                    self.inventory.append(character_want)
+                    Player.inventory.append(wanted_item)
+                    self.inventory.remove(wanted_item)
+                    print("((Awesome! You know have ", wanted_item, " but lost ", character_want, ".")
+                    print("((You gained plus 5 on your social level!")
+                elif answer.upper() in ['NO']:
+                    print(self.name, ":")
+                    print(self.sorry, ", well maybe someone else might have", wanted_item, "for a different price.")
+            elif character_want not in Player.inventory:
+                print(Player.inventory)
+                print("((Hmm.. Seems like you don't have the item...))")
+                print(self.name, ":")
+                print("'Oh well... I'm sure someone else might be able to trade ", wanted_item, "for something ya got.")
+        elif wanted_item.upper() not in self.inventory:
+            print(self.name, ":")
+            print(self.sorry, "don't have that on me right now. You can try asking others.")
+            print("is there anything else you want?")
+            answer = input(">_")
+            if answer.upper() in ['YES', self.inventory]:
+                return self.trade()
+            elif answer.upper() in ['NO']:
+                print(self.sorry, "you're better off asking someone else..")
+
+    def talk_to(self):
+        print("You've approached: ", self.name)
+        print("What would you like to talk about?")
+        print("'1. Them', '2. Band last year', '3. Band this year', '4. Their section'")
+        answer = input(">_")
+        if answer.lower() in ['Them', 'them', '1']:
+            print(self.them)
+            print("-"*5)
+            print("You've learned more about:", self.name)
+        elif answer.lower() in ['Band last year', 'Band Last Year', 'band last year', '2']:
+            print(self.last_year)
+            print("-" * 5)
+            print("You know now more about the band and about", self.name, "!")
+        elif answer.lower() in ['Band this year', 'Band This Year', 'band this year', '3']:
+            print(self.this_year)
+            print("-" * 5)
+            print("You now know how", self.name, "really thinks of your year, whether its a good or bad thing..")
+        elif answer.lower() in ['Their section', 'their section', 'Their Section', '4']:
+            print(self.section)
+            print("-" * 5)
+            print("You now know now more about", self.name, "and the", self.group)
+        else:
+            print("??? Do you wan't to repeat that again?")
+            self.talk_to()
+
+    def check(self):
+        print("This is:", self.name)
+        print("-"*3)
+        print(self.name)
+        print("-" * 1)
+        print(self.description)
+        print("-" * 1)
+        print(self.check)
+        print("-" * 1)
+        print(self.rank)
+        print("-" * 1)
+        print(self.grade)
+        print("-" * 1)
+        print(self.group)
+        print("-" * 1)
+
+
+# ITEMS ----------------------------------------------------------------------------------------------------------------
+# Liquids -----
+WATER = ConsumableLiquid("Water", "Fresh and cold water you brought from home! It even has ice!", 15, 5)
+MILK = ConsumableLiquid("Milk", "Cold school plain milk. Nothing special about it.", 7, 2)
+SPORTS_DRINK = ConsumableLiquid("Sports Drink", "This is the usual brand of sports drink everyone brings to camp. "
+                                "Refreshing, fruity, and energy giving!", 10, 15)
+ARIZONA = ConsumableLiquid("Arizona", "This is most everyone's favorite juice. This can most definitely bring up your "
+                                      "social level, though how sweet it is, it may not be as nice with your health "
+                                      "level.", 4, 8)
+REBEL = ConsumableLiquid("Rebel Energy Drink", "Every one loves this energy drink! Though it's not as healthy as water,"
+                                               " everyone craves for this after practice.", 2, 15)
+# Solids -----
+APPLE = ConsumableSolid("Apple", "A nice red apple! Sweet but solid! Though everyone likes junk food, no one could "
+                                 "decline a nice apple!", 10, 5)
+FRIES = ConsumableSolid("Mac's Fries", "Everyone loves fried! Though it'snot the healthiest item, but that doesnt stop"
+                                       " anyone from eating them!", 10, 15)
+BURGER = ConsumableSolid("Mac's Burger", "A cheese burger! If you'd compare this to Mac's Fries, you'd think the "
+                                         "burger was the side option. Though this is a whole meal for anyone after "
+                                         "practice!", 8, 12)
+SANDWICH = ConsumableSolid("School Sandwich", "Since this is a school food, you never know if this sandwich is any "
+                                              "good or bad...", random.randint(-20, 20), random.randint(-5, 5))
+SALAD = ConsumableSolid("Salad", "School's salad. This is a surprise whether you feel better or worse after eating "
+                                 "this...", random.randint(-10, 10), random.randint(-5, 5))
+# Health -----
+SUN_SCREEN = HealthItems("Sun Screen", "Sun screen helps you stay protected! This is the type the band provides to "
+                         "every student. Safe for every student and very protective!", 25,)
+ENERGY_SHOT = HealthItems("Energy", "A mini energy drink! Has the necessary proteins and energy giving for incoming"
+                          " activities.", 10)
+# Music -----
+ALTO1A = Music("First chair Alto", "Alto Section Leader's music. A rare item to get a hold of since they are always"
+                                   " organized with their music!", "Saxes", "1st", 20)
+ALTO1B = Music("2nd First chair Alto", "Music for the next in command! although this is 1st chair music, it seems to "
+                                       "be just a tad different from the Section leader's music.", "Saxes", "1st", 15)
+ALTO2A = Music("Second Chair Alto", "Music for the second chairs.. Which seems to be majority of the section. Not too"
+                                    "different from the 1st chair.. except everything.", "Saxes", "2nd", 5)
+
+# CHARACTERS -----------------------------------------------------------------------------------------------------------
+
+# DIRECTOR -----
+DIRECTOR = Characters("Director", "Band Director", "The band director is one of the nicest people you'll ever meet. "
+                      "He's always ready to help you when you need it. He's also the type of person to wear converse "
+                      "to a formal concert.", "Director", "Adult", "Director", "Director", "Cool, awesome,",
+                      "Whoops, sorry", "Last year we had a few up and down moments. But it's alright! We'll do better "
+                      "this year and put in twice as much hard work than the last!", "This year I plan to have twice "
+                      "as many fundraisers I as well plan to have as many competitions. So be prepared.", "I'm the "
+                      "director of the band. Haha, not much of a section.")
+# DRUM MAJORS ------
+DML = Characters("Drum Major L", "Parade Drum Major", "Incredibly talented Tenor player. Known for being an incredible"
+                 " player with knowledge in multiple instruments.", "Drum Major", "Junior/11th", "DM, Saxes", "Sorry,",
+                 "Okay then,", "I'm L. The Parade Drum Major. I've been an alumni from the school's feeder. I've been "
+                 "playing Tenor Sax since i was in 3rd grade and i've been getting better since then.", "Last year was "
+                 "my first year as parade drum major. I started off roughly but we all do, and we all improve.", "This"
+                 " year seems to be off to a good start. I can't make much assumptions about it yet.", "You can "
+                 "consider the Drum majors as their own section, but i came from the saxes. They're a good section. "
+                 "There's not much I can say about it other than that.")
+
+DMJ = Characters("Drum Major J", "Head Field Drum Major", "Incredibly talented player of multiple instruments. Has been"
+                 " head drum major since freshmen year. Rumors say he had made it to the top ranks due to an upper "
+                 "class men being related to him. Though records show no one with the same last name as him in the past"
+                 "10 years.", "Drum Major", "Junior/11th", "DM, Saxes", "Hm,", "Well,", "I'm J, the Head Drum major of "
+                 "the band.", "2 years ago we had won sweeps. I expect the band to win again, if the first years don't"
+                 " mess it up..", "I expect the first years to put their all into the band. If not, there's no reason"
+                 " for them being here.", "Section..? There's only 3 drum majors, can you consider that a section..?")
+
+DMC = Characters("Drum Major C", "Event Drum Major", "He's incredibly nice and chill. Despite being drum major, he is"
+                 "more known for being very chill and a friend to most everyone. Plays multiple low instruments rather"
+                 " than high ones.", "Drum Major", "Junior/11th", "DM, Saxes, Brass", "Sorry bud,", "Cool!", "Hey, i'm"
+                 "C! I'm a brass player and sax player! Oh drum major too. I take control and lead during school and"
+                 "football game events! Lead bari player in most events when the other drum majors are the ones"
+                 " conducting too.", "Last year was my first year as drum major! A great time and i look forward to "
+                 "the rest of my years coming!", "This year i know it's going to be great! Do you're best!", "I was "
+                 "part of the Saxes my middle school years. I started brass such as trombone and tuba my first two "
+                 "years of high school! Both sections are great and i know both will keep up the good work!")
+# SAXES ------
+SAX_SL = Characters("Section Leader Ave", "Senior Saxophone Section Leader Ave", "Ave has played alto sax since 2nd"
+                    "grade. He's attended multiple music camps in order to improve. Many say he was suggested for "
+                    "Section Leader his sophomore year. He alo intended on running for Drum major, but the director "
+                    "needed him to stay back and teach this year's freshmen.", "Section Leader", "Senior/12th",
+                    "Saxophone", "Uh,", "Yeah alright then,", "I'm Ave. Sax Section Leader. I expect you to work hard"
+                    " and put in all effort you can. Also, don't skip practice, when we have sectionals, i expect you"
+                    " attend them.", "Last year was bad. We could have done better. A lot of the best players left "
+                    "last year. I don't expect us to do well this year.", "If this year get's any worse, i'll lose "
+                    "hope for tha band. This year's freshmen don't seem any good...", "The sax section.. We're family.")
+# FLUTES -----
+FLUTE_SL = Characters("Section Leader Ari", "Senior Flute Section Leader Ari", "Ari has been a promising player since"
+                      " she started her freshmen year. Incredibly kind and understanding to her section.", "Section "
+                      "Leader", "Senior/12th", "Flutes", "Excuse me", "Good,", "I'm Ari. The Flute's section leader."
+                      "I don't have much to say. When you need help, feel free to come talk to me.", "Last year we had"
+                      " managed to get average awards an average band can get. The year before, we had managed to get"
+                      " the highest awards such as sweeps and onwards... No pressure, but do hope everyone tries "
+                      "their hardest.", "This year we have managed to convince more 8th graders to join the band. I "
+                      "just hope their talent level is as big as their freshmen ego.", "The flute section, we're here "
+                      "to help each other out, as well as put all our efforts to be better players. No one slacks off,"
+                      " we're elegant and graceful people as well as players.")
+# CLARINETS -----
+CLARINET_SL = Characters("Section Leader Liz", "Senior Clarinet Section Leader Liz", "Senior Section Leader Liz "
+                         "learned to play clarinet since 2nd grade. She has been on top of all her classes since then."
+                         " She was the class pet in all her classes and had managed to become clarinet leader each "
+                         "year. This is her 2nd year as section leader.", "Section Leader", "Senior/12th", "Clarinets",
+                         "Pardon,", "That's great", "I'm Elizabeth, but everyone calls me Liz. I'm the clarinet's"
+                         " section leader! I'm so happy to see how big this section is, I hope the sections grows even"
+                         " mre after i leave.", "The previous year we had gone a bit downhill. This being my last year,"
+                         " i expect things to go better,,", "This year seems to have a lot more members joining than"
+                         " before. I'm glad to see so many new faces.", "There is always so many kind people in the"
+                         " section. My opinion would be biased, but we're a kind and welcoming group.")
+CLARINET_SL2 = Characters("Section Leader Kim", "Junior Clarinet Section Leader Kim", "Guaranteed next year's clarinet"
+                          " section leader. Kin had been amazed by Liz's talent and had asked to be under her wing all"
+                          " of high school. Through that she has become the most talented player in her grade and "
+                          "section.", "Co Section Leader", "Junior/11th", "Clarinets", "Sorry,", "Oh cool,", "them", "last year", "this year", "section")
+# LOW_WINDS -----
+LW_SL = Characters("Section Leader Joaan", "Sophomore Low Wind Section Leader Joaan", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
+# TRUMPETS -----
+TRUMPET_SL = Characters("Section Leader Cole", "Senior Trumpet Section Leader Cole", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
+# HIGH BRASS -----
+MAX = Characters("Max", "Senior High brass section leader", "Max is the high brass section leader. Not as energetic as"
+                 " the sophomores but very energetic for a senior section leader. Vey talkative as he is proud of his"
+                 " section. Has also been dating the 2nd guard captain for 3 years.", "Section Leader", "Senior/12th",
+                 "High brass/Horns", "ah sorry,", "cool then,", "I'm Max! The high brass section leader! I've done "
+                 "marching band all four years! Thanks to that i have the best girl by my side and the most talented "
+                 "section!", "Last year was great!.. That's a lie.. We won sweeps the year before, but for what ever "
+                 "reason we've all gone downhill.. Do your best this year! Who knows! We might win something above "
+                 "1st!", "This year seems to be starting really off.. Don't let that bother you though, just do your "
+                 "best!", "High brass? They're the best! We're the best!")
+# LOW BRASS -----
+LB_SL = Characters("Section Leader Bryan", "Junior Low Brass Section Leader Bryan", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
+# PIT ------
+PIT_SL = Characters("Percussion Leader Vi", "Senior Percussion Leader Vi", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
+# DRUMLINE -----
+DL_SL = Characters("Drum Captain Van", "Senior Drum Captain Van", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
+# GUARD -----
+GUARD_SL = Characters("Guard Captain Tiana", "Senior Guard Captain Tiana", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
+
+
+# PLAYING CONTROL ------------------------------------------------------------------------------------------------------
 playing = True
 directions = ['north', 'south', 'east', 'west', 'north_east', 'north_west', 'south_east', 'south_west']
 short_directions = ['n', 's', 'e', 'w', 'ne', 'nw', 'se', 'sw']
@@ -585,7 +595,7 @@ while playing:
         print(Player.current_location.long_desc)
         print("*****")
     if command.lower() in ['t', 'talk']:
-        Room.Characters.talk()
+        print()
     if command.lower() in ['commands', 'command']:
         print("===***************************************")
         print("COMMANDS::                               *")
