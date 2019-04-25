@@ -548,7 +548,8 @@ CLARINET_SL = Characters("Section Leader Liz", "Senior Clarinet Section Leader L
 CLARINET_SL2 = Characters("Section Leader Kim", "Junior Clarinet Section Leader Kim", "Guaranteed next year's clarinet"
                           " section leader. Kin had been amazed by Liz's talent and had asked to be under her wing all"
                           " of high school. Through that she has become the most talented player in her grade and "
-                          "section.", "Co Section Leader", "Junior/11th", "Clarinets", "Sorry,", "Oh cool,", "them", "last year", "this year", "section")
+                          "section.", "Co Section Leader", "Junior/11th", "Clarinets", "Sorry,", "Oh cool,", "I'm kim!"
+                          " I'm the junior section leader for the clarinets.", "last year", "this year", "section")
 # LOW_WINDS -----
 LW_SL = Characters("Section Leader Joaan", "Sophomore Low Wind Section Leader Joaan", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
 # TRUMPETS -----
