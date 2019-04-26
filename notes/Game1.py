@@ -549,9 +549,17 @@ CLARINET_SL2 = Characters("Section Leader Kim", "Junior Clarinet Section Leader 
                           " section leader. Kin had been amazed by Liz's talent and had asked to be under her wing all"
                           " of high school. Through that she has become the most talented player in her grade and "
                           "section.", "Co Section Leader", "Junior/11th", "Clarinets", "Sorry,", "Oh cool,", "I'm kim!"
-                          " I'm the junior section leader for the clarinets.", "last year", "this year", "section")
+                          " I'm the junior section leader for the clarinets. Ah, there's not much about me else i can "
+                          "say.", "Oh! Last year was not good. i believe we may be able to get better this year~!",
+                          "This year! I have faith that the band could be better this year! If not, i may have to "
+                          "reconsider joining next year...", "The section, we are so many people, it's hard to tell if"
+                          " that's a good thing or bad. Well, the more members the better.")
 # LOW_WINDS -----
-LW_SL = Characters("Section Leader Joaan", "Sophomore Low Wind Section Leader Joaan", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
+LW_SL = Characters("Section Leader Joaan", "Sophomore Low Wind Section Leader Joaan", "Joaan is a sohphomore student."
+                   " There are not as lot of low wind players, but out of those there are, she is one of the highest"
+                   " players. She started off from a regular clarinet player, to a low wind player.", "Section Leader",
+                   "Sophomore/10th", "Low Winds", "Sorry,", "Nice,", "I'm Joaan. Thew low winds section leader. Sure "
+                   "everyone thinks my position was forced, but i'll show everyone i earned my spot.", "last year", "this year", "section")
 # TRUMPETS -----
 TRUMPET_SL = Characters("Section Leader Cole", "Senior Trumpet Section Leader Cole", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
 # HIGH BRASS -----
@@ -573,6 +581,64 @@ DL_SL = Characters("Drum Captain Van", "Senior Drum Captain Van", "check", "rank
 # GUARD -----
 GUARD_SL = Characters("Guard Captain Tiana", "Senior Guard Captain Tiana", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
 
+
+# ROOM CHARACYTERS -----------------------------------------------------------------------------------------------------
+TREE1.characters = []
+TREE2.characters = []
+OUTER_STAGE.characters = []
+BACK_STAGE.characters = []
+STAGE.characters = []
+CAFETERIA.characters = []
+JANITOR_ROOM.characters = []
+WATER_FOUNTAIN.characters = []
+FOOD_BOOTHS.characters = []
+KITCHEN.characters = []
+BAND_ROOM.characters = []
+OFFICE.characters = []
+DRUMLINE.characters = []
+PERCUSSION.characters = []
+WOODWIND.characters = []
+MAIN_BAND_ROOM.characters = []
+UNIFORM.characters = []
+ORCHESTRA.characters = []
+BRASS.characters = []
+GUARD.characters = []
+BAND_HALL.characters = []
+LOUNGE_HALL.characters = []
+STORAGE.characters = []
+TEACHER_LOUNGE.characters = []
+LOUNGE_TABLE.characters = []
+OUTER_BAND.characters = []
+OUTER_ORCHESTRA.characters = []
+
+# ROOM ITEMS -----------------------------------------------------------------------------------------------------------
+TREE1.items = []
+TREE2.items = []
+OUTER_STAGE.items = []
+BACK_STAGE.items = []
+STAGE.characters = []
+CAFETERIA.characters = []
+JANITOR_ROOM.characters = []
+WATER_FOUNTAIN.characters = []
+FOOD_BOOTHS.characters = []
+KITCHEN.characters = []
+BAND_ROOM.characters = []
+OFFICE.characters = []
+DRUMLINE.characters = []
+PERCUSSION.characters = []
+WOODWIND.characters = []
+MAIN_BAND_ROOM.characters = []
+UNIFORM.characters = []
+ORCHESTRA.characters = []
+BRASS.characters = []
+GUARD.characters = []
+BAND_HALL.characters = []
+LOUNGE_HALL.characters = []
+STORAGE.characters = []
+TEACHER_LOUNGE.characters = []
+LOUNGE_TABLE.characters = []
+OUTER_BAND.characters = []
+OUTER_ORCHESTRA.characters = []
 
 # PLAYING CONTROL ------------------------------------------------------------------------------------------------------
 playing = True
