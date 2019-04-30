@@ -21,6 +21,13 @@ def divisible_by_num_3(num: str):
 #        print(old_number)
 
 
+def reverse_it(string):
+    return x[::-1]
+
+
+reverse_it("Hello World")
+
+
 def divisible_by_2(num: str):
     first_num = int(num[0])
     if first_num % 2 == 0:

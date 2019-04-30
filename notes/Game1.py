@@ -39,13 +39,13 @@ OUTER_STAGE = Room("Amp", "The amp. It's stairs and wide stage is the best place
 BACK_STAGE = Room("Back_Stage", "It's the back of the stage. There's really no need to be here. ", "NORTH_WEST: "
                   "Stage, NORTH_EAST: Stage.", "Occasionally you can find theatre kids hanging around here.. Something"
                   " had happened between band and theatre kids 2 years ago. Though upperclassmen won't mention what so"
-                  " event was about, it seems to have seperated these two groups into almost purely enemies.. You'd "
+                  " event was about, it seems to have separated these two groups into almost purely enemies.. You'd "
                   "best hurry out of here..")
 STAGE = Room("Stage", "The school's main stage. Band performances, mainly concert happen here! When the lights shine "
              "on you, it's the best feeling! Oh, and theatre kids do their plays here to. ", "NORTH_WEST: Cafeteria, "
              "NORTH_EAST: Cafeteria.", "Saxes tends to have sectionals here.. They tend to be the only ones close to "
              "theatre kids compared to the rest of the band sections, that's why they get to have sectionals here "
-             "peacfully while theatre kids rehaearse and work on the stage.")
+             "peacefully while theatre kids rehearse and work on the stage.")
 CAFETERIA = Room("Cafeteria", "It's the school's cafeteria. Tables and chairs are put away most times.", "NORTH_WEST:"
                  " Water_Fountains, NORTH: Janitor_Storage_Room, SOUTH_EAST: Band_Hall, NORTH_EAST: Band_Hall.", "A lot"
                  " of sections tend to have practice here. It can get awkward with theatre kids appearing on stage. "
@@ -555,13 +555,15 @@ CLARINET_SL2 = Characters("Section Leader Kim", "Junior Clarinet Section Leader 
                           "reconsider joining next year...", "The section, we are so many people, it's hard to tell if"
                           " that's a good thing or bad. Well, the more members the better.")
 # LOW_WINDS -----
-LW_SL = Characters("Section Leader Joaan", "Sophomore Low Wind Section Leader Joaan", "Joaan is a sohphomore student."
+LW_SL = Characters("Section Leader Joan", "Sophomore Low Wind Section Leader Joan", "Joan is a sohphomore student."
                    " There are not as lot of low wind players, but out of those there are, she is one of the highest"
                    " players. She started off from a regular clarinet player, to a low wind player.", "Section Leader",
                    "Sophomore/10th", "Low Winds", "Sorry,", "Nice,", "I'm Joaan. Thew low winds section leader. Sure "
-                   "everyone thinks my position was forced, but i'll show everyone i earned my spot.", "last year", "this year", "section")
+                   "everyone thinks my position was forced, but i'll show everyone i earned my spot.", "last year",
+                   "this year", "section")
 # TRUMPETS -----
-TRUMPET_SL = Characters("Section Leader Cole", "Senior Trumpet Section Leader Cole", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
+TRUMPET_SL = Characters("Section Leader Cole", "Senior Trumpet Section Leader Cole", "check", "rank", "grade", "group",
+                        "sorry", "alright", "them", "last year", "this year", "section")
 # HIGH BRASS -----
 MAX = Characters("Max", "Senior High brass section leader", "Max is the high brass section leader. Not as energetic as"
                  " the sophomores but very energetic for a senior section leader. Vey talkative as he is proud of his"
@@ -573,16 +575,20 @@ MAX = Characters("Max", "Senior High brass section leader", "Max is the high bra
                  "1st!", "This year seems to be starting really off.. Don't let that bother you though, just do your "
                  "best!", "High brass? They're the best! We're the best!")
 # LOW BRASS -----
-LB_SL = Characters("Section Leader Bryan", "Junior Low Brass Section Leader Bryan", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
+LB_SL = Characters("Section Leader Bryan", "Junior Low Brass Section Leader Bryan", "check", "rank", "grade", "group",
+                   "sorry", "alright", "them", "last year", "this year", "section")
 # PIT ------
-PIT_SL = Characters("Percussion Leader Vi", "Senior Percussion Leader Vi", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
+PIT_SL = Characters("Percussion Leader Vi", "Senior Percussion Leader Vi", "check", "rank", "grade", "group", "sorry",
+                    "alright", "them", "last year", "this year", "section")
 # DRUMLINE -----
-DL_SL = Characters("Drum Captain Van", "Senior Drum Captain Van", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
+DL_SL = Characters("Drum Captain Van", "Senior Drum Captain Van", "check", "rank", "grade", "group", "sorry", "alright",
+                   "them", "last year", "this year", "section")
 # GUARD -----
-GUARD_SL = Characters("Guard Captain Tiana", "Senior Guard Captain Tiana", "check", "rank", "grade", "group", "sorry", "alright", "them", "last year", "this year", "section")
+GUARD_SL = Characters("Guard Captain Tiana", "Senior Guard Captain Tiana", "check", "rank", "grade", "group", "sorry",
+                      "alright", "them", "last year", "this year", "section")
 
 
-# ROOM CHARACYTERS -----------------------------------------------------------------------------------------------------
+# ROOM CHARACTERS -----------------------------------------------------------------------------------------------------
 TREE1.characters = []
 TREE2.characters = []
 OUTER_STAGE.characters = []
@@ -594,9 +600,9 @@ WATER_FOUNTAIN.characters = []
 FOOD_BOOTHS.characters = []
 KITCHEN.characters = []
 BAND_ROOM.characters = []
-OFFICE.characters = []
-DRUMLINE.characters = []
-PERCUSSION.characters = []
+OFFICE.characters = [DIRECTOR]
+DRUMLINE.characters = [DL_SL]
+PERCUSSION.characters = [PIT_SL]
 WOODWIND.characters = []
 MAIN_BAND_ROOM.characters = []
 UNIFORM.characters = []
