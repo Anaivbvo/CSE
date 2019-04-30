@@ -565,15 +565,15 @@ LW_SL = Characters("Section Leader Joan", "Sophomore Low Wind Section Leader Joa
 TRUMPET_SL = Characters("Section Leader Cole", "Senior Trumpet Section Leader Cole", "check", "rank", "grade", "group",
                         "sorry", "alright", "them", "last year", "this year", "section")
 # HIGH BRASS -----
-MAX = Characters("Max", "Senior High brass section leader", "Max is the high brass section leader. Not as energetic as"
-                 " the sophomores but very energetic for a senior section leader. Vey talkative as he is proud of his"
-                 " section. Has also been dating the 2nd guard captain for 3 years.", "Section Leader", "Senior/12th",
-                 "High brass/Horns", "ah sorry,", "cool then,", "I'm Max! The high brass section leader! I've done "
-                 "marching band all four years! Thanks to that i have the best girl by my side and the most talented "
-                 "section!", "Last year was great!.. That's a lie.. We won sweeps the year before, but for what ever "
-                 "reason we've all gone downhill.. Do your best this year! Who knows! We might win something above "
-                 "1st!", "This year seems to be starting really off.. Don't let that bother you though, just do your "
-                 "best!", "High brass? They're the best! We're the best!")
+HB_SL = Characters("Max", "Senior High brass section leader", "Max is the high brass section leader. Not energetic as"
+                   " the sophomores but very energetic for a senior section leader. Vey talkative as he is proud of his"
+                   " section. Has also been dating the 2nd guard captain for 3 years.", "Section Leader", "Senior/12th",
+                   "High brass/Horns", "ah sorry,", "cool then,", "I'm Max! The high brass section leader! I've done "
+                   "marching band all four years! Thanks to that i have the best girl by my side and the most talented "
+                   "section!", "Last year was great!.. That's a lie.. We won sweeps the year before, but for what ever "
+                   "reason we've all gone downhill.. Do your best this year! Who knows! We might win something above "
+                   "1st!", "This year seems to be starting really off.. Don't let that bother you though, just do your "
+                   "best!", "High brass? They're the best! We're the best!")
 # LOW BRASS -----
 LB_SL = Characters("Section Leader Bryan", "Junior Low Brass Section Leader Bryan", "check", "rank", "grade", "group",
                    "sorry", "alright", "them", "last year", "this year", "section")
@@ -584,8 +584,10 @@ PIT_SL = Characters("Percussion Leader Vi", "Senior Percussion Leader Vi", "chec
 DL_SL = Characters("Drum Captain Van", "Senior Drum Captain Van", "check", "rank", "grade", "group", "sorry", "alright",
                    "them", "last year", "this year", "section")
 # GUARD -----
-GUARD_SL = Characters("Guard Captain Tiana", "Senior Guard Captain Tiana", "check", "rank", "grade", "group", "sorry",
-                      "alright", "them", "last year", "this year", "section")
+GUARD_SL1 = Characters("Guard Captain Tiana", "Senior Guard Captain Tiana", "check", "rank", "grade", "group", "sorry",
+                       "alright", "them", "last year", "this year", "section")
+GUARD_SL2 = Characters("Guard Captain Bri", "Senior Guard Captain Bri", "check", "rank", "grade", "group", "sorry",
+                       "alright", "them", "last year", "this year", "section")
 
 
 # ROOM CHARACTERS -----------------------------------------------------------------------------------------------------
@@ -599,20 +601,20 @@ JANITOR_ROOM.characters = []
 WATER_FOUNTAIN.characters = []
 FOOD_BOOTHS.characters = []
 KITCHEN.characters = []
-BAND_ROOM.characters = []
-OFFICE.characters = [DIRECTOR]
+BAND_ROOM.characters = [FLUTE_SL]
+OFFICE.characters = [DIRECTOR, DMJ]
 DRUMLINE.characters = [DL_SL]
 PERCUSSION.characters = [PIT_SL]
-WOODWIND.characters = []
-MAIN_BAND_ROOM.characters = []
+WOODWIND.characters = [CLARINET_SL, CLARINET_SL2]
+MAIN_BAND_ROOM.characters = [DMC]
 UNIFORM.characters = []
-ORCHESTRA.characters = []
-BRASS.characters = []
-GUARD.characters = []
-BAND_HALL.characters = []
+ORCHESTRA.characters = [SAX_SL, DML]
+BRASS.characters = [HB_SL, GUARD_SL2, LB_SL]
+GUARD.characters = [GUARD_SL1]
+BAND_HALL.characters = [TRUMPET_SL]
 LOUNGE_HALL.characters = []
 STORAGE.characters = []
-TEACHER_LOUNGE.characters = []
+TEACHER_LOUNGE.characters = [LW_SL]
 LOUNGE_TABLE.characters = []
 OUTER_BAND.characters = []
 OUTER_ORCHESTRA.characters = []
@@ -653,6 +655,24 @@ short_directions = ['n', 's', 'e', 'w', 'ne', 'nw', 'se', 'sw']
 
 Player = Player("me", "it's me", 10, 10, 10, TREE1)
 
+print("===***************************************")
+print("COMMANDS::                               *")
+print("PRESS:                                   *")
+print(" 'q', 'quit', 'ee', or 'exit':           *")
+print("To exit and end game.                    *")
+print("===                                      *")
+print("'i' or 'inventory':                      *")
+print("To check inventory.                      *")
+print("===                                      *")
+print("'c', or 'check':                         *")
+print("To check the room's longer description.  *")
+print("===                                      *")
+print("'t', or 'talk':                          *")
+print("To talk to the room's characters.        *")
+print("===                                      *")
+print("'commands', 'help':                      *")
+print("To see the commands again.               *")
+print("===***************************************")
 
 while playing:
     print("-", Player.current_location.name)
@@ -704,21 +724,4 @@ while playing:
                 print("Error: Can't go that way")
 
 
-print("===***************************************")
-print("COMMANDS::                               *")
-print("PRESS:                                   *")
-print(" 'q', 'quit', 'ee', or 'exit':           *")
-print("To exit and end game.                    *")
-print("===                                      *")
-print("'i' or 'inventory':                      *")
-print("To check inventory.                      *")
-print("===                                      *")
-print("'c', or 'check':                         *")
-print("To check the room's longer description.  *")
-print("===                                      *")
-print("'t', or 'talk':                          *")
-print("To talk to the room's characters.        *")
-print("===                                      *")
-print("'commands':                              *")
-print("To see the commands again.               *")
-print("===***************************************")
+
