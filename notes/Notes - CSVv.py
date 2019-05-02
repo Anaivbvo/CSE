@@ -83,10 +83,9 @@ string = input(">_")
 
 
 def valid_card_number(num: str):
-    print(string[:-1])
-    print(reverse_it(string))
-    new = list(string)
-    new((0, 2, 4, 6, 8, 10)*2)
+    new = string[:-1]
+    print(new)
+    print(reverse_it(new))
 
 
 print(valid_card_number(string))

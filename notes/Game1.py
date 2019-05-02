@@ -522,7 +522,7 @@ SAX_SL = Characters("Section Leader Ave", "Senior Saxophone Section Leader Ave",
                     " and put in all effort you can. Also, don't skip practice, when we have sectionals, i expect you"
                     " attend them.", "Last year was bad. We could have done better. A lot of the best players left "
                     "last year. I don't expect us to do well this year.", "If this year get's any worse, i'll lose "
-                    "hope for tha band. This year's freshmen don't seem any good...", "The sax section.. We're family.")
+                    "hope for tha band. This year's freshmen don't seem too bad...", "The sax section.. We're family.")
 # FLUTES -----
 FLUTE_SL = Characters("Section Leader Ari", "Senior Flute Section Leader Ari", "Ari has been a promising player since"
                       " she started her freshmen year. Incredibly kind and understanding to her section.", "Section "
@@ -558,7 +558,7 @@ CLARINET_SL2 = Characters("Section Leader Kim", "Junior Clarinet Section Leader 
 LW_SL = Characters("Section Leader Joan", "Sophomore Low Wind Section Leader Joan", "Joan is a sohphomore student."
                    " There are not as lot of low wind players, but out of those there are, she is one of the highest"
                    " players. She started off from a regular clarinet player, to a low wind player.", "Section Leader",
-                   "Sophomore/10th", "Low Winds", "Sorry,", "Nice,", "I'm Joaan. Thew low winds section leader. Sure "
+                   "Sophomore/10th", "Low Winds", "Sorry,", "Nice,", "I'm Joan. Thew low winds section leader. Sure "
                    "everyone thinks my position was forced, but i'll show everyone i earned my spot.", "last year",
                    "this year", "section")
 # TRUMPETS -----
@@ -598,8 +598,8 @@ BACK_STAGE.characters = []
 STAGE.characters = []
 CAFETERIA.characters = []
 JANITOR_ROOM.characters = []
-WATER_FOUNTAIN.characters = []
-FOOD_BOOTHS.characters = []
+WATER_FOUNTAIN.characters = [WATER]
+FOOD_BOOTHS.characters = [APPLE, SALAD]
 KITCHEN.characters = []
 BAND_ROOM.characters = [FLUTE_SL]
 OFFICE.characters = [DIRECTOR, DMJ]
@@ -722,6 +722,3 @@ while playing:
                 Player.move(room_name)
             except KeyError:
                 print("Error: Can't go that way")
-
-
-
