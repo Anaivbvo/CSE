@@ -476,8 +476,7 @@ ALTO1B = Music("2nd First chair Alto", "Music for the next in command! although 
 ALTO2A = Music("Second Chair Alto", "Music for the second chairs.. Which seems to be majority of the section. Not too"
                                     "different from the 1st chair.. except everything.", "Saxes", "2nd", 5)
 
-# CHARACTERS -----------------------------------------------------------------------------------------------------------
-
+# CHARACTERS AND INVENTORY --------------------------------------------------------------------------------------------
 # DIRECTOR -----
 DIRECTOR = Characters("Director", "Band Director", "The band director is one of the nicest people you'll ever meet. "
                       "He's always ready to help you when you need it. He's also the type of person to wear converse "
@@ -486,6 +485,7 @@ DIRECTOR = Characters("Director", "Band Director", "The band director is one of 
                       "this year and put in twice as much hard work than the last!", "This year I plan to have twice "
                       "as many fundraisers I as well plan to have as many competitions. So be prepared.", "I'm the "
                       "director of the band. Haha, not much of a section.")
+DIRECTOR.inventory = []
 # DRUM MAJORS ------
 DML = Characters("Drum Major L", "Parade Drum Major", "Incredibly talented Tenor player. Known for being an incredible"
                  " player with knowledge in multiple instruments.", "Drum Major", "Junior/11th", "DM, Saxes", "Sorry,",
@@ -495,7 +495,7 @@ DML = Characters("Drum Major L", "Parade Drum Major", "Incredibly talented Tenor
                  " year seems to be off to a good start. I can't make much assumptions about it yet.", "You can "
                  "consider the Drum majors as their own section, but i came from the saxes. They're a good section. "
                  "There's not much I can say about it other than that.")
-
+DML.inventory = []
 DMJ = Characters("Drum Major J", "Head Field Drum Major", "Incredibly talented player of multiple instruments. Has been"
                  " head drum major since freshmen year. Rumors say he had made it to the top ranks due to an upper "
                  "class men being related to him. Though records show no one with the same last name as him in the past"
@@ -503,7 +503,7 @@ DMJ = Characters("Drum Major J", "Head Field Drum Major", "Incredibly talented p
                  "the band.", "2 years ago we had won sweeps. I expect the band to win again, if the first years don't"
                  " mess it up..", "I expect the first years to put their all into the band. If not, there's no reason"
                  " for them being here.", "Section..? There's only 3 drum majors, can you consider that a section..?")
-
+DMJ.inventory = []
 DMC = Characters("Drum Major C", "Event Drum Major", "He's incredibly nice and chill. Despite being drum major, he is"
                  "more known for being very chill and a friend to most everyone. Plays multiple low instruments rather"
                  " than high ones.", "Drum Major", "Junior/11th", "DM, Saxes, Brass", "Sorry bud,", "Cool!", "Hey, i'm"
@@ -513,6 +513,8 @@ DMC = Characters("Drum Major C", "Event Drum Major", "He's incredibly nice and c
                  "the rest of my years coming!", "This year i know it's going to be great! Do you're best!", "I was "
                  "part of the Saxes my middle school years. I started brass such as trombone and tuba my first two "
                  "years of high school! Both sections are great and i know both will keep up the good work!")
+DMC.inventory = []
+
 # SAXES ------
 SAX_SL = Characters("Section Leader Ave", "Senior Saxophone Section Leader Ave", "Ave has played alto sax since 2nd"
                     "grade. He's attended multiple music camps in order to improve. Many say he was suggested for "
@@ -523,6 +525,7 @@ SAX_SL = Characters("Section Leader Ave", "Senior Saxophone Section Leader Ave",
                     " attend them.", "Last year was bad. We could have done better. A lot of the best players left "
                     "last year. I don't expect us to do well this year.", "If this year get's any worse, i'll lose "
                     "hope for tha band. This year's freshmen don't seem too bad...", "The sax section.. We're family.")
+SAX_SL.inventory = []
 # FLUTES -----
 FLUTE_SL = Characters("Section Leader Ari", "Senior Flute Section Leader Ari", "Ari has been a promising player since"
                       " she started her freshmen year. Incredibly kind and understanding to her section.", "Section "
@@ -534,6 +537,7 @@ FLUTE_SL = Characters("Section Leader Ari", "Senior Flute Section Leader Ari", "
                       "just hope their talent level is as big as their freshmen ego.", "The flute section, we're here "
                       "to help each other out, as well as put all our efforts to be better players. No one slacks off,"
                       " we're elegant and graceful people as well as players.")
+FLUTE_SL.inventory = []
 # CLARINETS -----
 CLARINET_SL = Characters("Section Leader Liz", "Senior Clarinet Section Leader Liz", "Senior Section Leader Liz "
                          "learned to play clarinet since 2nd grade. She has been on top of all her classes since then."
@@ -545,6 +549,7 @@ CLARINET_SL = Characters("Section Leader Liz", "Senior Clarinet Section Leader L
                          " i expect things to go better,,", "This year seems to have a lot more members joining than"
                          " before. I'm glad to see so many new faces.", "There is always so many kind people in the"
                          " section. My opinion would be biased, but we're a kind and welcoming group.")
+CLARINET_SL.inventory = []
 CLARINET_SL2 = Characters("Section Leader Kim", "Junior Clarinet Section Leader Kim", "Guaranteed next year's clarinet"
                           " section leader. Kin had been amazed by Liz's talent and had asked to be under her wing all"
                           " of high school. Through that she has become the most talented player in her grade and "
@@ -554,6 +559,7 @@ CLARINET_SL2 = Characters("Section Leader Kim", "Junior Clarinet Section Leader 
                           "This year! I have faith that the band could be better this year! If not, i may have to "
                           "reconsider joining next year...", "The section, we are so many people, it's hard to tell if"
                           " that's a good thing or bad. Well, the more members the better.")
+CLARINET_SL2.inventory = []
 # LOW_WINDS -----
 LW_SL = Characters("Section Leader Joan", "Sophomore Low Wind Section Leader Joan", "Joan is a sohphomore student."
                    " There are not as lot of low wind players, but out of those there are, she is one of the highest"
@@ -561,9 +567,11 @@ LW_SL = Characters("Section Leader Joan", "Sophomore Low Wind Section Leader Joa
                    "Sophomore/10th", "Low Winds", "Sorry,", "Nice,", "I'm Joan. Thew low winds section leader. Sure "
                    "everyone thinks my position was forced, but i'll show everyone i earned my spot.", "last year",
                    "this year", "section")
+LW_SL.inventory = []
 # TRUMPETS -----
 TRUMPET_SL = Characters("Section Leader Cole", "Senior Trumpet Section Leader Cole", "check", "rank", "grade", "group",
                         "sorry", "alright", "them", "last year", "this year", "section")
+TRUMPET_SL.inventory = []
 # HIGH BRASS -----
 HB_SL = Characters("Max", "Senior High brass section leader", "Max is the high brass section leader. Not energetic as"
                    " the sophomores but very energetic for a senior section leader. Vey talkative as he is proud of his"
@@ -574,21 +582,26 @@ HB_SL = Characters("Max", "Senior High brass section leader", "Max is the high b
                    "reason we've all gone downhill.. Do your best this year! Who knows! We might win something above "
                    "1st!", "This year seems to be starting really off.. Don't let that bother you though, just do your "
                    "best!", "High brass? They're the best! We're the best!")
+HB_SL.inventory = []
 # LOW BRASS -----
 LB_SL = Characters("Section Leader Bryan", "Junior Low Brass Section Leader Bryan", "check", "rank", "grade", "group",
                    "sorry", "alright", "them", "last year", "this year", "section")
+LB_SL.inventory = []
 # PIT ------
 PIT_SL = Characters("Percussion Leader Vi", "Senior Percussion Leader Vi", "check", "rank", "grade", "group", "sorry",
                     "alright", "them", "last year", "this year", "section")
+PIT_SL.inventory = []
 # DRUMLINE -----
 DL_SL = Characters("Drum Captain Van", "Senior Drum Captain Van", "check", "rank", "grade", "group", "sorry", "alright",
                    "them", "last year", "this year", "section")
+DL_SL.inventory = []
 # GUARD -----
 GUARD_SL1 = Characters("Guard Captain Tiana", "Senior Guard Captain Tiana", "check", "rank", "grade", "group", "sorry",
                        "alright", "them", "last year", "this year", "section")
+GUARD_SL1.inventory = []
 GUARD_SL2 = Characters("Guard Captain Bri", "Senior Guard Captain Bri", "check", "rank", "grade", "group", "sorry",
                        "alright", "them", "last year", "this year", "section")
-
+GUARD_SL2.inventory = []
 
 # ROOM CHARACTERS -----------------------------------------------------------------------------------------------------
 TREE1.characters = []
@@ -598,8 +611,8 @@ BACK_STAGE.characters = []
 STAGE.characters = []
 CAFETERIA.characters = []
 JANITOR_ROOM.characters = []
-WATER_FOUNTAIN.characters = [WATER]
-FOOD_BOOTHS.characters = [APPLE, SALAD]
+WATER_FOUNTAIN.characters = []
+FOOD_BOOTHS.characters = []
 KITCHEN.characters = []
 BAND_ROOM.characters = [FLUTE_SL]
 OFFICE.characters = [DIRECTOR, DMJ]
@@ -624,29 +637,29 @@ TREE1.items = []
 TREE2.items = []
 OUTER_STAGE.items = []
 BACK_STAGE.items = []
-STAGE.characters = []
-CAFETERIA.characters = []
-JANITOR_ROOM.characters = []
-WATER_FOUNTAIN.characters = []
-FOOD_BOOTHS.characters = []
-KITCHEN.characters = []
-BAND_ROOM.characters = []
-OFFICE.characters = []
-DRUMLINE.characters = []
-PERCUSSION.characters = []
-WOODWIND.characters = []
-MAIN_BAND_ROOM.characters = []
-UNIFORM.characters = []
-ORCHESTRA.characters = []
-BRASS.characters = []
-GUARD.characters = []
-BAND_HALL.characters = []
-LOUNGE_HALL.characters = []
-STORAGE.characters = []
-TEACHER_LOUNGE.characters = []
-LOUNGE_TABLE.characters = []
-OUTER_BAND.characters = []
-OUTER_ORCHESTRA.characters = []
+STAGE.items = []
+CAFETERIA.items = []
+JANITOR_ROOM.items = []
+WATER_FOUNTAIN.items = []
+FOOD_BOOTHS.items = []
+KITCHEN.items = []
+BAND_ROOM.items = []
+OFFICE.items = []
+DRUMLINE.items = []
+PERCUSSION.items = []
+WOODWIND.items = []
+MAIN_BAND_ROOM.items = []
+UNIFORM.items = []
+ORCHESTRA.items = []
+BRASS.items = []
+GUARD.items = []
+BAND_HALL.items = []
+LOUNGE_HALL.items = []
+STORAGE.items = []
+TEACHER_LOUNGE.items = []
+LOUNGE_TABLE.items = []
+OUTER_BAND.items = []
+OUTER_ORCHESTRA.items = []
 
 # PLAYING CONTROL ------------------------------------------------------------------------------------------------------
 playing = True

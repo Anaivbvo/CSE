@@ -1,11 +1,9 @@
-def reverse_it(string):
-    new_number = string[::-1]
-    print(new_number)
-    return none
-
-
 print("The Luhn Formula:")
 number = input(">_")
+
+
+def reverse_it(string):
+    print(string[::-1])
 
 
 def valid_card_number(num: str):
