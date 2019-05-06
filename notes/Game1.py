@@ -488,18 +488,20 @@ DIRECTOR = Characters("Director", "Band Director", "The band director is one of 
 DIRECTOR.inventory = []
 # DRUM MAJORS ------
 DML = Characters("Drum Major L", "Parade Drum Major", "Incredibly talented Tenor player. Known for being an incredible"
-                 " player with knowledge in multiple instruments.", "Drum Major", "Junior/11th", "DM, Saxes", "Sorry,",
+                 " player with knowledge in multiple instruments.", "Drum Major", "Junior/11th", "DM, Saxes, Clarinets",
+                 "Sorry,",
                  "Okay then,", "I'm L. The Parade Drum Major. I've been an alumni from the school's feeder. I've been "
                  "playing Tenor Sax since i was in 3rd grade and i've been getting better since then.", "Last year was "
                  "my first year as parade drum major. I started off roughly but we all do, and we all improve.", "This"
-                 " year seems to be off to a good start. I can't make much assumptions about it yet.", "You can "
+                 " year seems to be off to a... start. I can't make much assumptions about it yet.", "You can "
                  "consider the Drum majors as their own section, but i came from the saxes. They're a good section. "
                  "There's not much I can say about it other than that.")
 DML.inventory = []
 DMJ = Characters("Drum Major J", "Head Field Drum Major", "Incredibly talented player of multiple instruments. Has been"
                  " head drum major since freshmen year. Rumors say he had made it to the top ranks due to an upper "
                  "class men being related to him. Though records show no one with the same last name as him in the past"
-                 "10 years.", "Drum Major", "Junior/11th", "DM, Saxes", "Hm,", "Well,", "I'm J, the Head Drum major of "
+                 "10 years.", "Drum Major", "Junior/11th", "DM, Saxes, Percussion", "Hm,", "Well,",
+                 "I'm J, the Head Drum major of "
                  "the band.", "2 years ago we had won sweeps. I expect the band to win again, if the first years don't"
                  " mess it up..", "I expect the first years to put their all into the band. If not, there's no reason"
                  " for them being here.", "Section..? There's only 3 drum majors, can you consider that a section..?")
@@ -524,7 +526,7 @@ SAX_SL = Characters("Section Leader Ave", "Senior Saxophone Section Leader Ave",
                     " and put in all effort you can. Also, don't skip practice, when we have sectionals, i expect you"
                     " attend them.", "Last year was bad. We could have done better. A lot of the best players left "
                     "last year. I don't expect us to do well this year.", "If this year get's any worse, i'll lose "
-                    "hope for tha band. This year's freshmen don't seem too bad...", "The sax section.. We're family.")
+                    "hope for the band. This year's freshmen don't seem too bad...", "The sax section.. We're family.")
 SAX_SL.inventory = []
 # FLUTES -----
 FLUTE_SL = Characters("Section Leader Ari", "Senior Flute Section Leader Ari", "Ari has been a promising player since"
@@ -561,16 +563,25 @@ CLARINET_SL2 = Characters("Section Leader Kim", "Junior Clarinet Section Leader 
                           " that's a good thing or bad. Well, the more members the better.")
 CLARINET_SL2.inventory = []
 # LOW_WINDS -----
-LW_SL = Characters("Section Leader Joan", "Sophomore Low Wind Section Leader Joan", "Joan is a sohphomore student."
+LW_SL = Characters("Section Leader Joan", "Sophomore Low Wind Section Leader Joan", "Joan is a sophomore student."
                    " There are not as lot of low wind players, but out of those there are, she is one of the highest"
                    " players. She started off from a regular clarinet player, to a low wind player.", "Section Leader",
                    "Sophomore/10th", "Low Winds", "Sorry,", "Nice,", "I'm Joan. Thew low winds section leader. Sure "
-                   "everyone thinks my position was forced, but i'll show everyone i earned my spot.", "last year",
-                   "this year", "section")
+                   "everyone thinks my position was forced, but i'll show everyone i earned my spot.", "My first year "
+                   "was intresting. Everyhting was new, and i'm sure that's how i all seems to you now, i promise "
+                   "things will get easier and more familiar.", "My second year as well as my first year as section"
+                   " leader is something i'm excited and very much looking foward too! I'm not too sure what i expect "
+                   "from the band this year though.", "Our section is very small, maybe around 4 players. Oh i hope "
+                   "there's a low wind freshman.")
 LW_SL.inventory = []
 # TRUMPETS -----
-TRUMPET_SL = Characters("Section Leader Cole", "Senior Trumpet Section Leader Cole", "check", "rank", "grade", "group",
-                        "sorry", "alright", "them", "last year", "this year", "section")
+TRUMPET_SL = Characters("Section Leader Cole", "Senior Trumpet Section Leader Cole", "Senior section leader Cole lives"
+                        " up to the title of being one of the best trumpet players this band has seen. Unlike most "
+                        "other players wioth stpries of playing their instruments all their lives, this is Cole's 4th "
+                        "year playing, he had lied his way into the band by saying he had played the instruments since "
+                        "5th in order to try something new. Though his story may be a tad of a lie, his playing skills"
+                        " are honest truth and incredible!", "Section Leader", "Senior/12th", "Trumpets", "Pardon",
+                        "Alright,", "I'm ", "last year", "this year", "section")
 TRUMPET_SL.inventory = []
 # HIGH BRASS -----
 HB_SL = Characters("Max", "Senior High brass section leader", "Max is the high brass section leader. Not energetic as"
@@ -690,6 +701,8 @@ print("===***************************************")
 while playing:
     print("-", Player.current_location.name)
     print("-", Player.current_location.description)
+    print("- Those in the room:")
+    print(str(Player.current_location.characters.name))
     print("-", Player.current_location.av_dir)
     command = input(">_")
     if command.lower() in ['q', 'quit', 'exit', 'ee']:
@@ -701,7 +714,8 @@ while playing:
         print(Player.current_location.long_desc)
         print("*****")
     if command.lower() in ['t', 'talk']:
-        print()
+        print("Who would you like to talk to:")
+        print(str(Player.current_location.characters.name))
     if command.lower() in ['commands', 'command']:
         print("===***************************************")
         print("COMMANDS::                               *")
@@ -730,8 +744,3 @@ while playing:
         if command.lower() in short_directions:
             pos = short_directions.index(command.lower())
             command = directions[pos]
-            try:
-                room_name = getattr(Player.current_location, command.lower())
-                Player.move(room_name)
-            except KeyError:
-                print("Error: Can't go that way")
