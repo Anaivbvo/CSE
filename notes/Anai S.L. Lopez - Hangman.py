@@ -1,41 +1,60 @@
-
 import random
-import string
-
-bank = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple', 'violet']
-word = random.choices(bank)
-wins = False
-found = []
-guesses_left = 8
-list_of_guesses = []
-
-for i in range(0, len(word)):
-    found.append("-")
-
-while guesses_left > 0:
-    guess = input("Enter a letter: ")
-    for guess in letter_in_word:
-        print("%s is in the word" % guess)
+word_bank = ["Treble Clef", "Music Theory", "Cow", "Dog", "Animal", "Computer", "Mouse", "Crackers",
+             "Grappling Hook", "Stringed Instruments", "Drought", "Red", "Drag", "Dripping",
+             "Scary", "Ground", "Electricity", "Internet", "Living Room", "Blue", "Cyan", "Tyrannosaurus Rex"
+             "Ripping", "Pig", "Chicken", "Frog", "Water", "Wandering", "Training", "Reading Is Good",
+             "playing games", "reading books", "potato", "tomato", "turkey", "potted plant", "corn", "town", "mayor",
+             "painting", "switch", "cpu", "internet browser", "starry sky", "flag", "train", "cruel", "tree", "earthy",
+             "serious", "answer", "kick", "oceanic", "beautiful", "tiger", "history", "plasma", "gateway", "forty",
+             "llama", "cactus", "camel", "chocolate", "harmony", "world", "coral reef"]
+guessed = []
+random_word = random.choice(word_bank)
+word = list(random_word)
+true = list(word)
+answer = "".join(word)
+line = ""
+space = " "
+question_mark = "?"
+for character in word:
+    if character is question_mark:
+        line = line + "?"
+    if character is space:
+        line = line + " "
     else:
-        print("%s is not in the word" % guess)
-        guesses_left -= 1
-    print("You have: ", guesses_left, "guesses so far")
-    list_of_guesses.append(guess)
-    print("Guesses made so far:", list_of_guesses)
-if guesses_left == 0:
-    print("You ran out of guesses!")
-
-import random
-
-Underscore = list(string.punctuation)
-word_bank = ['dog', 'catfish', 'Jose', 'frog', 'gummy',
-             'cat', 'pants', 'dragon', 'lizard', 'blank']
-word = random.choice(word_bank)
-word_bank = list(word)
-
-letter_list = []
-playing = True
-player_won = False
-guess = 8
-
-while guesses_left < 0 and playing:
+        line = line + "-"
+        answer = answer.replace(answer, line)
+correct = 7
+while correct > 0:
+    print(answer)
+    answer = list(answer)
+    if true == answer:
+        answer = "".join(answer)
+        print("congratulations! the word was %s" % answer)
+        exit()
+    guessed = "".join(guessed)
+    print("letters you've guessed - %s" % guessed)
+    guessed = list(guessed)
+    guess = input("insert guess")
+    guessed.append(guess)
+    if guess in answer:
+        print("you already guessed this")
+        answer = "".join(answer)
+    if guess.swapcase() in word:
+        guess = guess.swapcase()
+    while guess in word:
+        answer = list(answer)
+        current_index = word.index(guess)
+        word.pop(current_index)
+        word.insert(current_index, "-")
+        answer.pop(current_index)
+        answer.insert(current_index, guess)
+        answer = "".join(answer)
+        if guess.swapcase() in word:
+            guess = guess.swapcase()
+    if guess not in word and guess not in answer:
+        answer = "".join(answer)
+        print("nope")
+        correct = correct - 1
+true = "".join(true)
+print("the word was %s" % true)
+print("you could'nt guess it :/")

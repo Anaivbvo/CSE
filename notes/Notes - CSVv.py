@@ -76,7 +76,6 @@ with open("Book1.csv", 'r') as old_csv:
             old_num = row[0]
             if validate(old_num):
                 writer.writerow(row)
-
 print("Done")
 
 string = input(">_")
