@@ -5,6 +5,22 @@ List = []
 with open("Sales Records.csv") as old_csv:
     reader = csv.reader(old_csv)
     total1 = 0
+    for row in reader:
+        if row[0] == 'Region':
+            continue
+        # old_number = int(row[0]) + 1
+        old_number = row[13]
+        if row[2] == 'Baby Food':
+            total1 += float(old_number)
+            # print(old_number)
+
+print("The total baby food profit was:")
+totalA = ("${:,}".format(round(total1, 2)))
+print(totalA)
+List.append(totalA)
+
+with open("Sales Records.csv") as old_csv:
+    reader = csv.reader(old_csv)
     total2 = 0
     total3 = 0
     total4 = 0
@@ -21,90 +37,74 @@ with open("Sales Records.csv") as old_csv:
             continue
         # old_number = int(row[0]) + 1
         old_number = row[13]
-        if row[2] == 'Baby Food':
-            name = "Baby Food"
-            total1 += float(old_number)
-            # print(old_number)
-            total1 = round(total1, 2)
-            totalA = ("${:,}".format(total1))
         if row[2] == 'Beverage':
-            name = "Beverage"
             total2 += float(old_number)
             # print(old_number)
             total2 = round(total2, 2)
             totalB = ("${:,}".format(total2))
         if row[2] == 'Cereal':
-            name = "Cereal"
             total3 += float(old_number)
             # print(old_number)
             total3 = round(total3, 2)
             totalC = ("${:,}".format(total3))
         if row[2] == 'Clothes':
-            name = "Clothes"
             total4 += float(old_number)
             # print(old_number)
             total4 = round(total4, 2)
             totalD = ("${:,}".format(total4))
         if row[2] == 'Cosmetics':
-            name = "Cosmetics"
             total5 += float(old_number)
             # print(old_number)
             total5 = round(total5, 2)
             totalE = ("${:,}".format(total5))
         if row[2] == 'Fruits':
-            name = "Fruits"
             total6 += float(old_number)
             # print(old_number)
             total6 = round(total6, 2)
             totalF = ("${:,}".format(total6))
         if row[2] == 'Households':
-            name = "Households"
             total7 += float(old_number)
             # print(old_number)
             total7 = round(total7, 2)
             totalG = ("${:,}".format(total7))
         if row[2] == 'Meat':
-            name = "Meat"
             total8 += float(old_number)
             # print(old_number)
             total8 = round(total8, 2)
             totalH = ("${:,}".format(total8))
         if row[2] == 'Office':
-            name = "Office"
             total9 += float(old_number)
             # print(old_number)
             total9 = round(total9, 2)
             totalI = ("${:,}".format(total9))
         if row[2] == 'Personal':
-            name = "Personal"
             total10 += float(old_number)
             # print(old_number)
             total10 = round(total10, 2)
             totalJ = ("${:,}".format(total10))
         if row[2] == 'Snacks':
-            name = "Snacks"
             total11 += float(old_number)
             # print(old_number)
             total11 = round(total11, 2)
             totalK = ("${:,}".format(total11))
         if row[2] == 'Vegetables':
-            name = "Vegetables"
             total12 += float(old_number)
             # print(old_number)
             total12 = round(total12, 2)
             totalL = ("${:,}".format(total12))
-    print("The total baby food profit was:")
-    totalA = ("${:,}".format(round(total1, 2)))
-    print(totalA)
-    List.append(totalA)
 
-    print("The total beverage profit was:")
-    totalB = ("${:,}".format(round(total2, 2)))
-    print(totalB)
-    List.append(totalB)
+print("The total baby food profit was:")
+totalA = ("${:,}".format(round(total1, 2)))
+print(totalA)
+List.append(totalA)
 
-    print("The total cereal profit was:")
-    totalC = ("${:,}".format(round(total3, 2)))
+print("The total beverage profit was:")
+totalB = ("${:,}".format(round(total2, 2)))
+print(totalB)
+List.append(totalB)
+
+print("The total cereal profit was:")
+totalC = ("${:,}".format(round(total3, 2)))
 print(totalC)
 List.append(totalC)
 
@@ -154,5 +154,4 @@ print(totalL)
 List.append(totalL)
 
 print("The one who made the most profit was: ")
-print(max(List))
 print(max(List))
