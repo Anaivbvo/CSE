@@ -39,6 +39,7 @@ while correct > 0:
     if guess in answer:
         print("you already guessed this")
         answer = "".join(answer)
+
     if guess.swapcase() in word:
         guess = guess.swapcase()
     while guess in word:

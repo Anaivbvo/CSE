@@ -58,4 +58,3 @@ class Items(object):
         if answer.upper() in ['NO']:
             print("you did not pick up:", self.name)
             print(ME.inventory)
-
