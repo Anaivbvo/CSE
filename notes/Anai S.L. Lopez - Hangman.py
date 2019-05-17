@@ -1,5 +1,6 @@
 import random
-word_bank = ["apple", "applesauce", "billboard", "catastrophe", "balloon", "dictionary", "elephant", "fisherman"]
+word_bank = ["absolute", "abstract", "academic", "accepted", "accident", "accuracy", "accurate", "achieved"]
+
 guessed = []
 random_word = random.choice(word_bank)
 word = list(random_word)
