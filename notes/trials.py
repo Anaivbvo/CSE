@@ -1,93 +1,46 @@
 import csv
 
-topics = ['baby food', 'beverage', 'cereal', 'clothes', 'cosmetics', 'fruits', 'households', 'meat', 'office supplies',
-          'personal', 'snacks', 'vegetables']
+
+def validate(num: int):
+    num = list(num)
+    if len(num) == 16:
+        last_num = num[15]
+        num.pop(15)
+        num = num[:: - 1]
+        odds = num[0:15:2]
+        even = num[1:15:2]
+        o = 0
+        for i in odds:
+            odds[o] = int(odds[o])
+            odds[o] *= 2
+            if int(odds[o]) >= 10:
+                odds[o] = int(odds[o]) - 9
+                o += 1
+            else:
+                o += 1
+        oddadd = int(odds[0]) + int(odds[1]) + int(odds[2]) + int(odds[3]) + int(odds[4]) + int(odds[5]) + int(odds[6])\
+            + int(odds[7])
+        evenadd = int(even[0]) + int(even[1]) + int(even[2]) + int(even[3]) + int(even[4]) + int(even[5]) + int(even[6])
+        allnum = oddadd + evenadd
+        if int(allnum) % 10 is int(last_num):
+            return True
+        else:
+            return False
+    return False
 
 
-with open("Sales Records.csv") as old_csv:
-    reader = csv.reader(old_csv)
-    total1 = 0
-    total2 = 0
-    total3 = 0
-    total4 = 0
-    total5 = 0
-    total6 = 0
-    total7 = 0
-    total8 = 0
-    total9 = 0
-    total10 = 0
-    total11 = 0
-    total12 = 0
-    for row in reader:
-        if row[0] == 'Region':
-            continue
-        # old_number = int(row[0]) + 1
-        old_number = row[13]
-        if row[2] == topics[0]:
-            total1 += float(old_number)
-            # print(old_number)
-            total1 = round(total1, 2)
-            totalA = ("${:,}".format(total1))
-        if row[2] == topics[1]:
-            total2 += float(old_number)
-            # print(old_number)
-            total2 = round(total2, 2)
-            totalB = ("${:,}".format(total2))
-        if row[2] == topics[2]:
-            total3 += float(old_number)
-            # print(old_number)
-            total3 = round(total3, 2)
-            totalC = ("${:,}".format(total3))
-        if row[2] == topics[3]:
-            total4 += float(old_number)
-            # print(old_number)
-            total4 = round(total4, 2)
-            totalD = ("${:,}".format(total4))
-        if row[2] == topics[4]:
-            total5 += float(old_number)
-            # print(old_number)
-            total5 = round(total5, 2)
-        if row[2] == topics[5]:
-            total6 += float(old_number)
-            # print(old_number)
-            total6 = round(total6, 2)
-        if row[2] == topics[6]:
-            total7 += float(old_number)
-            # print(old_number)
-            total7 = round(total7, 2)
-        if row[2] == topics[7]:
-            total8 += float(old_number)
-            # print(old_number)
-            total8 = round(total8, 2)
-        if row[2] == topics[8]:
-            total9 += float(old_number)
-            # print(old_number)
-            total9 = round(total9, 2)
-        if row[2] == topics[9]:
-            total10 += float(old_number)
-            # print(old_number)
-            total10 = round(total10, 2)
-        if row[2] == topics[10]:
-            total11 += float(old_number)
-            # print(old_number)
-            total11 = round(total11, 2)
-        if row[2] == topics[11]:
-            total12 += float(old_number)
-            # print(old_number)
-            total12 = round(total12, 2)
+with open("Book1.csv", "r") as old_csv:
+    with open("File.csv", "w") as new_csv:
+        with open("FakeFile.csv", "w") as fake_csv:
+            reader = csv.reader(old_csv)
+            writer = csv.writer(new_csv)
+            writer2 = csv.writer(fake_csv)
+            print("Processing...")
 
-print("The total baby food profit was:")
-print(totalA)
-print("The total beverage profit was:")
-print("The total cereal profit was:")
-print("The total clothes profit was:")
-print("The total cosmetics profit was:")
-print("The total fruits profit was:")
-print("The total households profit was:")
-print("The total meat profit was:")
-print("The total office supplies profit was:")
-print("The total personal profit was:")
-print("The total snacks profit was:")
-print("The total vegetables profit was:")
-
-
+            for row in reader:
+                old_number = row[0]
+                if validate(old_number) is True:
+                    writer.writerow(row)
+                if validate(old_number) is False:
+                    writer2.writerow(row)
+print("Done!")

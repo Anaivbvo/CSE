@@ -153,6 +153,9 @@ totalL = ("${:,}".format(round(total12, 2)))
 print(totalL)
 List.append(totalL)
 
+print(List)
+
 print("The one who made the most profit was: ")
+
 print(max(List))
 print(max(List))
