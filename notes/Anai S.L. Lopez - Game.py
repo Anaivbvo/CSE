@@ -714,7 +714,7 @@ while playing:
         print("*****")
         print(Player.current_location.long_desc)
         print("*****")
-    if command.lower() in ['commands', 'command']:
+    if command.lower() in ['commands', 'command', 'help']:
         print("==========================================")
         print("COMMANDS::                               |")
         print("PRESS:                                   |")
