@@ -122,7 +122,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notes/Anai S.L. Lopez - Game.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3037">
+            <state relative-caret-position="4057">
               <caret line="716" column="55" selection-start-line="716" selection-start-column="55" selection-end-line="716" selection-end-column="55" />
             </state>
           </provider>
@@ -131,8 +131,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notes/paper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1666">
-              <caret line="31" column="58" lean-forward="true" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+            <state relative-caret-position="251">
+              <caret line="119" column="52" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -185,10 +185,11 @@
         <option value="$PROJECT_DIR$/notes/uhhhhhe.py" />
         <option value="$PROJECT_DIR$/notes/Anai S.L. Lopez - Game.py" />
         <option value="$PROJECT_DIR$/notes/Game2.py" />
+        <option value="$PROJECT_DIR$/notes/paper.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="495" />
     <option name="width" value="1432" />
     <option name="height" value="1047" />
@@ -373,16 +374,15 @@
       <workItem from="1557935418097" duration="3396000" />
       <workItem from="1558021873242" duration="3232000" />
       <workItem from="1558111905112" duration="2840000" />
-      <workItem from="1558450215091" duration="6007000" />
+      <workItem from="1558450215091" duration="6563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32056000" />
+    <option name="totallyTimeSpent" value="32612000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2531983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -422,7 +422,7 @@
     <SUITE FILE_PATH="coverage/CSE$Anai_S_L__Lopez___Validator.coverage" NAME="Anai S.L. Lopez - Validator Coverage Results" MODIFIED="1558454732877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Notes___CSVv.coverage" NAME="Notes - CSVv Coverage Results" MODIFIED="1557508706411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Anai_S_L__Lopez___Hangman.coverage" NAME="Anai S.L. Lopez - Hangman Coverage Results" MODIFIED="1558111960999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
-    <SUITE FILE_PATH="coverage/CSE$paper.coverage" NAME="paper Coverage Results" MODIFIED="1558456267845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
+    <SUITE FILE_PATH="coverage/CSE$paper.coverage" NAME="paper Coverage Results" MODIFIED="1558456928054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Game1.coverage" NAME="Game1 Coverage Results" MODIFIED="1557418083963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Anai_S_L__Lopez___Game.coverage" NAME="Anai S.L. Lopez - Game Coverage Results" MODIFIED="1558455879382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
     <SUITE FILE_PATH="coverage/CSE$Saless.coverage" NAME="Saless Coverage Results" MODIFIED="1557508380908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notes" />
@@ -582,13 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notes/Anai S.L. Lopez - Game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3037">
-          <caret line="716" column="55" selection-start-line="716" selection-start-column="55" selection-end-line="716" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notes/Anai S.L. Lopez - Validator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4">
@@ -601,10 +594,17 @@
         <state relative-caret-position="-548" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/notes/Anai S.L. Lopez - Game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4057">
+          <caret line="716" column="55" selection-start-line="716" selection-start-column="55" selection-end-line="716" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/notes/paper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1666">
-          <caret line="31" column="58" lean-forward="true" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+        <state relative-caret-position="251">
+          <caret line="119" column="52" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
         </state>
       </provider>
     </entry>

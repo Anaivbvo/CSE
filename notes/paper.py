@@ -116,6 +116,7 @@ class Characters(object):
             print("Haha sorry no can do!")
             print("The director asked me first for paper! I'm on my way to giving it to him right now!")
             print("...")
+            self.inventory.pop(1)
             print("is there anything else you need?")
             self.trade()
         elif wanted_item in self.inventory:
@@ -159,4 +160,5 @@ class Characters(object):
 Andrew = Characters("Andrew", "Senior Section Leader Andrew", "Senior", "Hm,", "Alright,")
 print("You ask Andrew in search for paper!")
 Andrew.inventory = ['alto reed 4', 'paper', '1st chair music', 'water', 'neck strap']
+
 Andrew.trade()
