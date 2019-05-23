@@ -343,7 +343,7 @@ class Music(Items):
 
 class Characters(object):
     def __init__(self, name, description, check, rank, grade, group, sorry, alright, them, last_year, this_year,
-                 section):
+                 section, short_name):
         self.name = name
         self.description = description
         self.check = check
@@ -484,7 +484,7 @@ DIRECTOR = Characters("Director", "Band Director", "The band director is one of 
                       "Whoops, sorry", "Last year we had a few up and down moments. But it's alright! We'll do better "
                       "this year and put in twice as much hard work than the last!", "This year I plan to have twice "
                       "as many fundraisers I as well plan to have as many competitions. So be prepared.", "I'm the "
-                      "director of the band. Haha, not much of a section.")
+                      "director of the band. Haha, not much of a section.", "director")
 DIRECTOR.inventory = []
 # DRUM MAJORS ------
 DML = Characters("Drum Major L", "Parade Drum Major", "Incredibly talented Tenor player. Known for being an incredible"
@@ -495,7 +495,7 @@ DML = Characters("Drum Major L", "Parade Drum Major", "Incredibly talented Tenor
                  "my first year as parade drum major. I started off roughly but we all do, and we all improve.", "This"
                  " year seems to be off to a... start. I can't make much assumptions about it yet.", "You can "
                  "consider the Drum majors as their own section, but i came from the saxes. They're a good section. "
-                 "There's not much I can say about it other than that.")
+                 "There's not much I can say about it other than that.", "DML")
 DML.inventory = []
 DMJ = Characters("Drum Major J", "Head Field Drum Major", "Incredibly talented player of multiple instruments. Has been"
                  " head drum major since freshmen year. Rumors say he had made it to the top ranks due to an upper "
@@ -504,7 +504,8 @@ DMJ = Characters("Drum Major J", "Head Field Drum Major", "Incredibly talented p
                  "I'm J, the Head Drum major of "
                  "the band.", "2 years ago we had won sweeps. I expect the band to win again, if the first years don't"
                  " mess it up..", "I expect the first years to put their all into the band. If not, there's no reason"
-                 " for them being here.", "Section..? There's only 3 drum majors, can you consider that a section..?")
+                 " for them being here.", "Section..? There's only 3 drum majors, can you consider that a section..?",
+                 "DMJ")
 DMJ.inventory = []
 DMC = Characters("Drum Major C", "Event Drum Major", "He's incredibly nice and chill. Despite being drum major, he is"
                  "more known for being very chill and a friend to most everyone. Plays multiple low instruments rather"
@@ -514,7 +515,7 @@ DMC = Characters("Drum Major C", "Event Drum Major", "He's incredibly nice and c
                  " conducting too.", "Last year was my first year as drum major! A great time and i look forward to "
                  "the rest of my years coming!", "This year i know it's going to be great! Do you're best!", "I was "
                  "part of the Saxes my middle school years. I started brass such as trombone and tuba my first two "
-                 "years of high school! Both sections are great and i know both will keep up the good work!")
+                 "years of high school! Both sections are great and i know both will keep up the good work!", "DMC")
 DMC.inventory = []
 
 # SAXES ------
@@ -526,7 +527,8 @@ SAX_SL = Characters("Section Leader Ave", "Senior Saxophone Section Leader Ave",
                     " and put in all effort you can. Also, don't skip practice, when we have sectionals, i expect you"
                     " attend them.", "Last year was bad. We could have done better. A lot of the best players left "
                     "last year. I don't expect us to do well this year.", "If this year get's any worse, i'll lose "
-                    "hope for the band. This year's freshmen don't seem too bad...", "The sax section.. We're family.")
+                    "hope for the band. This year's freshmen don't seem too bad...", "The sax section.. We're family.",
+                    "SAX SL")
 SAX_SL.inventory = []
 # FLUTES -----
 FLUTE_SL = Characters("Section Leader Ari", "Senior Flute Section Leader Ari", "Ari has been a promising player since"
@@ -538,7 +540,7 @@ FLUTE_SL = Characters("Section Leader Ari", "Senior Flute Section Leader Ari", "
                       "their hardest.", "This year we have managed to convince more 8th graders to join the band. I "
                       "just hope their talent level is as big as their freshmen ego.", "The flute section, we're here "
                       "to help each other out, as well as put all our efforts to be better players. No one slacks off,"
-                      " we're elegant and graceful people as well as players.")
+                      " we're elegant and graceful people as well as players.", "FLUTE SL")
 FLUTE_SL.inventory = []
 # CLARINETS -----
 CLARINET_SL = Characters("Section Leader Liz", "Senior Clarinet Section Leader Liz", "Senior Section Leader Liz "
@@ -550,7 +552,7 @@ CLARINET_SL = Characters("Section Leader Liz", "Senior Clarinet Section Leader L
                          " mre after i leave.", "The previous year we had gone a bit downhill. This being my last year,"
                          " i expect things to go better,,", "This year seems to have a lot more members joining than"
                          " before. I'm glad to see so many new faces.", "There is always so many kind people in the"
-                         " section. My opinion would be biased, but we're a kind and welcoming group.")
+                         " section. My opinion would be biased, but we're a kind and welcoming group.", )
 CLARINET_SL.inventory = []
 CLARINET_SL2 = Characters("Section Leader Kim", "Junior Clarinet Section Leader Kim", "Guaranteed next year's clarinet"
                           " section leader. Kin had been amazed by Liz's talent and had asked to be under her wing all"
@@ -714,6 +716,17 @@ while playing:
         print("*****")
         print(Player.current_location.long_desc)
         print("*****")
+    if command.lower() in ('talk', 'speak', 't'):
+        tar = 0
+        for i in Player.current_location.characters:
+            print("This is", Player.current_location.name, ".", "Those in the room are:")
+            print(Player.current_location.characters[tar].name)
+            tar += 1
+        a = input("talk to who?")
+        e = 0
+        for i in Player.current_location.characters:
+            if a.upper() == Player.current_location.characters[e].short_name:
+                Characters.talk_to(Player.current_location.characters[e])
     if command.lower() in ['commands', 'command', 'help']:
         print("==========================================")
         print("COMMANDS::                               |")
