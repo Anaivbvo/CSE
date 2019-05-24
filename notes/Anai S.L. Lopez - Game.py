@@ -718,13 +718,14 @@ while playing:
         tar = 0
         for i in Player.current_location.characters:
             print("This is", Player.current_location.name, ".", "Those in the room are:")
-            print(Player.current_location.characters[tar].name)
+            print(str(Player.current_location.characters[tar].name))
             tar += 1
-        a = input("talk to who?")
+        print("talk to who?")
+        a = input(">_")
         e = 0
         for i in Player.current_location.characters:
-            if a.upper() == Player.current_location.characters[e].short_name:
-                Characters.talk_to(Player.current_location.characters[e])
+            if a.upper() == Player.current_location.characters.name:
+                Player.current_location.characters.name
     if command.lower() in ['commands', 'command', 'help']:
         print("==========================================")
         print("COMMANDS::                               |")
@@ -744,12 +745,14 @@ while playing:
         print("'commands', 'help':                      |")
         print("To see the commands again.               |")
         print("==========================================")
-    if command.lower() in directions:
+    if command.lower() in short_directions:
+        pos = short_directions.index(command.lower())
+        command = directions[pos]
+    elif command.lower() in directions:
         try:
-            room_name = getattr(Player.current_location, command.lower())
-            Player.move(room_name)
-        except KeyError:
-            print("Error: Can't go that way")
-        if command.lower() in short_directions:
-            pos = short_directions.index(command.lower())
-            command = directions[pos]
+            room_object = getattr(Player.current_location, command)
+            if room_object is None:
+                raise AttributeError
+            Player.move(room_object)
+        except AttributeError:
+            print("I can not go that way")
